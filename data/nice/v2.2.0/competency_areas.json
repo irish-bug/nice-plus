@@ -1,0 +1,79 @@
+[
+  {
+    "id": "NF-COM-001",
+    "title": "Access Controls",
+    "description": "This Competency Area describes a learner’s capabilities to define, manage, and monitor the roles and secure access privileges of who is authorized to access protected data and resources and understand the impact of different types of access controls.",
+    "statement_count": 0,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-002",
+    "title": "Artificial Intelligence (AI) Security",
+    "description": "This Competency Area describes a learner’s capability to understand Artificial Intelligence (AI) systems and to use them in a secure manner that maximizes AI’s benefits while minimizing potential negative risks.",
+    "statement_count": 88,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-003",
+    "title": "Asset Management",
+    "description": "This Competency Area describes a learner’s capabilities to conduct and maintain an accurate inventory of all digital assets, to include identifying, developing, operating, maintaining, upgrading, and disposing of assets.",
+    "statement_count": 0,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-004",
+    "title": "Cloud Security",
+    "description": "This Competency Area describes a learner’s capabilities to protect cloud data, applications, and infrastructure from internal and external threats.",
+    "statement_count": 0,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-005",
+    "title": "Communications Security",
+    "description": "This Competency Area describes a learner’s capabilities to secure the transmissions, broadcasting, switching, control, and operation of communications and related network infrastructures.",
+    "statement_count": 0,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-006",
+    "title": "Cryptography",
+    "description": "This Competency Area describes a learner’s capabilities to transform data using cryptographic processes to ensure it can only be read by the person who is authorized to access it.",
+    "statement_count": 106,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-007",
+    "title": "Cyber Resiliency",
+    "description": "This Competency Area describes a learner’s capability related to architecting, designing, developing, implementing, and maintaining the trustworthiness of systems that use or are enabled by cyber resources in order to anticipate, withstand, recover from, and adapt to adverse conditions, stresses, attacks, or compromises.",
+    "statement_count": 122,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-008",
+    "title": "DevSecOps",
+    "description": "This Competency Area describes a learner’s capabilities to integrate security as a shared responsibility throughout the development, security, and operations (DevSecOps) life cycle of technologies.",
+    "statement_count": 96,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-009",
+    "title": "Operating Systems (OS) Security",
+    "description": "This Competency Area describes a learner’s capabilities to install, administer, troubleshoot, backup, and conduct recovery of Operating Systems (OS), including in simulated environments.",
+    "statement_count": 0,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-010",
+    "title": "Operational Technology (OT) Security",
+    "description": "This Competency Area describes a learner’s capabilities to improve and maintain the security of Operational Technology (OT) systems while addressing their unique performance, reliability, and safety requirements.",
+    "statement_count": 0,
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "NF-COM-011",
+    "title": "Supply Chain Security",
+    "description": "This Competency Area describes a learner’s capabilities to analyze and control digital and physical risks presented by technology products or services purchased from parties outside your organization.",
+    "statement_count": 0,
+    "nice_version": "2.2.0"
+  }
+]

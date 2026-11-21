@@ -1,0 +1,534 @@
+{
+  "schema_version": "0.3.0",
+  "kind": "nice-plus.competency_areas",
+  "notice": "DRAFT. NICE Plus is an independent extension of the NIST NICE Framework for OT/ICS roles. It is not a NIST product and has not been reviewed or endorsed by NIST. NICE statements are quoted exactly from NICE Framework Components; plus statements (IDs starting P) are drafts authored by nice-plus.",
+  "competency_areas": [
+    {
+      "id": "PC-OT-001",
+      "title": "Cyber-Informed Engineering",
+      "status": "draft",
+      "description": "DRAFT. The capability to apply Cyber-Informed Engineering (CIE): using engineering design, not only added security controls, to eliminate or limit the consequences a cyber attack on an industrial system could cause, across the whole system lifecycle. Organized by the 12 CIE principles in DOE's National CIE Strategy and INL's CIE Implementation Guide. CIE is aimed at the engineers and technicians who design, build, operate and maintain physical infrastructure, not only at cybersecurity specialists.",
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE (pp. 12-14)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Part B, Principles 1-12 (pp. 13-134)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix D.2.7 INL CIE and CCE (PDF p. 215)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "open_questions": [
+        "Should CIE be a competency area (as here) or also a role, e.g. a CIE lead engineer?",
+        "CIE comes from the energy sector. Which principles need different statements for manufacturing?"
+      ],
+      "statements": [
+        {
+          "id": "PK-OT-0007",
+          "type": "knowledge",
+          "text": "Knowledge of Cyber-Informed Engineering (CIE) principles and consequence-driven analysis methods",
+          "source": "plus",
+          "status": "draft"
+        },
+        {
+          "id": "PK-OT-0018",
+          "type": "knowledge",
+          "text": "Knowledge of the systems engineering lifecycle (concept through retirement) and the cybersecurity choices available to engineers in each phase",
+          "source": "plus",
+          "status": "draft"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Consequence-focused design",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Consequence-focused design (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 1: Consequence-Focused Design (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0027",
+              "type": "task",
+              "text": "Identify the critical functions where cyber manipulation could cause unacceptable consequences, and focus security design effort on them first",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PS-OT-0009",
+              "type": "skill",
+              "text": "Skill in tracing how manipulation of a digital function could lead to a physical consequence",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PK-OT-0006",
+              "type": "knowledge",
+              "text": "Knowledge of how cyber events in manufacturing become production consequences such as line stoppage, scrap, latent quality defects and equipment damage",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "T2042",
+              "type": "task",
+              "text": "Generate cyberattack scenarios of serious physical consequence",
+              "source": "nice",
+              "status": "official"
+            },
+            {
+              "id": "T2035",
+              "type": "task",
+              "text": "Perform a process hazard analysis (PHA)",
+              "source": "nice",
+              "status": "official"
+            }
+          ]
+        },
+        {
+          "title": "Engineered controls",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Engineered controls (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 2: Engineered Controls (p. 23)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0028",
+              "type": "task",
+              "text": "Specify engineered controls early in design that eliminate or limit high-consequence cyber-enabled outcomes, instead of relying only on added IT security controls",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PK-OT-0017",
+              "type": "knowledge",
+              "text": "Knowledge of engineered controls that limit physical consequences independently of digital control systems (e.g., mechanical interlocks, relief devices, hardwired trips, physical travel limits)",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "T2041",
+              "type": "task",
+              "text": "Participate in safety system design processes to counteract potential cybersecurity sabotage",
+              "source": "nice",
+              "status": "official"
+            }
+          ]
+        },
+        {
+          "title": "Secure information architecture",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Secure information architecture (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 3: Secure Information Architecture (p. 33)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0029",
+              "type": "task",
+              "text": "Design information pathways so that data flows only in intended directions, and enforce those flows with architectural controls",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PT-OT-0017",
+              "type": "task",
+              "text": "Design zone and conduit models that group OT assets by function, criticality and consequence, and specify the security controls for each conduit",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PT-OT-0018",
+              "type": "task",
+              "text": "Design the boundary between enterprise and control networks (e.g., an industrial DMZ or unidirectional gateway) so that traffic does not pass directly between them",
+              "source": "plus",
+              "status": "draft"
+            }
+          ]
+        },
+        {
+          "title": "Design simplification",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Design simplification (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 4: Design Simplification (p. 43)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0030",
+              "type": "task",
+              "text": "Limit digital functionality to what each function needs, removing high-consequence, low-value complexity and latent capabilities that attackers could misuse",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PT-OT-0026",
+              "type": "task",
+              "text": "Disable unneeded services, ports and default accounts on controllers, HMIs and network devices during commissioning",
+              "source": "plus",
+              "status": "draft"
+            }
+          ]
+        },
+        {
+          "title": "Resilient layered defenses",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Resilient layered defenses (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 5: Layered Defenses (p. 52)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0031",
+              "type": "task",
+              "text": "Design layered defenses with diversity, redundancy and hardening so that a single failure cannot disable a critical function and degradation during an incident is predictable",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "K0791",
+              "type": "knowledge",
+              "text": "Knowledge of defense-in-depth principles and practices",
+              "source": "nice",
+              "status": "official"
+            }
+          ]
+        },
+        {
+          "title": "Active defense",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Active defense (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 6: Active Defense (p. 61)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0032",
+              "type": "task",
+              "text": "Include design elements that detect intrusions and allow a threat to be isolated or removed while critical operations continue",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "K1290",
+              "type": "knowledge",
+              "text": "Knowledge of the Active Cyber Defense Cycle (ACDC)",
+              "source": "nice",
+              "status": "official"
+            },
+            {
+              "id": "K1291",
+              "type": "knowledge",
+              "text": "Knowledge of active defense principles and practices",
+              "source": "nice",
+              "status": "official"
+            }
+          ]
+        },
+        {
+          "title": "Interdependency evaluation",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Interdependency evaluation (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 7: Interdependency Evaluation (p. 71)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0033",
+              "type": "task",
+              "text": "Evaluate, with safety, quality, maintenance and other disciplines, how misuse of a digital system could affect their areas of operation",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "T1020",
+              "type": "task",
+              "text": "Determine the operational and safety impacts of cybersecurity lapses",
+              "source": "nice",
+              "status": "official"
+            }
+          ]
+        },
+        {
+          "title": "Digital asset awareness",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Digital asset awareness (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 8: Digital Asset Awareness (p. 81)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "T2047",
+              "type": "task",
+              "text": "Inventory OT assets",
+              "source": "nice",
+              "status": "official"
+            },
+            {
+              "id": "T2028",
+              "type": "task",
+              "text": "Develop OT inventory model for cybersecurity ",
+              "source": "nice",
+              "status": "official"
+            },
+            {
+              "id": "K1307",
+              "type": "knowledge",
+              "text": "Knowledge of OT inventory principles and practices",
+              "source": "nice",
+              "status": "official"
+            }
+          ]
+        },
+        {
+          "title": "Cyber-secure supply chain controls",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Cyber-secure supply chain controls (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 9: Cyber-Secure Supply Chain Controls (p. 92)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0009",
+              "type": "task",
+              "text": "Specify cybersecurity requirements in machine-builder and integrator contracts for new production equipment",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PT-OT-0023",
+              "type": "task",
+              "text": "Ensure OT cybersecurity requirements are included in capital projects, procurement and plant modifications",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "T1399",
+              "type": "task",
+              "text": "Develop supply chain, system, network, and operational security contract language",
+              "source": "nice",
+              "status": "official"
+            }
+          ]
+        },
+        {
+          "title": "Planned resilience with no assumed security",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Planned resilience with no assumed security (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 10: Planned Resilience (p. 104)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0034",
+              "type": "task",
+              "text": "Plan for continued operation during and after a cyber attack that degrades digital controls, assuming any digital component may be compromised during its lifecycle",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PT-OT-0001",
+              "type": "task",
+              "text": "Maintain backups of controller programs, configurations and firmware, verify their integrity, and test restoration",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PT-OT-0014",
+              "type": "task",
+              "text": "Restore controllers and OT systems from known-good backups and verify logic, setpoints and firmware before returning them to production",
+              "source": "plus",
+              "status": "draft"
+            }
+          ]
+        },
+        {
+          "title": "Engineering information control",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Engineering information control (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 11: Engineering Information Control (p. 114)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0035",
+              "type": "task",
+              "text": "Protect sensitive engineering records (e.g., requirements, specifications, designs, configurations, test results) whose release would help attackers",
+              "source": "plus",
+              "status": "draft"
+            }
+          ]
+        },
+        {
+          "title": "Cybersecurity culture",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Cybersecurity culture (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 12: Organizational Culture (p. 126)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            {
+              "id": "PT-OT-0020",
+              "type": "task",
+              "text": "Establish OT cybersecurity governance with accountability shared across operations, engineering, IT security and safety",
+              "source": "plus",
+              "status": "draft"
+            },
+            {
+              "id": "PT-OT-0024",
+              "type": "task",
+              "text": "Ensure OT incident response plans are exercised jointly with operations, engineering and safety staff",
+              "source": "plus",
+              "status": "draft"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

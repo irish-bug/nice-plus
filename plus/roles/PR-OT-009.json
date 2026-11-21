@@ -1,0 +1,32 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-009",
+  "title": "System Integrator Security Engineer",
+  "status": "stub",
+  "category": "DD",
+  "description": "STUB. Works for a system integrator or machine builder and delivers OT systems that meet the asset owner's security requirements during design, build, commissioning and handover.",
+  "extends": [],
+  "related": [
+    "DD-WRL-007",
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "isa-iec-62443-2-4",
+      "locator": null,
+      "locator_status": "none",
+      "support": "related",
+      "note": "Security program requirements for IACS service providers."
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "Appendix F.7.16 System and Services Acquisition (PDF pp. 297-298)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": [
+    "How should integrator duties differ from the asset owner's OT engineer (PR-OT-001)?"
+  ]
+}

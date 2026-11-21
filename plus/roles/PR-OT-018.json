@@ -1,0 +1,32 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-018",
+  "title": "OT Risk and Consequence Analyst",
+  "status": "stub",
+  "category": "OG",
+  "description": "STUB. Analyzes OT cyber risk in terms of physical consequence, using consequence-driven and Cyber-Informed Engineering methods and process hazard analysis.",
+  "extends": [],
+  "related": [
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "inl-cie-implementation-guide",
+      "locator": null,
+      "locator_status": "none",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "Appendix D.2.7 INL CIE and CCE (PDF p. 215)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": [
+    "Draws on DD-WRL-009 tasks T2035 (process hazard analysis) and T2042 (attack scenarios with physical consequence). Should it extend DD-WRL-009?",
+    "Should this role be drafted around the Cyber-Informed Engineering competency area (PC-OT-001), with PT-OT-0027 and PS-OT-0009 as core?"
+  ]
+}

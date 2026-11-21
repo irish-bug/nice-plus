@@ -1,0 +1,247 @@
+{
+  "$comment": "DRAFT NICE Plus work role. Not a NIST product. Core/additional flags and added statements are nice-plus judgments, not NIST's. Statements were chosen by relevance to the role, not from coverage tags.",
+  "id": "PR-OT-002",
+  "title": "Controls / Automation Engineer (Security Duties)",
+  "status": "draft",
+  "category": "DD",
+  "description": "DRAFT. Designs, programs, commissions and maintains control systems (PLCs, HMIs, drives, and the networks that connect them) and is responsible for the security of the logic and configurations they own. NICE has no role for the engineers who write and change controller programs; NICE work role DD-WRL-009 covers OT security engineering but not control system programming.",
+  "extends": [],
+  "related": [
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§3.3.2 Build and Train a Cross-Functional Team (PDF p. 55)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": "Names control engineers as members of the OT cybersecurity team."
+    },
+    {
+      "source": "plc-top20-v1.0",
+      "locator": null,
+      "locator_status": "none",
+      "support": "related",
+      "note": "Secure coding practices aimed at the engineers who program PLCs."
+    }
+  ],
+  "open_questions": [
+    "Is one role right for both design-side controls engineers and plant-floor automation technicians, or should they be split?",
+    "Should this role inherit any of DD-WRL-009, or stay standalone with selected statements as now?"
+  ],
+  "add_nice": [
+    {
+      "statement": "K0680",
+      "flag": "core",
+      "rationale": "Inferred: Baseline cybersecurity principles."
+    },
+    {
+      "statement": "K1293",
+      "flag": "core",
+      "rationale": "Inferred: Purdue levels frame where controllers and HMIs sit."
+    },
+    {
+      "statement": "K1297",
+      "flag": "core",
+      "rationale": "Inferred: Controls engineers work alongside and around safety systems."
+    },
+    {
+      "statement": "K1300",
+      "flag": "core",
+      "rationale": "Inferred: Control system network architectures they design and maintain."
+    },
+    {
+      "statement": "K1302",
+      "flag": "core",
+      "rationale": "Inferred: Industry hazards set the consequence of a bad change."
+    },
+    {
+      "statement": "K1304",
+      "flag": "core",
+      "rationale": "Inferred: Operational priorities govern when changes can happen."
+    },
+    {
+      "statement": "K1306",
+      "flag": "core",
+      "rationale": "Inferred: OT assets they own."
+    },
+    {
+      "statement": "K1309",
+      "flag": "core",
+      "rationale": "Inferred: OT protocols their systems use."
+    },
+    {
+      "statement": "K1287",
+      "flag": "core",
+      "rationale": "Inferred: Change management processes govern their work."
+    },
+    {
+      "statement": "K1122",
+      "flag": "core",
+      "rationale": "Inferred: Configuration management of controller programs."
+    },
+    {
+      "statement": "S0942",
+      "flag": "core",
+      "rationale": "Inferred: Recovering control systems is part of the job."
+    },
+    {
+      "statement": "S0943",
+      "flag": "core",
+      "rationale": "Inferred: Connecting to OT assets for programming and diagnostics."
+    },
+    {
+      "statement": "S0944",
+      "flag": "core",
+      "rationale": "Inferred: Designing and specifying OT systems."
+    },
+    {
+      "statement": "K0948",
+      "flag": "core",
+      "rationale": "Inferred: PLCs, drives and HMIs are embedded systems."
+    },
+    {
+      "statement": "K1081",
+      "flag": "core",
+      "rationale": "Inferred: Firmware updates on controllers and devices."
+    },
+    {
+      "statement": "K0068",
+      "flag": "core",
+      "rationale": "Inferred: Controller programming draws on programming-language structure."
+    },
+    {
+      "statement": "K0749",
+      "flag": "core",
+      "rationale": "Inferred: Process engineering knowledge underlies control design."
+    },
+    {
+      "statement": "T1020",
+      "flag": "core",
+      "rationale": "Inferred: Judging operational and safety impact of security lapses in their systems."
+    },
+    {
+      "statement": "K1223",
+      "flag": "core",
+      "rationale": "Inferred: Backups of controller programs and configurations."
+    },
+    {
+      "statement": "K0685",
+      "flag": "core",
+      "rationale": "Inferred: Access control on controllers and engineering software."
+    },
+    {
+      "statement": "S0757",
+      "flag": "additional",
+      "rationale": "Inferred: Verifying integrity of program files."
+    },
+    {
+      "statement": "K1294",
+      "flag": "additional",
+      "rationale": "Inferred: Change management policies they follow."
+    },
+    {
+      "statement": "T2033",
+      "flag": "additional",
+      "rationale": "Inferred: Contributing to change management plans."
+    }
+  ],
+  "add_plus": [
+    {
+      "statement": "PK-OT-0002",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0003",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0004",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0016",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0001",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0002",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0005",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0025",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0026",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0001",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0002",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0008",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0004",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0006",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0005",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0006",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0007",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0028",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0030",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0017",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0027",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0033",
+      "flag": "additional"
+    },
+    {
+      "statement": "PS-OT-0009",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0018",
+      "flag": "additional"
+    }
+  ]
+}

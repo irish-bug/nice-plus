@@ -1,0 +1,31 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-011",
+  "title": "OT Network Engineer",
+  "status": "stub",
+  "category": "IO",
+  "description": "STUB. Designs and operates industrial networks (switched control networks, fieldbus gateways, wireless, and zone boundary devices) with attention to determinism and availability.",
+  "extends": [],
+  "related": [
+    "IO-WRL-004"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "IO-WRL-004",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§5.2.3 Layer 3 – Network Security (PDF p. 88)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": [
+    "How much of the OT Security Architect (PR-OT-006) belongs here instead?"
+  ]
+}

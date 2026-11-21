@@ -1,0 +1,249 @@
+{
+  "$comment": "DRAFT NICE Plus work role. Not a NIST product. Core/additional flags and added statements are nice-plus judgments, not NIST's. Statements were chosen by relevance to the role, not from coverage tags.",
+  "id": "PR-OT-006",
+  "title": "OT Security Architect",
+  "status": "draft",
+  "category": "DD",
+  "description": "DRAFT. OT specialization of NICE work role DD-WRL-001 (Cybersecurity Architecture). Designs the security architecture of OT environments: zones and conduits, the IT/OT boundary, remote access, monitoring and safety system independence, balancing security against availability and safety.",
+  "extends": [
+    "DD-WRL-001"
+  ],
+  "related": [
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "DD-WRL-001",
+      "locator_status": "verified",
+      "support": "related",
+      "note": "Parent NICE role; all its statements are inherited."
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§5.2.3 Layer 3 – Network Security (PDF p. 88)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "isa-iec-62443-3-2",
+      "locator": null,
+      "locator_status": "none",
+      "support": "related",
+      "note": "Zones, conduits and target security levels."
+    }
+  ],
+  "open_questions": [
+    "How much overlap with PR-OT-001 (OT Cybersecurity Engineer) is acceptable before the two should merge?",
+    "Should 62443 security-level targeting be core once we can verify the clauses?"
+  ],
+  "inherit": [
+    {
+      "role": "DD-WRL-001",
+      "default_flag": "additional",
+      "core": [
+        "K0674",
+        "K0680",
+        "K0682",
+        "K0683",
+        "K0685",
+        "K0689",
+        "K0710",
+        "K0718",
+        "K0730",
+        "K0731",
+        "K0753",
+        "K0791",
+        "K0835",
+        "K0839",
+        "K0878",
+        "K0915",
+        "K0948",
+        "K0949",
+        "K1014",
+        "K1081",
+        "K1137",
+        "K1159",
+        "K1212",
+        "K1223",
+        "S0141",
+        "S0418",
+        "S0428",
+        "S0569",
+        "S0578",
+        "S0673",
+        "S0683",
+        "S0686",
+        "S0813",
+        "S0853",
+        "S0880",
+        "T0084",
+        "T1019",
+        "T1020",
+        "T1077",
+        "T1122",
+        "T1123",
+        "T1125",
+        "T1151",
+        "T1152",
+        "T1153",
+        "T1179",
+        "T1264",
+        "T1426",
+        "T1434",
+        "T1508",
+        "T1519",
+        "T1527",
+        "T1556"
+      ],
+      "rationale": "Inferred: architecture design, segmentation, availability and risk statements are core; IT-only (e.g., PII, PCI, PHI, cross-domain, KMS) and general statements are additional."
+    }
+  ],
+  "add_nice": [
+    {
+      "statement": "K1293",
+      "flag": "core",
+      "rationale": "Inferred: Purdue levels."
+    },
+    {
+      "statement": "K1300",
+      "flag": "core",
+      "rationale": "Inferred: Control system network architectures."
+    },
+    {
+      "statement": "K1309",
+      "flag": "core",
+      "rationale": "Inferred: OT protocols shape boundary controls."
+    },
+    {
+      "statement": "K1289",
+      "flag": "core",
+      "rationale": "Inferred: Control system risks, threats and vulnerabilities."
+    },
+    {
+      "statement": "K1297",
+      "flag": "core",
+      "rationale": "Inferred: OT safety systems."
+    },
+    {
+      "statement": "K1306",
+      "flag": "core",
+      "rationale": "Inferred: OT assets."
+    },
+    {
+      "statement": "S0941",
+      "flag": "core",
+      "rationale": "Inferred: Finding gaps in control system network architecture."
+    },
+    {
+      "statement": "S0946",
+      "flag": "core",
+      "rationale": "Inferred: Interpreting OT network drawings."
+    },
+    {
+      "statement": "S0948",
+      "flag": "core",
+      "rationale": "Inferred: Zone and conduit requirement analysis."
+    },
+    {
+      "statement": "S0951",
+      "flag": "core",
+      "rationale": "Inferred: Securing control system communication protocols and media."
+    },
+    {
+      "statement": "T2031",
+      "flag": "core",
+      "rationale": "Inferred: Identifying gaps in OT network architecture."
+    },
+    {
+      "statement": "T2032",
+      "flag": "core",
+      "rationale": "Inferred: Assigning security level targets to zones."
+    },
+    {
+      "statement": "T2045",
+      "flag": "core",
+      "rationale": "Inferred: Assigning engineering assets to zones."
+    },
+    {
+      "statement": "T2041",
+      "flag": "core",
+      "rationale": "Inferred: Designing against cyber sabotage of safety systems."
+    }
+  ],
+  "add_plus": [
+    {
+      "statement": "PK-OT-0002",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0014",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0003",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0008",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0017",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0018",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0019",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0007",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0001",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0005",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0015",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0029",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0031",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0032",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0030",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0035",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0034",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0018",
+      "flag": "additional"
+    }
+  ]
+}

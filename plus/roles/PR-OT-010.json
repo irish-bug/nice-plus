@@ -1,0 +1,26 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-010",
+  "title": "OT Product Security Engineer",
+  "status": "stub",
+  "category": "DD",
+  "description": "STUB. Works for an OT equipment vendor and builds security into controllers, HMIs, network devices and engineering software across the product life cycle.",
+  "extends": [],
+  "related": [
+    "DD-WRL-003",
+    "DD-WRL-004",
+    "DD-WRL-005"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "DD-WRL-003, DD-WRL-004, DD-WRL-005",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": [
+    "ISA/IEC 62443-4-1 and 4-2 are the natural sources; they need adding to the registry once a copy is available to check part titles."
+  ]
+}

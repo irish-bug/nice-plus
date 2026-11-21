@@ -1,0 +1,84 @@
+[
+  {
+    "id": "DD",
+    "title": "DESIGN and DEVELOPMENT",
+    "description": "Conducts research, conceptualizes, designs, develops, and tests secure technology systems, including on perimeter and cloud-based networks.",
+    "work_roles": [
+      "DD-WRL-001",
+      "DD-WRL-002",
+      "DD-WRL-003",
+      "DD-WRL-004",
+      "DD-WRL-005",
+      "DD-WRL-006",
+      "DD-WRL-007",
+      "DD-WRL-008",
+      "DD-WRL-009"
+    ],
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "IN",
+    "title": "INVESTIGATION",
+    "description": "Collects, processes, analyzes, and disseminates information from all sources of intelligence on foreign actors' cyberspace programs, intentions, capabilities, research and development, and operational activities",
+    "work_roles": [
+      "IN-WRL-001",
+      "IN-WRL-002"
+    ],
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "IO",
+    "title": "IMPLEMENTATION and OPERATION",
+    "description": "Provides implementation, administration, configuration, operation, and maintenance to ensure effective and efficient technology system performance and security.",
+    "work_roles": [
+      "IO-WRL-001",
+      "IO-WRL-002",
+      "IO-WRL-003",
+      "IO-WRL-004",
+      "IO-WRL-005",
+      "IO-WRL-006",
+      "IO-WRL-007"
+    ],
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "OG",
+    "title": "OVERSIGHT and GOVERNANCE",
+    "description": "Provides leadership, management, direction, and advocacy so the organization may effectively manage cybersecurity-related risks to the enterprise and conduct cybersecurity work.",
+    "work_roles": [
+      "OG-WRL-001",
+      "OG-WRL-002",
+      "OG-WRL-003",
+      "OG-WRL-004",
+      "OG-WRL-005",
+      "OG-WRL-006",
+      "OG-WRL-007",
+      "OG-WRL-008",
+      "OG-WRL-009",
+      "OG-WRL-010",
+      "OG-WRL-011",
+      "OG-WRL-012",
+      "OG-WRL-013",
+      "OG-WRL-014",
+      "OG-WRL-015",
+      "OG-WRL-016",
+      "OG-WRL-017"
+    ],
+    "nice_version": "2.2.0"
+  },
+  {
+    "id": "PD",
+    "title": "PROTECTION and DEFENSE",
+    "description": "Protects against, identifies, and analyzes risks to technology systems or networks. Includes investigation of cybersecurity events or crimes related to technology systems and networks.",
+    "work_roles": [
+      "PD-WRL-001",
+      "PD-WRL-002",
+      "PD-WRL-003",
+      "PD-WRL-004",
+      "PD-WRL-005",
+      "PD-WRL-006",
+      "PD-WRL-007"
+    ],
+    "nice_version": "2.2.0"
+  }
+]

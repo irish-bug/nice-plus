@@ -1,0 +1,11 @@
+{
+  "source": "mitre-attack-ics-v20.1",
+  "file": "ics-attack.json",
+  "url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/ics-attack/ics-attack.json",
+  "version": "20.1",
+  "collection_modified": "2026-11-05T05:00:37.128Z",
+  "retrieved": "2026-11-20",
+  "sha256": "3f6448369f9135ade84ff6437479441530d0b262f910dca991879a7146b524ff",
+  "licence": "MITRE ATT&CK terms of use; see ../LICENSE.txt. © 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation.",
+  "modified": false
+}

@@ -1,0 +1,32 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-008",
+  "title": "Functional Safety and Cybersecurity Engineer",
+  "status": "stub",
+  "category": "DD",
+  "description": "STUB. Engineers safety instrumented systems and the interaction between functional safety and cybersecurity, so that cyber events cannot defeat safety functions.",
+  "extends": [],
+  "related": [
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§2.3.7 Safety Systems (PDF p. 42)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§4.2.2 Safety Systems (PDF p. 72)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": [
+    "Should this extend DD-WRL-009 or stand alone?",
+    "Which safety-lifecycle standards can be cited without reproducing copyrighted text?"
+  ]
+}

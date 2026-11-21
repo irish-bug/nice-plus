@@ -1,0 +1,2453 @@
+{
+  "collection": {
+    "id": "cyberfire-operationaltechnology",
+    "title": "Cyber Fire OT puzzles",
+    "source": "cyberfire-operationaltechnology",
+    "role": "example coverage source",
+    "repository": "operationaltechnology",
+    "commit": "b0bef0fedff6aab3bd90838281b02814bbba994d",
+    "commit_date": "2026-11-02",
+    "tag_scheme": "NICE statement IDs in puzzle.md front matter `ksas:`",
+    "objective_note": "`objective` is copied as written; many are lab labels, not learning objectives."
+  },
+  "modules": [
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/36",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/36/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "Truth Tables",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0739",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/37",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/37/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "Truth Tables",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0739",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/38",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/38/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "Truth Tables",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0739",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/39",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/39/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680",
+        "K0839"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/40",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/40/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0739",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/41",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/41/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/42",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/42/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/43",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/43/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/44",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/44/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "S0735"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/45",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/45/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "S0735"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/46",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/46/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "PLC Programming Problems",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "S0735",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/47",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/47/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "PLC Programming Problems",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "S0735",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/48",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/48/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "PLC Programming Problems",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "S0735",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/49",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/49/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "PLC Programming Problems",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "S0735",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/50",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Afternoon/50/puzzle.md",
+      "category": "OT1_Day1-Afternoon",
+      "objective": "PLC Programming Problems",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "S0735",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/0",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/0/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "welcome to class",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/1",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/1/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0728",
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/10",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/10/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/11",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/11/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/12",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/12/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/13",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/13/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/14",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/14/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/15",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/15/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/16",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/16/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/17",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/17/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/18",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/18/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/19",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/19/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/2",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/2/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0728",
+        "K0839"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/20",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/20/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/21",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/21/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/22",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/22/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/23",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/23/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/24",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/24/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/25",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/25/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/29",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/29/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "Protocols",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K1094",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/3",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/3/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1087",
+        "K0480"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/30",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/30/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "Protocols",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K1094",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/31",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/31/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "Protocols",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K1094",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/32",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/32/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "Protocols",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K1094",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/33",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/33/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "Protocols",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K1094",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/34",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/34/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "Protocols",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K1094",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/4",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/4/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0742",
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/5",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/5/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0791",
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/6",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/6/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0728",
+        "K0839"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/7",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/7/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/8",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/8/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/9",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day1-Morning/9/puzzle.md",
+      "category": "OT1_Day1-Morning",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day2/1",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day2/1/puzzle.md",
+      "category": "OT1_Day2",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1002",
+        "K0839"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day2/2",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day2/2/puzzle.md",
+      "category": "OT1_Day2",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1002",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day2/3",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day2/3/puzzle.md",
+      "category": "OT1_Day2",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1002",
+        "K0826"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day2/4",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day2/4/puzzle.md",
+      "category": "OT1_Day2",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day2/5",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day2/5/puzzle.md",
+      "category": "OT1_Day2",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0955",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day2/6",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day2/6/puzzle.md",
+      "category": "OT1_Day2",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0955",
+        "K1085",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day2/7",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day2/7/puzzle.md",
+      "category": "OT1_Day2",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1002",
+        "K0839"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day2/8",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day2/8/puzzle.md",
+      "category": "OT1_Day2",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1002",
+        "K0839"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day2/9",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day2/9/puzzle.md",
+      "category": "OT1_Day2",
+      "objective": "OT Cybersecurity",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1002",
+        "K0839"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/1",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/1/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "complete lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "K1193",
+        "K0480"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/10",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/10/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "complete lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "K1012"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/11",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/11/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "Finish Lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0674",
+        "K1002",
+        "S0874"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/12",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/12/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "Finish Lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0866",
+        "K0852"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/13",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/13/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "hack the planet",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/2",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/2/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "complete lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "K1193",
+        "K1012"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/3",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/3/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "complete lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "K1193",
+        "K1012"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/4",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/4/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "complete lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "K1193",
+        "K1012"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/5",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/5/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "Finish Lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "K1193"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/6",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/6/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "complete lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "K0783"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/7",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/7/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "Finish Lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0674",
+        "K1002",
+        "K0783"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/8",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/8/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "complete lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "K1012"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/9",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab1/9/puzzle.md",
+      "category": "OT1_Day3-Lab1",
+      "objective": "Finish Lab 1",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1012",
+        "S0621"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/1",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/1/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1012",
+        "K0480"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/10",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/10/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1002",
+        "S0874"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/11",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/11/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "K0686"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/12",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/12/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0686",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/13",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/13/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0686",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/14",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/14/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1085",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/15",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/15/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0878",
+        "S0542"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/16",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/16/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1094",
+        "S0156",
+        "K1085"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/17",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/17/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0674",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/18",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/18/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0874",
+        "S0794"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/19",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/19/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1085",
+        "K0674",
+        "S0874"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/2",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/2/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0623",
+        "K1012"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/3",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/3/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0599",
+        "K1092"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/4",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/4/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0599",
+        "K1012"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/5",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/5/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0599",
+        "K1012"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/6",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/6/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0599",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/7",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/7/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0604",
+        "S0622"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/8",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/8/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0674",
+        "K1002",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/9",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Lab2/9/puzzle.md",
+      "category": "OT1_Day3-Lab2",
+      "objective": "Complete Lab 2",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0674",
+        "K1002",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/1",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Warmup/1/puzzle.md",
+      "category": "OT1_Day3-Warmup",
+      "objective": "open the manual",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0724"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/2",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Warmup/2/puzzle.md",
+      "category": "OT1_Day3-Warmup",
+      "objective": "VM access",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0424"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/3",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Warmup/3/puzzle.md",
+      "category": "OT1_Day3-Warmup",
+      "objective": "warmup exercise",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/4",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Warmup/4/puzzle.md",
+      "category": "OT1_Day3-Warmup",
+      "objective": "Wireshark reference",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/5",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Warmup/5/puzzle.md",
+      "category": "OT1_Day3-Warmup",
+      "objective": "understand yara strings",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0860",
+        "S0617"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/6",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Warmup/6/puzzle.md",
+      "category": "OT1_Day3-Warmup",
+      "objective": "string and grep",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0424",
+        "S0621"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/7",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Warmup/7/puzzle.md",
+      "category": "OT1_Day3-Warmup",
+      "objective": "sha1 signatures",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0622",
+        "S0757"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/8",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Warmup/8/puzzle.md",
+      "category": "OT1_Day3-Warmup",
+      "objective": "volatility flags",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0599",
+        "K1092"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/9",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/OT1_Day3-Warmup/9/puzzle.md",
+      "category": "OT1_Day3-Warmup",
+      "objective": "wireshark basics",
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/10",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/10/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Identify unauthorized setpoint modifications in Structured Text.",
+      "release_id": null,
+      "statements": [
+        "S0623",
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/11",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/11/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Execute containment and recovery steps with process continuity and safety constraints.",
+      "release_id": null,
+      "statements": [
+        "S0806",
+        "K0724",
+        "K0839"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/12",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/12/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Execute recovery steps and verify logic integrity after a controller reflash.",
+      "release_id": null,
+      "statements": [
+        "K0701",
+        "S0757",
+        "S0806"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/2",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/2/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Identify MBAP header length anomalies in Modbus TCP traffic",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "S0156",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/20",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/20/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Recognize a ENIP command and its direct physical consequence.",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/22",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/22/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Analyze CIP service codes to detect unauthorized controller state manipulation.",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K1002",
+        "K0724"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/23",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/23/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Identify adversarial TTPs used for device fingerprinting via ENIP.",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K0783",
+        "S0465"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/24",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/24/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Deeply understand Modbus/TCP addressing and protocol offsets.",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/25",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/25/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Identify DNP3 Transport Layer fragment anomalies.",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/26",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/26/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Analyze ladder logic to detect unauthorized changes.",
+      "release_id": null,
+      "statements": [
+        "S0623",
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/27",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/27/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Reconstruct an adversary timeline to identify unauthorized control nodes and tampered ENIP/CIP setpoints.",
+      "release_id": null,
+      "statements": [
+        "S0794",
+        "S0806",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/28",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/28/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Identify adversarial TTPs for Profinet network discovery.",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "K0783",
+        "S0465"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/29",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/29/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Detect unauthorized logic changes in Structured Text.",
+      "release_id": null,
+      "statements": [
+        "S0623",
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/3",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/3/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Identify the missing field in a truncated (Partial) MBAP header.",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "S0156",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/30",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/30/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Reconstruct adversary timeline using historian and network layers.",
+      "release_id": null,
+      "statements": [
+        "S0794",
+        "S0859",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/31",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/31/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Execute containment steps while maintaining process stability.",
+      "release_id": null,
+      "statements": [
+        "S0806",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/32",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/32/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Communicate risk to leadership regarding network architecture.",
+      "release_id": null,
+      "statements": [
+        "K0915",
+        "S0878"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/4",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/4/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Identify a DNP3 Link Layer length field anomaly.",
+      "release_id": null,
+      "statements": [
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/5",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/5/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Perform packet analysis to extract a setpoint modification.",
+      "release_id": null,
+      "statements": [
+        "S0156",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/6",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/6/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Perform packet analysis to reconstruct a multi-state control change.",
+      "release_id": null,
+      "statements": [
+        "S0156",
+        "K1002",
+        "K0839"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/7",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/7/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Interpret control logic and correlate behavior to a physical process.",
+      "release_id": null,
+      "statements": [
+        "K0068",
+        "K0749",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/8",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/8/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Compare baseline vs modified logic state for hidden manipulation.",
+      "release_id": null,
+      "statements": [
+        "S0623",
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-advanced/9",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-advanced/9/puzzle.md",
+      "category": "ot-advanced",
+      "objective": "Identify a hidden logic override in a ladder logic comparison.",
+      "release_id": null,
+      "statements": [
+        "S0623",
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/1",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/1/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680",
+        "K0839",
+        "S0465"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/14",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/14/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0739",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/15",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/15/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0739",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/17",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/17/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0739",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/18",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/18/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0739",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/19",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/19/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0739",
+        "K0068"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/2",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/2/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680",
+        "K0839",
+        "S0465"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/20",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/20/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/21",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/21/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/22",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/22/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/23",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/23/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/24",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/24/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/25",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/25/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/26",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/26/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/3",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/3/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680",
+        "K0839",
+        "S0465"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/4",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/4/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0680",
+        "K0839",
+        "S0465"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-core/40",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-core/40/puzzle.md",
+      "category": "ot-core",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0068",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-device/1000",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-device/1000/puzzle.md",
+      "category": "ot-device",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0599",
+        "S0604",
+        "K0948"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-device/1001",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-device/1001/puzzle.md",
+      "category": "ot-device",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0604",
+        "K1092",
+        "K0948"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-device/1010",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-device/1010/puzzle.md",
+      "category": "ot-device",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0599",
+        "S0604",
+        "K0948"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-device/1011",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-device/1011/puzzle.md",
+      "category": "ot-device",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0674",
+        "S0156",
+        "K1002"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-device/1020",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-device/1020/puzzle.md",
+      "category": "ot-device",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0674",
+        "S0156",
+        "K1094"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-grokwell/100",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-grokwell/100/puzzle.md",
+      "category": "ot-grokwell",
+      "objective": null,
+      "release_id": null,
+      "statements": [
+        "K0911",
+        "K0744",
+        "S0424"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-grokwell/200",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-grokwell/200/puzzle.md",
+      "category": "ot-grokwell",
+      "objective": null,
+      "release_id": null,
+      "statements": [
+        "K0742",
+        "K0744",
+        "S0424"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-grokwell/300",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-grokwell/300/puzzle.md",
+      "category": "ot-grokwell",
+      "objective": null,
+      "release_id": null,
+      "statements": [
+        "K0743",
+        "K1081"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-grokwell/400",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-grokwell/400/puzzle.md",
+      "category": "ot-grokwell",
+      "objective": null,
+      "release_id": null,
+      "statements": [
+        "K0806",
+        "K1092",
+        "S0612"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-grokwell/500",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-grokwell/500/puzzle.md",
+      "category": "ot-grokwell",
+      "objective": null,
+      "release_id": null,
+      "statements": [
+        "S0626",
+        "S0424"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-grokwell/600",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-grokwell/600/puzzle.md",
+      "category": "ot-grokwell",
+      "objective": null,
+      "release_id": null,
+      "statements": [
+        "K1002",
+        "K0839",
+        "S0465",
+        "S0806"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/1",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/1/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0480",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/10",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/10/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0959",
+        "K0923"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/100",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/100/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/11",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/11/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0695"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/12",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/12/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "S0695"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/13",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/13/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0955"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/14",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/14/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0955"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/15",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/15/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1117"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/150",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/150/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/16",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/16/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1207"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/2",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/2/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0480",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/20",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/20/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0786"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/200",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/200/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/21",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/21/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0955",
+        "K0956"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/22",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/22/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0955",
+        "K0956"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/23",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/23/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0955",
+        "K0956"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/3",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/3/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0480",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/30",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/30/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/35",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/35/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/36",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/36/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/4",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/4/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0480",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/40",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/40/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/42",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/42/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/45",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/45/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/5",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/5/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K0480",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/50",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/50/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/500",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/500/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/55",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/55/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/550",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/550/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "S0156",
+        "K0674"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/60",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/60/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-pcap/75",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-pcap/75/puzzle.md",
+      "category": "ot-pcap",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-train/100",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-train/100/puzzle.md",
+      "category": "ot-train",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-train/200",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-train/200/puzzle.md",
+      "category": "ot-train",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-train/300",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-train/300/puzzle.md",
+      "category": "ot-train",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-train/400",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-train/400/puzzle.md",
+      "category": "ot-train",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    },
+    {
+      "id": "cyberfire-operationaltechnology:ot-train/500",
+      "collection": "cyberfire-operationaltechnology",
+      "path": "categories/ot-train/500/puzzle.md",
+      "category": "ot-train",
+      "objective": null,
+      "release_id": "INL/MIS-26-89792",
+      "statements": [
+        "K1193",
+        "K0674",
+        "S0156"
+      ],
+      "provenance": "author-tagged"
+    }
+  ],
+  "untagged": [
+    "OT1_Day1-Afternoon/35",
+    "OT1_Day1-Morning/26",
+    "OT1_Day1-Morning/27",
+    "OT1_Day1-Morning/28"
+  ]
+}

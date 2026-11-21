@@ -1,0 +1,95 @@
+{
+  "$comment": "DRAFT NICE Plus work role. Not a NIST product. Core/additional flags and added statements are nice-plus judgments, not NIST's. Statements were chosen by relevance to the role, not from coverage tags.",
+  "id": "PR-OT-005",
+  "title": "Control Room Operator (Cyber-Aware)",
+  "status": "draft",
+  "category": "IO",
+  "description": "DRAFT. Operates an industrial process from a control room or HMI and is the first to see many cyber events as process abnormalities. Not a security role: this defines the cybersecurity awareness and response duties an operator needs. NICE has no operator role.",
+  "extends": [],
+  "related": [
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§3.3.5 Establish a Cybersecurity Awareness Training Program for the OT Environment (PDF p. 58)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§3.3.2 Build and Train a Cross-Functional Team (PDF p. 55)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": "Names control system operators as members of the OT cybersecurity team."
+    }
+  ],
+  "open_questions": [
+    "Is an awareness-level role useful in a workforce framework, or should operator duties be a reusable 'OT cyber awareness' statement set?",
+    "Which statements differ between control room operators and field operators?"
+  ],
+  "add_nice": [
+    {
+      "statement": "K0677",
+      "flag": "core",
+      "rationale": "Inferred: Following the site's cybersecurity policies and procedures."
+    },
+    {
+      "statement": "K0730",
+      "flag": "core",
+      "rationale": "Inferred: Cyber safety principles."
+    },
+    {
+      "statement": "K1304",
+      "flag": "core",
+      "rationale": "Inferred: Operational priorities."
+    },
+    {
+      "statement": "K1297",
+      "flag": "core",
+      "rationale": "Inferred: OT safety systems and their role."
+    },
+    {
+      "statement": "K1087",
+      "flag": "core",
+      "rationale": "Inferred: Recognizing social engineering, a common route into OT."
+    },
+    {
+      "statement": "T1242",
+      "flag": "core",
+      "rationale": "Inferred: Escalating incidents that may have immediate impact."
+    },
+    {
+      "statement": "K1301",
+      "flag": "additional",
+      "rationale": "Inferred: Awareness of real cyber incidents that affected OT."
+    }
+  ],
+  "add_plus": [
+    {
+      "statement": "PK-OT-0012",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0013",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0015",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0016",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0006",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0006",
+      "flag": "additional"
+    }
+  ]
+}

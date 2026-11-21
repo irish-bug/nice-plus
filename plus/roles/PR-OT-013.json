@@ -1,0 +1,24 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-013",
+  "title": "Industrial Cybersecurity Technician",
+  "status": "stub",
+  "category": "IO",
+  "description": "STUB. Hands-on technician who applies security controls on the plant floor: device configuration, backups, transient-asset and media controls, and first-line checks. NICE's DD-WRL-009 description names 'industrial cybersecurity technicians' as a role it interfaces with, but NICE does not define one.",
+  "extends": [],
+  "related": [
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "DD-WRL-009",
+      "locator_status": "verified",
+      "support": "related",
+      "note": "DD-WRL-009 description mentions industrial cybersecurity technicians."
+    }
+  ],
+  "open_questions": [
+    "Overlaps the Controls / Automation Engineer (PR-OT-002). Where is the line?"
+  ]
+}

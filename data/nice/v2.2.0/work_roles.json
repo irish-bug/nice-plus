@@ -1,0 +1,921 @@
+[
+  {
+    "id": "DD-WRL-001",
+    "title": "Cybersecurity Architecture",
+    "description": "Responsible for ensuring that security requirements are adequately addressed in all aspects of enterprise architecture, including reference models, segment and solution architectures, and the resulting systems that protect and support organizational mission and business processes.",
+    "category": "DD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "652"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "DD-WRL-001",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "DD-WRL-002",
+    "title": "Enterprise Architecture",
+    "description": "Responsible for developing and maintaining business, systems, and information processes to support enterprise mission needs. Develops technology rules and requirements that describe baseline and target architectures.",
+    "category": "DD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "651"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "DD-WRL-002",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "DD-WRL-003",
+    "title": "Secure Software Development",
+    "description": "Responsible for developing, creating, modifying, and maintaining computer applications, software, or specialized utility programs.",
+    "category": "DD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "621"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "DD-WRL-003",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "DD-WRL-004",
+    "title": "Secure Systems Development",
+    "description": "Responsible for the secure design, development, and testing of systems and the evaluation of system security throughout the systems development life cycle.",
+    "category": "DD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "631",
+      "632"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "DD-WRL-004",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "DD-WRL-005",
+    "title": "Software Security Assessment",
+    "description": "Responsible for analyzing the security of new or existing computer applications, software, or specialized utility programs and delivering actionable results.",
+    "category": "DD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "622"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "DD-WRL-005",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "DD-WRL-006",
+    "title": "Systems Requirements Planning",
+    "description": "Responsible for consulting with internal and external customers to evaluate and translate functional requirements and integrating security policies into technical solutions.",
+    "category": "DD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "641"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "DD-WRL-006",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "DD-WRL-007",
+    "title": "Systems Testing and Evaluation",
+    "description": "Responsible for planning, preparing, and executing system tests; evaluating test results against specifications and requirements; and reporting test results and findings.",
+    "category": "DD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "671"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "DD-WRL-007",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "DD-WRL-008",
+    "title": "Technology Research and Development",
+    "description": "Responsible for conducting software and systems engineering and software systems research to develop new capabilities with fully integrated cybersecurity. Conducts comprehensive technology research to evaluate potential vulnerabilities in cyberspace systems.",
+    "category": "DD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "661"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "DD-WRL-008",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "DD-WRL-009",
+    "title": "Operational Technology (OT) Cybersecurity Engineering",
+    "description": "Responsible for working within the engineering department to design and create systems, processes, and procedures that maintain the safety, reliability, controllability and security of industrial systems in the face of intentional and incidental cyber events. Interfaces with Chief Information Security Officer, plant managers and industrial cybersecurity technicians.",
+    "category": "DD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "DD-WRL-009",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "IN-WRL-001",
+    "title": "Cybercrime Investigation",
+    "description": "Responsible for investigating cyberspace intrusion incidents and crimes. Applies tactics, techniques, and procedures for a full range of investigative tools and processes and appropriately balances the benefits of prosecution versus intelligence gathering.",
+    "category": "IN",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "221"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IN-WRL-001",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "IN-WRL-002",
+    "title": "Digital Evidence Analysis",
+    "description": "Responsible for identifying, collecting, examining, and preserving digital evidence using controlled and documented analytical and investigative techniques.",
+    "category": "IN",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "211"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IN-WRL-002",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "IO-WRL-001",
+    "title": "Data Analysis",
+    "description": "Responsible for analyzing data from multiple disparate sources to provide cybersecurity and privacy insight. Designs and implements custom algorithms, workflow processes, and layouts for complex, enterprise-scale data sets used for modeling, data mining, and research purposes.",
+    "category": "IO",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "422"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IO-WRL-001",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "IO-WRL-002",
+    "title": "Database Administration",
+    "description": "Responsible for administering databases and data management systems that allow for the secure storage, query, protection, and utilization of data.",
+    "category": "IO",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "421"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IO-WRL-002",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "IO-WRL-003",
+    "title": "Knowledge Management",
+    "description": "Responsible for managing and administering processes and tools to identify, document, and access an organization’s intellectual capital.",
+    "category": "IO",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "431"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IO-WRL-003",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "IO-WRL-004",
+    "title": "Network Operations",
+    "description": "Responsible for planning, implementing, and operating network services and systems, including hardware and virtual environments.",
+    "category": "IO",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "441"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IO-WRL-004",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "IO-WRL-005",
+    "title": "Systems Administration",
+    "description": "Responsible for setting up and maintaining a system or specific components of a system in adherence with organizational security policies and procedures. Includes hardware and software installation, configuration, and updates; user account management; backup and recovery management; and security control implementation.",
+    "category": "IO",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "451"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IO-WRL-005",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "IO-WRL-006",
+    "title": "Systems Security Analysis",
+    "description": "Responsible for developing and analyzing the integration, testing, operations, and maintenance of systems security. Prepares, performs, and manages the security aspects of implementing and operating a system.",
+    "category": "IO",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "461"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IO-WRL-006",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "IO-WRL-007",
+    "title": "Technical Support",
+    "description": "Responsible for providing technical support to customers who need assistance utilizing client-level hardware and software in accordance with established or approved organizational policies and processes.",
+    "category": "IO",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "411"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IO-WRL-007",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-001",
+    "title": "Communications Security (COMSEC) Management",
+    "description": "Responsible for managing the Communications Security (COMSEC) resources of an organization.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "723"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-001",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-002",
+    "title": "Cybersecurity Policy and Planning",
+    "description": "Responsible for developing and maintaining cybersecurity plans, strategy, and policy to support and align with organizational cybersecurity initiatives and regulatory compliance.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "752"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-002",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-003",
+    "title": "Cybersecurity Workforce Management",
+    "description": "Responsible for developing cybersecurity workforce plans, assessments, strategies, and guidance, including cybersecurity-related staff training, education, and hiring processes. Makes adjustments in response to or in anticipation of changes to cybersecurity-related policy, technology, and staffing needs and requirements.Authors mandated workforce planning strategies to maintain compliance with legislation, regulation, and policy.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "751"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-003",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-004",
+    "title": "Cybersecurity Curriculum Development",
+    "description": "Responsible for developing, planning, coordinating, and evaluating cybersecurity awareness, training, or education content, methods, and techniques based on instructional needs and requirements.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "711"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-004",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-005",
+    "title": "Cybersecurity Instruction",
+    "description": "Responsible for developing and conducting cybersecurity awareness, training, or education.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "712"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-005",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-006",
+    "title": "Cybersecurity Legal Advice",
+    "description": "Responsible for providing cybersecurity legal advice and recommendations, including monitoring related legislation and regulations.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "731"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-006",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-007",
+    "title": "Executive Cybersecurity Leadership",
+    "description": "Responsible for establishing vision and direction for an organization's cybersecurity operations and resources and their impact on digital and physical spaces. Possesses authority to make and execute decisions that impact an organization broadly, including policy approval and stakeholder engagement.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "901"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-007",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-008",
+    "title": "Privacy Compliance",
+    "description": "Responsible for developing and overseeing an organization’s privacy compliance program and staff, including establishing and managing privacy-related governance, policy, and incident response needs.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "732"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-008",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-009",
+    "title": "Product Support Management",
+    "description": "Responsible for planning, estimating costs, budgeting, developing, implementing, and managing product support strategies in order to field and maintain the readiness and operational capability of systems and components.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "803"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-009",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-010",
+    "title": "Program Management",
+    "description": "Responsible for leading, coordinating, and the overall success of a defined program. Includes communicating about the program and ensuring alignment with agency or organizational priorities.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "801"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-010",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-011",
+    "title": "Secure Project Management",
+    "description": "Responsible for overseeing and directly managing technology projects. Ensures cybersecurity is built into projects to protect the organization’s critical infrastructure and assets, reduce risk, and meet organizational goals. Tracks and communicates project status and demonstrates project value to the organization.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "802"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-011",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-012",
+    "title": "Security Control Assessment",
+    "description": "Responsible for conducting independent comprehensive assessments of management, operational, and technical security controls and control enhancements employed within or inherited by a system to determine their overall effectiveness.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "612"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-012",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-013",
+    "title": "Systems Authorization",
+    "description": "Responsible for operating an information system at an acceptable level of risk to organizational operations, organizational assets, individuals, other organizations, and the nation.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "611"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-013",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-014",
+    "title": "Systems Security Management",
+    "description": "Responsible for managing the cybersecurity of a program, organization, system, or enclave.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "722"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-014",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-015",
+    "title": "Technology Portfolio Management",
+    "description": "Responsible for managing a portfolio of technology investments that align with the overall needs of mission and enterprise priorities.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "804"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-015",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-016",
+    "title": "Technology Program Auditing",
+    "description": "Responsible for conducting evaluations of technology programs or their individual components to determine compliance with published standards.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "805"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-016",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "OG-WRL-017",
+    "title": "Cybersecurity Supply Chain Risk Management",
+    "description": "Responsible for developing cybersecurity supply chain risk management (C-SCRM) policies, processes, and procedures to identify, assess, protect against, and respond to cybersecurity risks throughout the supply chain, and for advising other stakeholders within an enterprise about supply chain risks.",
+    "category": "OG",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-017",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "PD-WRL-001",
+    "title": "Defensive Cybersecurity",
+    "description": "Responsible for analyzing data collected from various cybersecurity defense tools to mitigate risks.",
+    "category": "PD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "511"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "PD-WRL-001",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "PD-WRL-002",
+    "title": "Digital Forensics",
+    "description": "Responsible for analyzing digital evidence from computer security incidents to derive useful information in support of system and network vulnerability mitigation.",
+    "category": "PD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "212"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "PD-WRL-002",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "PD-WRL-003",
+    "title": "Incident Response",
+    "description": "Responsible for investigating, analyzing, and responding to network cybersecurity incidents.",
+    "category": "PD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "531"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "PD-WRL-003",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "PD-WRL-004",
+    "title": "Infrastructure Support",
+    "description": "Responsible for testing, implementing, deploying, maintaining, and administering infrastructure hardware and software for cybersecurity.",
+    "category": "PD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "521"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "PD-WRL-004",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "PD-WRL-005",
+    "title": "Insider Threat Analysis",
+    "description": "Responsible for identifying and assessing the capabilities and activities of cybersecurity insider threats; produces findings to help initialize and support law enforcement and counterintelligence activities and investigations.",
+    "category": "PD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "PD-WRL-005",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "PD-WRL-006",
+    "title": "Threat Analysis",
+    "description": "Responsible for collecting, processing, analyzing, and disseminating cybersecurity threat assessments. Develops cybersecurity indicators to maintain awareness of the status of the highly dynamic operating environment.",
+    "category": "PD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "141"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "PD-WRL-006",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  },
+  {
+    "id": "PD-WRL-007",
+    "title": "Vulnerability Analysis",
+    "description": "Responsible for assessing systems and networks to identify deviations from acceptable configurations, enclave policy, or local policy. Measure effectiveness of defense-in-depth architecture against known vulnerabilities.",
+    "category": "PD",
+    "source": "nice",
+    "status": "official",
+    "nice_version": "2.2.0",
+    "extends": [],
+    "overlaps": [],
+    "opm_codes": [
+      "541"
+    ],
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "PD-WRL-007",
+        "locator_status": "verified",
+        "support": "verbatim"
+      }
+    ]
+  }
+]

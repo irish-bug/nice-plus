@@ -1,0 +1,147 @@
+{
+  "schema_version": "0.3.0",
+  "kind": "nice-plus.role",
+  "notice": "DRAFT. NICE Plus is an independent extension of the NIST NICE Framework for OT/ICS roles. It is not a NIST product and has not been reviewed or endorsed by NIST. NICE statements are quoted exactly from NICE Framework Components; plus statements (IDs starting P) are drafts authored by nice-plus.",
+  "role": {
+    "id": "PR-OT-011",
+    "title": "OT Network Engineer",
+    "status": "stub",
+    "source": "plus",
+    "category": "IO",
+    "description": "STUB. Designs and operates industrial networks (switched control networks, fieldbus gateways, wireless, and zone boundary devices) with attention to determinism and availability.",
+    "extends": [],
+    "related": [
+      {
+        "role": "IO-WRL-004",
+        "title": "Network Operations"
+      }
+    ],
+    "overlaps": [],
+    "overlaps_method": "Computed: NICE roles sharing the most statements with this role, excluding the roles it extends.",
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "IO-WRL-004",
+        "locator_status": "verified",
+        "support": "related",
+        "note": null
+      },
+      {
+        "source": "nist-sp-800-82r3",
+        "locator": "§5.2.3 Layer 3 – Network Security (PDF p. 88)",
+        "locator_status": "verified",
+        "support": "related",
+        "note": null
+      }
+    ],
+    "open_questions": [
+      "How much of the OT Security Architect (PR-OT-006) belongs here instead?"
+    ]
+  },
+  "frameworks": {
+    "nice": {
+      "version": "2.2.0",
+      "released": "2026-04-28",
+      "source": "nist-nice-v2.2.0"
+    },
+    "attack_ics": {
+      "version": "20.1",
+      "source": "mitre-attack-ics-v20.1",
+      "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation."
+    }
+  },
+  "statements": [],
+  "coverage": {
+    "collections": [
+      {
+        "id": "cyberfire-operationaltechnology",
+        "title": "Cyber Fire OT puzzles",
+        "role": "example coverage source",
+        "commit": "b0bef0fedff6aab3bd90838281b02814bbba994d",
+        "commit_date": "2026-11-02"
+      }
+    ],
+    "summary": {
+      "all": {
+        "total": 0,
+        "covered": 0
+      },
+      "by_type": {
+        "task": {
+          "total": 0,
+          "covered": 0
+        },
+        "knowledge": {
+          "total": 0,
+          "covered": 0
+        },
+        "skill": {
+          "total": 0,
+          "covered": 0
+        }
+      },
+      "by_flag": {
+        "core": {
+          "total": 0,
+          "covered": 0
+        },
+        "additional": {
+          "total": 0,
+          "covered": 0
+        }
+      },
+      "by_source": {
+        "nice": {
+          "total": 0,
+          "covered": 0
+        },
+        "plus": {
+          "total": 0,
+          "covered": 0
+        }
+      },
+      "by_basis": {
+        "inherited": {
+          "total": 0,
+          "covered": 0
+        },
+        "added-nice": {
+          "total": 0,
+          "covered": 0
+        },
+        "plus": {
+          "total": 0,
+          "covered": 0
+        }
+      }
+    },
+    "modules": [],
+    "gaps": [],
+    "provenance_note": "author-tagged = tag assigned by the module's author; inferred = mapping proposed by nice-plus. Neither is independently verified."
+  },
+  "sources": [
+    {
+      "id": "cyberfire-operationaltechnology",
+      "title": "Cyber Fire OT puzzles (operationaltechnology repository)",
+      "publisher": "Cyber Fire / Idaho National Laboratory",
+      "version": "git commit; see data/coverage/cyberfire-operationaltechnology.json",
+      "date": null,
+      "url": null,
+      "licence": "The puzzles are not public. Only puzzle paths, NICE tags, objective lines and INL release IDs are imported and published here; puzzle text, hints and answers are never copied.",
+      "held": "data/coverage/cyberfire-operationaltechnology.json (tags only)",
+      "note": "Example coverage source. Tags are assigned by puzzle authors and have not been independently verified."
+    },
+    {
+      "id": "nist-nice-v2.2.0",
+      "title": "Workforce Framework for Cybersecurity (NICE Framework) Components v2.2.0",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "2.2.0",
+      "date": "2026-04-28",
+      "url": "https://csrc.nist.gov/csrc/media/Projects/cprt/documents/nice/v2-2-0_nf_components.json",
+      "licence": "US Government work",
+      "held": "sources/nice/v2.2.0/v2-2-0_nf_components.json",
+      "sha256": "3ad1d9d7e0d6b32895cb569f86c3bc05af2937a68e96eab4d1c9b3d9fa6e575e",
+      "retrieved": "2026-11-20"
+    }
+  ]
+}

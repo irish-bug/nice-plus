@@ -1,0 +1,180 @@
+{
+  "$comment": "DRAFT NICE Plus work role. Not a NIST product. Core/additional flags and added statements are nice-plus judgments, not NIST's. Statements were chosen by relevance to the role, not from coverage tags.",
+  "id": "PR-OT-004",
+  "title": "ICS Incident Responder",
+  "status": "draft",
+  "category": "PD",
+  "description": "DRAFT. OT specialization of NICE work role PD-WRL-003 (Incident Response). Investigates and responds to cybersecurity incidents affecting industrial control systems, coordinating containment and recovery with operations, engineering and safety staff so that response does not cause unsafe conditions or unnecessary downtime.",
+  "extends": [
+    "PD-WRL-003"
+  ],
+  "related": [
+    "PD-WRL-002",
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "PD-WRL-003",
+      "locator_status": "verified",
+      "support": "related",
+      "note": "Parent NICE role; all its statements are inherited."
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§3.3.8 Develop an Incident Response Capability (PDF p. 59)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§6.4 Respond (RS) (PDF pp. 151-153)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": [
+    "Should ICS forensics (controllers, field devices) be part of this role or only the separate ICS Forensic Analyst stub (PR-OT-014)?",
+    "Many responders are external (vendors, integrators, retained IR firms). Does the role need a service-provider variant?"
+  ],
+  "inherit": [
+    {
+      "role": "PD-WRL-003",
+      "default_flag": "additional",
+      "core": [
+        "K0680",
+        "K0682",
+        "K0701",
+        "K0709",
+        "K0724",
+        "K0725",
+        "K0726",
+        "K0751",
+        "K0783",
+        "K0791",
+        "K0832",
+        "K0833",
+        "K0844",
+        "K0845",
+        "K0915",
+        "K0916",
+        "S0080",
+        "S0547",
+        "S0549",
+        "S0589",
+        "S0607",
+        "S0608",
+        "S0805",
+        "S0806",
+        "S0821",
+        "T0510",
+        "T1020",
+        "T1109",
+        "T1250",
+        "T1251",
+        "T1252",
+        "T1260",
+        "T1315",
+        "T1316",
+        "T1332",
+        "T1333",
+        "T1370",
+        "T1371",
+        "T1485",
+        "T1489"
+      ],
+      "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+    }
+  ],
+  "add_nice": [
+    {
+      "statement": "K1002",
+      "flag": "core",
+      "rationale": "Inferred: SCADA and supervisory systems are often in scope."
+    },
+    {
+      "statement": "K1297",
+      "flag": "core",
+      "rationale": "Inferred: Response must not compromise safety systems."
+    },
+    {
+      "statement": "K1301",
+      "flag": "core",
+      "rationale": "Inferred: Cyber incidents that have affected OT."
+    },
+    {
+      "statement": "K1304",
+      "flag": "core",
+      "rationale": "Inferred: Operational priorities shape containment choices."
+    },
+    {
+      "statement": "K1306",
+      "flag": "core",
+      "rationale": "Inferred: OT assets in scope."
+    },
+    {
+      "statement": "K1309",
+      "flag": "core",
+      "rationale": "Inferred: OT protocols seen in evidence."
+    },
+    {
+      "statement": "S0942",
+      "flag": "core",
+      "rationale": "Inferred: System recovery for control system environments."
+    },
+    {
+      "statement": "T1124",
+      "flag": "core",
+      "rationale": "Inferred: Restoring essential capabilities after catastrophic failure."
+    },
+    {
+      "statement": "K1293",
+      "flag": "core",
+      "rationale": "Inferred: Purdue levels frame scoping and containment."
+    }
+  ],
+  "add_plus": [
+    {
+      "statement": "PK-OT-0010",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0011",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0012",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0013",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0014",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0003",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0001",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0008",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0003",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0001",
+      "flag": "additional"
+    }
+  ]
+}

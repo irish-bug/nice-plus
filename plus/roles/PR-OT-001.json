@@ -1,0 +1,326 @@
+{
+  "$comment": "DRAFT NICE Plus work role. Not a NIST product. 'inherit' pulls every statement from the named NICE role(s) at build time, so a NICE update flows through. The core/additional flags are nice-plus judgments, not NIST's (NICE does not flag statements). add_nice was chosen by relevance to the role after a sweep of all NICE v2.2.0 statements, not from coverage tags.",
+  "id": "PR-OT-001",
+  "title": "OT Cybersecurity Engineer (Manufacturing)",
+  "status": "draft",
+  "category": "DD",
+  "description": "DRAFT. A manufacturing specialization of NICE work role DD-WRL-009 (Operational Technology (OT) Cybersecurity Engineering). Engineers the security of manufacturing control systems (PLC-based production lines and machine cells, and the operations systems that schedule and track them) so that plants keep producing safely and to specification despite intentional or accidental cyber events. Works with controls engineers, machine builders and integrators, plant operations and maintenance, and IT security.",
+  "extends": [
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "DD-WRL-009",
+      "locator_status": "verified",
+      "support": "related",
+      "note": "Parent NICE role; its description and statements are inherited unchanged."
+    },
+    {
+      "source": "nist-ir-8183r1",
+      "locator": "§2 Overview of Manufacturing Systems; §5 Business/Mission Objectives",
+      "locator_status": "verified",
+      "support": "related",
+      "note": "Manufacturing context for the specialization."
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§2.3.4 Programmable Logic Controller-Based Topologies",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "inherit": [
+    {
+      "role": "DD-WRL-009",
+      "default_flag": "core",
+      "additional": [
+        "K0676",
+        "K0678",
+        "K0679",
+        "K0681",
+        "K0729",
+        "K0734",
+        "K1076",
+        "K1180",
+        "K1182",
+        "S0385",
+        "S0386",
+        "S0387",
+        "S0391",
+        "S0430",
+        "S0949",
+        "T1069",
+        "T1070",
+        "T1185",
+        "T1187",
+        "T1338",
+        "T1345",
+        "T2039"
+      ],
+      "rationale": "Inferred: OT-specific, risk, architecture, configuration and change-management statements are core; general compliance, privacy, communication and administrative statements are additional for a plant-floor engineering role."
+    }
+  ],
+  "add_nice": [
+    {
+      "statement": "K1002",
+      "flag": "core",
+      "rationale": "Inferred: SCADA and supervisory systems are part of manufacturing control systems; NICE links this only to PD-WRL-006."
+    },
+    {
+      "statement": "K0915",
+      "flag": "core",
+      "rationale": "Inferred: Zone and conduit design starts from network architecture."
+    },
+    {
+      "statement": "K0791",
+      "flag": "core",
+      "rationale": "Inferred: Defense in depth is the basis of zone and conduit design."
+    },
+    {
+      "statement": "K0878",
+      "flag": "core",
+      "rationale": "Inferred: Firewalls enforce conduits between plant zones."
+    },
+    {
+      "statement": "K0753",
+      "flag": "core",
+      "rationale": "Inferred: Vendor and integrator remote access is a leading manufacturing exposure (see PK-OT-0005, PT-OT-0003)."
+    },
+    {
+      "statement": "K0948",
+      "flag": "core",
+      "rationale": "Inferred: PLCs, drives, HMIs and smart field devices are embedded systems."
+    },
+    {
+      "statement": "K1081",
+      "flag": "core",
+      "rationale": "Inferred: Controller and device firmware updates are a recurring plant-floor security task."
+    },
+    {
+      "statement": "K1223",
+      "flag": "core",
+      "rationale": "Inferred: Recovery depends on controller program and configuration backups (see PT-OT-0001)."
+    },
+    {
+      "statement": "K0715",
+      "flag": "core",
+      "rationale": "Inferred: Redundant controllers, networks and power are common in production systems and shape security design."
+    },
+    {
+      "statement": "K0749",
+      "flag": "core",
+      "rationale": "Inferred: Securing a process requires understanding how it is engineered."
+    },
+    {
+      "statement": "K0803",
+      "flag": "additional",
+      "rationale": "Inferred: Machine and line procurement brings supply chain risk (see PT-OT-0009)."
+    },
+    {
+      "statement": "K0839",
+      "flag": "additional",
+      "rationale": "Inferred: Critical manufacturing is a critical infrastructure sector, though not every plant falls in it."
+    },
+    {
+      "statement": "K1340",
+      "flag": "additional",
+      "rationale": "Inferred: Safety considerations bound every security change on a production line; NICE links this statement to no role."
+    },
+    {
+      "statement": "S0920",
+      "flag": "core",
+      "rationale": "Inferred: Segmenting assets by criticality and trust is the core of zone design; NICE links this statement to no role."
+    },
+    {
+      "statement": "S0418",
+      "flag": "core",
+      "rationale": "Inferred: Applying secure network architectures to plant networks."
+    },
+    {
+      "statement": "S0757",
+      "flag": "additional",
+      "rationale": "Inferred: Verifying file integrity supports logic and backup integrity checks (see PT-OT-0001, PT-OT-0002); NICE links this statement to no role."
+    },
+    {
+      "statement": "T1011",
+      "flag": "core",
+      "rationale": "Inferred: Protecting cyber-physical functions against safety risk is central to the role."
+    },
+    {
+      "statement": "T1019",
+      "flag": "core",
+      "rationale": "Inferred: Production equipment is cyber-physical, and its special needs drive design choices."
+    },
+    {
+      "statement": "T1020",
+      "flag": "core",
+      "rationale": "Inferred: Determining operational and safety impact of security lapses is the engineering basis for prioritization."
+    },
+    {
+      "statement": "T1454",
+      "flag": "core",
+      "rationale": "Inferred: Designing secure interfaces between IT, physical and embedded systems is the plant-floor IT/OT boundary problem."
+    },
+    {
+      "statement": "T1920",
+      "flag": "core",
+      "rationale": "Inferred: Configuration baselines are the reference for detecting unauthorized change (see PT-OT-0002)."
+    },
+    {
+      "statement": "T1366",
+      "flag": "additional",
+      "rationale": "Inferred: Identifying supply chain risk in critical production components."
+    },
+    {
+      "statement": "T1399",
+      "flag": "additional",
+      "rationale": "Inferred: Security contract language for machine builders and integrators (see PT-OT-0009)."
+    },
+    {
+      "statement": "T1624",
+      "flag": "additional",
+      "rationale": "Inferred: Vulnerability analysis of patches and updates before they reach production."
+    },
+    {
+      "statement": "T1126",
+      "flag": "additional",
+      "rationale": "Inferred: Recovery requirements for production systems."
+    }
+  ],
+  "add_plus": [
+    {
+      "statement": "PK-OT-0001",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0002",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0003",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0004",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0005",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0006",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0007",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0008",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0001",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0002",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0003",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0004",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0005",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0006",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0007",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0008",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0009",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0001",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0002",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0003",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0004",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0027",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0028",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0031",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0033",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0034",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0009",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0017",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0018",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0029",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0030",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0032",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0035",
+      "flag": "additional"
+    }
+  ]
+}

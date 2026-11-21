@@ -1,0 +1,175 @@
+{
+  "schema_version": "0.3.0",
+  "kind": "nice-plus.index",
+  "nice_version": "2.2.0",
+  "roles": [
+    {
+      "id": "PR-OT-001",
+      "title": "OT Cybersecurity Engineer (Manufacturing)",
+      "status": "draft",
+      "file": "roles/PR-OT-001.json",
+      "statements": 166,
+      "covered": 12
+    },
+    {
+      "id": "PR-OT-002",
+      "title": "Controls / Automation Engineer (Security Duties)",
+      "status": "draft",
+      "file": "roles/PR-OT-002.json",
+      "statements": 47,
+      "covered": 6
+    },
+    {
+      "id": "PR-OT-003",
+      "title": "OT Cyber Defense Analyst",
+      "status": "draft",
+      "file": "roles/PR-OT-003.json",
+      "statements": 224,
+      "covered": 24
+    },
+    {
+      "id": "PR-OT-004",
+      "title": "ICS Incident Responder",
+      "status": "draft",
+      "file": "roles/PR-OT-004.json",
+      "statements": 125,
+      "covered": 10
+    },
+    {
+      "id": "PR-OT-005",
+      "title": "Control Room Operator (Cyber-Aware)",
+      "status": "draft",
+      "file": "roles/PR-OT-005.json",
+      "statements": 13,
+      "covered": 1
+    },
+    {
+      "id": "PR-OT-006",
+      "title": "OT Security Architect",
+      "status": "draft",
+      "file": "roles/PR-OT-006.json",
+      "statements": 250,
+      "covered": 16
+    },
+    {
+      "id": "PR-OT-007",
+      "title": "Chief Operational Technology Officer",
+      "status": "draft",
+      "file": "roles/PR-OT-007.json",
+      "statements": 117,
+      "covered": 6
+    },
+    {
+      "id": "PR-OT-008",
+      "title": "Functional Safety and Cybersecurity Engineer",
+      "status": "stub",
+      "file": "roles/PR-OT-008.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-009",
+      "title": "System Integrator Security Engineer",
+      "status": "stub",
+      "file": "roles/PR-OT-009.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-010",
+      "title": "OT Product Security Engineer",
+      "status": "stub",
+      "file": "roles/PR-OT-010.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-011",
+      "title": "OT Network Engineer",
+      "status": "stub",
+      "file": "roles/PR-OT-011.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-012",
+      "title": "OT Systems Administrator",
+      "status": "stub",
+      "file": "roles/PR-OT-012.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-013",
+      "title": "Industrial Cybersecurity Technician",
+      "status": "stub",
+      "file": "roles/PR-OT-013.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-014",
+      "title": "ICS Forensic Analyst",
+      "status": "stub",
+      "file": "roles/PR-OT-014.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-015",
+      "title": "ICS Threat Analyst",
+      "status": "stub",
+      "file": "roles/PR-OT-015.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-016",
+      "title": "OT Vulnerability Assessor",
+      "status": "stub",
+      "file": "roles/PR-OT-016.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-017",
+      "title": "OT Cybersecurity Program Manager",
+      "status": "stub",
+      "file": "roles/PR-OT-017.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-018",
+      "title": "OT Risk and Consequence Analyst",
+      "status": "stub",
+      "file": "roles/PR-OT-018.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-019",
+      "title": "OT Security Assessor",
+      "status": "stub",
+      "file": "roles/PR-OT-019.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-020",
+      "title": "OT Supply Chain Risk Analyst",
+      "status": "stub",
+      "file": "roles/PR-OT-020.json",
+      "statements": 0,
+      "covered": 0
+    },
+    {
+      "id": "PR-OT-021",
+      "title": "OT Cybersecurity Instructor and Exercise Designer",
+      "status": "stub",
+      "file": "roles/PR-OT-021.json",
+      "statements": 0,
+      "covered": 0
+    }
+  ]
+}

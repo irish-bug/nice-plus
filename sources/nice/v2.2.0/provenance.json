@@ -1,0 +1,14 @@
+{
+  "source": "nist-nice-v2.2.0",
+  "file": "v2-2-0_nf_components.json",
+  "url": "https://csrc.nist.gov/csrc/media/Projects/cprt/documents/nice/v2-2-0_nf_components.json",
+  "found_via": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/nice-framework-current-versions",
+  "version": "2.2.0",
+  "released": "2026-04-28",
+  "released_source": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/current-version/change-logs",
+  "released_note": "The Change Logs page gives 28 April 2026. The Current Versions page showed 'April 28, 2025' on 2026-11-20, which conflicts with the v2.1.0 release of 3 December 2025 and is treated as a typo.",
+  "retrieved": "2026-11-20",
+  "sha256": "3ad1d9d7e0d6b32895cb569f86c3bc05af2937a68e96eab4d1c9b3d9fa6e575e",
+  "licence": "US Government work (NIST). Not subject to copyright in the United States.",
+  "modified": false
+}

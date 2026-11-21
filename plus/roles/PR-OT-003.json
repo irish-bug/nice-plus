@@ -1,0 +1,192 @@
+{
+  "$comment": "DRAFT NICE Plus work role. Not a NIST product. Core/additional flags and added statements are nice-plus judgments, not NIST's. Statements were chosen by relevance to the role, not from coverage tags.",
+  "id": "PR-OT-003",
+  "title": "OT Cyber Defense Analyst",
+  "status": "draft",
+  "category": "PD",
+  "description": "DRAFT. OT specialization of NICE work role PD-WRL-001 (Defensive Cybersecurity). Monitors OT networks and systems for malicious activity, using industrial protocol traffic, controller and application logs, and process data, and judges whether anomalies are cyber events or process events.",
+  "extends": [
+    "PD-WRL-001"
+  ],
+  "related": [
+    "DD-WRL-009"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "PD-WRL-001",
+      "locator_status": "verified",
+      "support": "related",
+      "note": "Parent NICE role; all its statements are inherited."
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§6.3 Detect (DE) (PDF pp. 143-150)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": [
+    "Most inherited PD-WRL-001 statements are flagged additional. Is the core list right for an OT SOC analyst?",
+    "Should OT and IT SOC analysts be one role with OT statements added, rather than a separate role?"
+  ],
+  "inherit": [
+    {
+      "role": "PD-WRL-001",
+      "default_flag": "additional",
+      "core": [
+        "K0674",
+        "K0680",
+        "K0682",
+        "K0684",
+        "K0691",
+        "K0718",
+        "K0724",
+        "K0732",
+        "K0783",
+        "K0788",
+        "K0791",
+        "K0831",
+        "K0832",
+        "K0833",
+        "K0844",
+        "K0845",
+        "K0915",
+        "K0924",
+        "K0939",
+        "K0948",
+        "K0950",
+        "K1089",
+        "K1131",
+        "K1144",
+        "K1176",
+        "K1181",
+        "K1193",
+        "K0749",
+        "S0156",
+        "S0572",
+        "S0593",
+        "S0688",
+        "S0838",
+        "S0846",
+        "S0859",
+        "S0863",
+        "S0866",
+        "S0872",
+        "S0874",
+        "S0875",
+        "S0885",
+        "T0299",
+        "T1020",
+        "T1084",
+        "T1085",
+        "T1112",
+        "T1241",
+        "T1242",
+        "T1299",
+        "T1347",
+        "T1348",
+        "T1349",
+        "T1350",
+        "T1351",
+        "T1386",
+        "T1387",
+        "T1390",
+        "T1428",
+        "T1582"
+      ],
+      "rationale": "Inferred: detection, network analysis, incident escalation and adversary-behaviour statements are core; IT-specific (e.g., PCI, PHI, web applications) and general statements are additional."
+    }
+  ],
+  "add_nice": [
+    {
+      "statement": "K1002",
+      "flag": "core",
+      "rationale": "Inferred: SCADA and supervisory systems are part of what is monitored."
+    },
+    {
+      "statement": "K1309",
+      "flag": "core",
+      "rationale": "Inferred: OT protocols are the main traffic analysed."
+    },
+    {
+      "statement": "K1293",
+      "flag": "core",
+      "rationale": "Inferred: Purdue levels frame sensor placement and context."
+    },
+    {
+      "statement": "K1298",
+      "flag": "core",
+      "rationale": "Inferred: Anomaly detection tools and techniques."
+    },
+    {
+      "statement": "K1308",
+      "flag": "core",
+      "rationale": "Inferred: OT network detection tools and techniques."
+    },
+    {
+      "statement": "K1301",
+      "flag": "core",
+      "rationale": "Inferred: Cyber incidents that have affected OT."
+    },
+    {
+      "statement": "K1306",
+      "flag": "core",
+      "rationale": "Inferred: OT assets give detections their context."
+    },
+    {
+      "statement": "K1304",
+      "flag": "core",
+      "rationale": "Inferred: Operational priorities shape alert handling."
+    },
+    {
+      "statement": "K1297",
+      "flag": "core",
+      "rationale": "Inferred: Safety systems must be recognised in traffic and treated with care."
+    },
+    {
+      "statement": "S0939",
+      "flag": "core",
+      "rationale": "Inferred: Event analysis."
+    }
+  ],
+  "add_plus": [
+    {
+      "statement": "PK-OT-0002",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0008",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0009",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0010",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0011",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0003",
+      "flag": "core"
+    },
+    {
+      "statement": "PS-OT-0005",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0003",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0012",
+      "flag": "additional"
+    }
+  ]
+}

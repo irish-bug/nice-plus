@@ -1,0 +1,905 @@
+{
+  "schema_version": "0.3.0",
+  "kind": "nice-plus.role",
+  "notice": "DRAFT. NICE Plus is an independent extension of the NIST NICE Framework for OT/ICS roles. It is not a NIST product and has not been reviewed or endorsed by NIST. NICE statements are quoted exactly from NICE Framework Components; plus statements (IDs starting P) are drafts authored by nice-plus.",
+  "role": {
+    "id": "PR-OT-005",
+    "title": "Control Room Operator (Cyber-Aware)",
+    "status": "draft",
+    "source": "plus",
+    "category": "IO",
+    "description": "DRAFT. Operates an industrial process from a control room or HMI and is the first to see many cyber events as process abnormalities. Not a security role: this defines the cybersecurity awareness and response duties an operator needs. NICE has no operator role.",
+    "extends": [],
+    "related": [
+      {
+        "role": "DD-WRL-009",
+        "title": "Operational Technology (OT) Cybersecurity Engineering"
+      }
+    ],
+    "overlaps": [
+      {
+        "role": "DD-WRL-009",
+        "title": "Operational Technology (OT) Cybersecurity Engineering",
+        "shared": 5,
+        "of_nice_role": 108,
+        "jaccard": 0.043
+      },
+      {
+        "role": "OG-WRL-005",
+        "title": "Cybersecurity Instruction",
+        "shared": 3,
+        "of_nice_role": 160,
+        "jaccard": 0.018
+      },
+      {
+        "role": "PD-WRL-001",
+        "title": "Defensive Cybersecurity",
+        "shared": 3,
+        "of_nice_role": 205,
+        "jaccard": 0.014
+      },
+      {
+        "role": "PD-WRL-007",
+        "title": "Vulnerability Analysis",
+        "shared": 3,
+        "of_nice_role": 96,
+        "jaccard": 0.028
+      },
+      {
+        "role": "DD-WRL-001",
+        "title": "Cybersecurity Architecture",
+        "shared": 2,
+        "of_nice_role": 218,
+        "jaccard": 0.009
+      }
+    ],
+    "overlaps_method": "Computed: NICE roles sharing the most statements with this role, excluding the roles it extends.",
+    "citations": [
+      {
+        "source": "nist-sp-800-82r3",
+        "locator": "§3.3.5 Establish a Cybersecurity Awareness Training Program for the OT Environment (PDF p. 58)",
+        "locator_status": "verified",
+        "support": "related",
+        "note": null
+      },
+      {
+        "source": "nist-sp-800-82r3",
+        "locator": "§3.3.2 Build and Train a Cross-Functional Team (PDF p. 55)",
+        "locator_status": "verified",
+        "support": "related",
+        "note": "Names control system operators as members of the OT cybersecurity team."
+      }
+    ],
+    "open_questions": [
+      "Is an awareness-level role useful in a workforce framework, or should operator duties be a reusable 'OT cyber awareness' statement set?",
+      "Which statements differ between control room operators and field operators?"
+    ]
+  },
+  "frameworks": {
+    "nice": {
+      "version": "2.2.0",
+      "released": "2026-04-28",
+      "source": "nist-nice-v2.2.0"
+    },
+    "attack_ics": {
+      "version": "20.1",
+      "source": "mitre-attack-ics-v20.1",
+      "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation."
+    }
+  },
+  "statements": [
+    {
+      "id": "T1242",
+      "type": "task",
+      "text": "Escalate incidents that may cause ongoing and immediate impact to the environment",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "IN-WRL-001",
+          "PD-WRL-001"
+        ],
+        "rationale": "Inferred: Escalating incidents that may have immediate impact."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1242",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0677",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-002",
+          "DD-WRL-003",
+          "DD-WRL-004",
+          "DD-WRL-005",
+          "DD-WRL-006",
+          "DD-WRL-007",
+          "DD-WRL-008",
+          "DD-WRL-009",
+          "IN-WRL-001",
+          "IN-WRL-002",
+          "IO-WRL-001",
+          "IO-WRL-002",
+          "IO-WRL-003",
+          "IO-WRL-004",
+          "IO-WRL-005",
+          "IO-WRL-006",
+          "IO-WRL-007",
+          "OG-WRL-001",
+          "OG-WRL-002",
+          "OG-WRL-003",
+          "OG-WRL-004",
+          "OG-WRL-005",
+          "OG-WRL-006",
+          "OG-WRL-007",
+          "OG-WRL-008",
+          "OG-WRL-009",
+          "OG-WRL-010",
+          "OG-WRL-011",
+          "OG-WRL-012",
+          "OG-WRL-013",
+          "OG-WRL-014",
+          "OG-WRL-015",
+          "OG-WRL-016",
+          "PD-WRL-001",
+          "PD-WRL-002",
+          "PD-WRL-003",
+          "PD-WRL-004",
+          "PD-WRL-005",
+          "PD-WRL-006",
+          "PD-WRL-007"
+        ],
+        "rationale": "Inferred: Following the site's cybersecurity policies and procedures."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0677",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0730",
+      "type": "knowledge",
+      "text": "Knowledge of cyber safety principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-002",
+          "DD-WRL-003",
+          "DD-WRL-004",
+          "DD-WRL-005",
+          "DD-WRL-006",
+          "DD-WRL-007",
+          "DD-WRL-009",
+          "IO-WRL-005",
+          "IO-WRL-006",
+          "OG-WRL-005",
+          "OG-WRL-007",
+          "OG-WRL-009",
+          "OG-WRL-010",
+          "OG-WRL-011",
+          "OG-WRL-012",
+          "OG-WRL-013",
+          "PD-WRL-001",
+          "PD-WRL-004",
+          "PD-WRL-007"
+        ],
+        "rationale": "Inferred: Cyber safety principles."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0730",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "K1087",
+      "type": "knowledge",
+      "text": "Knowledge of social engineering tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "OG-WRL-005",
+          "PD-WRL-007"
+        ],
+        "rationale": "Inferred: Recognizing social engineering, a common route into OT."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1087",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/3",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1297",
+      "type": "knowledge",
+      "text": "Knowledge of OT safety systems",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: OT safety systems and their role."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1297",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1301",
+      "type": "knowledge",
+      "text": "Knowledge of cyber incidents impacting OT",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Awareness of real cyber incidents that affected OT."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1301",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1304",
+      "type": "knowledge",
+      "text": "Knowledge of operational priorities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Operational priorities."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1304",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0015",
+      "type": "task",
+      "text": "Report suspected cyber-related process abnormalities through the site escalation path while keeping the process in a safe state",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1242",
+          "relation": "refines"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.5 Establish a Cybersecurity Awareness Training Program for the OT Environment (PDF p. 58)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.2 Awareness and Training (PR.AT) (PDF p. 125)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Training should cover the physical process as well as the OT system."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0016",
+      "type": "task",
+      "text": "Follow procedures for operating in manual or degraded modes when control or view is lost",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1304",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0827",
+          "name": "Loss of Control"
+        },
+        {
+          "id": "T0829",
+          "name": "Loss of View"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.5 Response and Recovery Plans (PDF p. 133)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Lists transitioning to manual operations."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.1.2 Assessing Risk in an OT Environment (PDF p. 69)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Manual control mechanisms let operators control actuators without the digital OT system."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0006",
+      "type": "knowledge",
+      "text": "Knowledge of how cyber events in manufacturing become production consequences such as line stoppage, scrap, latent quality defects and equipment damage",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1304",
+          "relation": "refines"
+        },
+        {
+          "id": "K1302",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0828",
+          "name": "Loss of Productivity and Revenue"
+        },
+        {
+          "id": "T0879",
+          "name": "Damage to Property"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-ir-8183r1",
+          "locator": "§5 Manufacturing Business/Mission Objectives",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Lists Maintain Production Goals and Maintain Quality of Product among manufacturing business/mission objectives."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.2.1 (PDF p. 189)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Notes extended downtimes and production losses."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PK-OT-0012",
+      "type": "knowledge",
+      "text": "Knowledge of signs that a process abnormality may have a cyber cause (e.g., unexplained setpoint or mode changes, HMI values that disagree with field indications, unexpected or suppressed alarms)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1301",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0836",
+          "name": "Modify Parameter"
+        },
+        {
+          "id": "T0858",
+          "name": "Change Operating Mode"
+        },
+        {
+          "id": "T0832",
+          "name": "Manipulation of View"
+        },
+        {
+          "id": "T0878",
+          "name": "Alarm Suppression"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.1 Anomalies and Events (DE.AE) (PDF p. 144)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Operational events such as unauthorized configuration changes and unplanned shutdowns."
+        },
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": "T0832, T0878",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0013",
+      "type": "knowledge",
+      "text": "Knowledge of site rules for removable media, personal devices and vendor access in control rooms and production areas",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K0677",
+          "relation": "refines"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0847",
+          "name": "Replication Through Removable Media"
+        },
+        {
+          "id": "T0864",
+          "name": "Transient Cyber Asset"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.7 Media Protection (PR.PT-2) (PDF p. 136)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.5 Establish a Cybersecurity Awareness Training Program for the OT Environment (PDF p. 58)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Training should outline the steps personnel follow when interacting with OT systems."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PS-OT-0006",
+      "type": "skill",
+      "text": "Skill in cross-checking HMI indications against independent field indications (e.g., local gauges, field operator reports)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1304",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0832",
+          "name": "Manipulation of View"
+        }
+      ],
+      "citations": [
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": "T0832",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Manipulation of View."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.2 Awareness and Training (PR.AT) (PDF p. 125)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Training should cover the physical process as well as the OT system."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    }
+  ],
+  "coverage": {
+    "collections": [
+      {
+        "id": "cyberfire-operationaltechnology",
+        "title": "Cyber Fire OT puzzles",
+        "role": "example coverage source",
+        "commit": "b0bef0fedff6aab3bd90838281b02814bbba994d",
+        "commit_date": "2026-11-02"
+      }
+    ],
+    "summary": {
+      "all": {
+        "total": 13,
+        "covered": 1
+      },
+      "by_type": {
+        "task": {
+          "total": 3,
+          "covered": 0
+        },
+        "knowledge": {
+          "total": 9,
+          "covered": 1
+        },
+        "skill": {
+          "total": 1,
+          "covered": 0
+        }
+      },
+      "by_flag": {
+        "core": {
+          "total": 11,
+          "covered": 1
+        },
+        "additional": {
+          "total": 2,
+          "covered": 0
+        }
+      },
+      "by_source": {
+        "nice": {
+          "total": 7,
+          "covered": 1
+        },
+        "plus": {
+          "total": 6,
+          "covered": 0
+        }
+      },
+      "by_basis": {
+        "inherited": {
+          "total": 0,
+          "covered": 0
+        },
+        "added-nice": {
+          "total": 7,
+          "covered": 1
+        },
+        "plus": {
+          "total": 6,
+          "covered": 0
+        }
+      }
+    },
+    "modules": [
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/3",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/3/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1087"
+        ]
+      }
+    ],
+    "gaps": [
+      "T1242",
+      "K0677",
+      "K0730",
+      "K1297",
+      "K1301",
+      "K1304",
+      "PT-OT-0015",
+      "PT-OT-0016",
+      "PK-OT-0006",
+      "PK-OT-0012",
+      "PK-OT-0013",
+      "PS-OT-0006"
+    ],
+    "provenance_note": "author-tagged = tag assigned by the module's author; inferred = mapping proposed by nice-plus. Neither is independently verified."
+  },
+  "sources": [
+    {
+      "id": "cyberfire-operationaltechnology",
+      "title": "Cyber Fire OT puzzles (operationaltechnology repository)",
+      "publisher": "Cyber Fire / Idaho National Laboratory",
+      "version": "git commit; see data/coverage/cyberfire-operationaltechnology.json",
+      "date": null,
+      "url": null,
+      "licence": "The puzzles are not public. Only puzzle paths, NICE tags, objective lines and INL release IDs are imported and published here; puzzle text, hints and answers are never copied.",
+      "held": "data/coverage/cyberfire-operationaltechnology.json (tags only)",
+      "note": "Example coverage source. Tags are assigned by puzzle authors and have not been independently verified."
+    },
+    {
+      "id": "mitre-attack-ics-v20.1",
+      "title": "MITRE ATT&CK for ICS (STIX 2.1 collection)",
+      "publisher": "The MITRE Corporation",
+      "version": "20.1",
+      "date": "2026-11-05",
+      "url": "https://attack.mitre.org/matrices/ics/",
+      "licence": "MITRE ATT&CK terms of use (sources/attack-ics/LICENSE.txt)",
+      "held": "sources/attack-ics/v20.1/ics-attack.json",
+      "sha256": "3f6448369f9135ade84ff6437479441530d0b262f910dca991879a7146b524ff",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "nist-ir-8183r1",
+      "title": "NISTIR 8183 Rev. 1, Cybersecurity Framework Version 1.1 Manufacturing Profile",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "Rev. 1",
+      "date": "2020-10",
+      "url": "https://csrc.nist.gov/pubs/ir/8183/r1/final",
+      "licence": "US Government work",
+      "held": null,
+      "sha256": "ed32a2662e064012174d0b2dfe021aa25fe29c6997909b2dcec641b37425fef3",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8183r1.pdf. No Rev. 2 final was found at csrc.nist.gov on 2026-11-20."
+    },
+    {
+      "id": "nist-nice-v2.2.0",
+      "title": "Workforce Framework for Cybersecurity (NICE Framework) Components v2.2.0",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "2.2.0",
+      "date": "2026-04-28",
+      "url": "https://csrc.nist.gov/csrc/media/Projects/cprt/documents/nice/v2-2-0_nf_components.json",
+      "licence": "US Government work",
+      "held": "sources/nice/v2.2.0/v2-2-0_nf_components.json",
+      "sha256": "3ad1d9d7e0d6b32895cb569f86c3bc05af2937a68e96eab4d1c9b3d9fa6e575e",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "nist-sp-800-82r3",
+      "title": "NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "Rev. 3",
+      "date": "2023-09",
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "licence": "US Government work",
+      "held": null,
+      "sha256": "608f554514d381853e24e0b33123b7080fbd757826f460032690aade63394616",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf. Locators give the section and the PDF page index (not the printed page number)."
+    }
+  ]
+}

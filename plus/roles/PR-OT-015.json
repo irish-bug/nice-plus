@@ -1,0 +1,29 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-015",
+  "title": "ICS Threat Analyst",
+  "status": "stub",
+  "category": "PD",
+  "description": "STUB. Tracks adversaries that target industrial systems and turns threat intelligence into OT detections, hunts and risk input, using ATT&CK for ICS.",
+  "extends": [],
+  "related": [
+    "PD-WRL-006"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "PD-WRL-006",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "mitre-attack-ics-v20.1",
+      "locator": null,
+      "locator_status": "none",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": []
+}

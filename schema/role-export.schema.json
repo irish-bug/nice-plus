@@ -1,0 +1,347 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/irish-bug/nice-plus/schema/role-export.schema.json",
+  "title": "NICE Plus role export (contract with ottobotto)",
+  "description": "One file per role at export/roles/<role id>.json. Consumers must check schema_version: a minor bump only adds optional fields; a major bump may remove or rename fields.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "kind",
+    "notice",
+    "role",
+    "frameworks",
+    "statements",
+    "coverage",
+    "sources"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^0\\.[0-9]+\\.[0-9]+$",
+      "description": "0.2.0 added role.related, role.open_questions, statement.open_questions and the stub/reviewed statuses. 0.3.0 added statements[].competency_areas and export/competency_areas.json."
+    },
+    "kind": {
+      "const": "nice-plus.role"
+    },
+    "notice": {
+      "type": "string",
+      "description": "Draft / not-a-NIST-product notice. Show it wherever the role is presented."
+    },
+    "role": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "status",
+        "source",
+        "category",
+        "description",
+        "extends",
+        "overlaps",
+        "citations",
+        "related",
+        "open_questions"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "nice-plus.schema.json#/$defs/roleId"
+        },
+        "title": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "official",
+            "stub",
+            "draft",
+            "reviewed"
+          ]
+        },
+        "source": {
+          "enum": [
+            "nice",
+            "plus"
+          ]
+        },
+        "category": {
+          "$ref": "nice-plus.schema.json#/$defs/categoryId"
+        },
+        "description": {
+          "type": "string"
+        },
+        "extends": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "role",
+              "title"
+            ],
+            "properties": {
+              "role": {
+                "$ref": "nice-plus.schema.json#/$defs/niceRoleId"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "overlaps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "role",
+              "title",
+              "shared",
+              "of_nice_role",
+              "jaccard"
+            ],
+            "properties": {
+              "role": {
+                "$ref": "nice-plus.schema.json#/$defs/niceRoleId"
+              },
+              "title": {
+                "type": "string"
+              },
+              "shared": {
+                "type": "integer"
+              },
+              "of_nice_role": {
+                "type": "integer"
+              },
+              "jaccard": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "overlaps_method": {
+          "type": "string"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "nice-plus.schema.json#/$defs/citation"
+          }
+        },
+        "related": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "role",
+              "title"
+            ],
+            "properties": {
+              "role": {
+                "$ref": "nice-plus.schema.json#/$defs/niceRoleId"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "type": "object",
+      "required": [
+        "nice",
+        "attack_ics"
+      ],
+      "properties": {
+        "nice": {
+          "type": "object",
+          "required": [
+            "version",
+            "released",
+            "source"
+          ]
+        },
+        "attack_ics": {
+          "type": "object",
+          "required": [
+            "version",
+            "source",
+            "notice"
+          ]
+        }
+      }
+    },
+    "statements": {
+      "type": "array",
+      "description": "Every statement linked to the role. Ordered: NICE before plus, then task, knowledge, skill, then by id.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "text",
+          "source",
+          "nice_version",
+          "status",
+          "link",
+          "relates_to_nice",
+          "ot_context",
+          "attack_ics",
+          "citations",
+          "coverage"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "nice-plus.schema.json#/$defs/statementId"
+          },
+          "type": {
+            "$ref": "nice-plus.schema.json#/$defs/statementType"
+          },
+          "text": {
+            "type": "string"
+          },
+          "source": {
+            "enum": [
+              "nice",
+              "plus"
+            ]
+          },
+          "nice_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "official",
+              "draft",
+              "reviewed"
+            ]
+          },
+          "link": {
+            "$ref": "nice-plus.schema.json#/$defs/roleStatement"
+          },
+          "relates_to_nice": {
+            "type": "array"
+          },
+          "ot_context": {
+            "$ref": "nice-plus.schema.json#/$defs/otContext"
+          },
+          "attack_ics": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "$ref": "nice-plus.schema.json#/$defs/attackIcsId"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "citations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "nice-plus.schema.json#/$defs/citation"
+            }
+          },
+          "coverage": {
+            "type": "array",
+            "items": {
+              "$ref": "nice-plus.schema.json#/$defs/coverageRef"
+            }
+          },
+          "open_questions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "competency_areas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "NICE (NF-COM-###) and plus (PC-OT-###) competency areas this statement belongs to. Plus areas are described in export/competency_areas.json."
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "collections",
+        "summary",
+        "modules",
+        "gaps",
+        "provenance_note"
+      ],
+      "properties": {
+        "collections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "commit"
+            ]
+          }
+        },
+        "summary": {
+          "type": "object",
+          "required": [
+            "all",
+            "by_type",
+            "by_flag",
+            "by_source",
+            "by_basis"
+          ],
+          "$comment": "Each tally is {total, covered}."
+        },
+        "modules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "collection",
+              "path",
+              "statements_in_role"
+            ]
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "$ref": "nice-plus.schema.json#/$defs/statementId"
+          },
+          "description": "Statements with no covering module. These become candidate ottobotto modules."
+        },
+        "provenance_note": {
+          "type": "string"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "nice-plus.schema.json#/$defs/source"
+      }
+    }
+  }
+}

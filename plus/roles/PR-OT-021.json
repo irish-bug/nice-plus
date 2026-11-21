@@ -1,0 +1,23 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-021",
+  "title": "OT Cybersecurity Instructor and Exercise Designer",
+  "status": "stub",
+  "category": "OG",
+  "description": "STUB. Designs and delivers OT cybersecurity training, labs and exercises, including cyber range scenarios that reflect real industrial processes.",
+  "extends": [],
+  "related": [
+    "OG-WRL-005",
+    "OG-WRL-004"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "OG-WRL-005, OG-WRL-004",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": []
+}

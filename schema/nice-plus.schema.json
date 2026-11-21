@@ -1,0 +1,617 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/irish-bug/nice-plus/schema/nice-plus.schema.json",
+  "title": "NICE Plus data model",
+  "description": "Definitions for work roles, TKS statements, role-statement links, citations, sources and coverage modules. NICE and plus IDs use disjoint patterns so they can never collide.",
+  "$defs": {
+    "niceStatementId": {
+      "type": "string",
+      "pattern": "^[TKS][0-9]{4}$"
+    },
+    "plusStatementId": {
+      "type": "string",
+      "pattern": "^P[TKS]-OT-[0-9]{4}$"
+    },
+    "statementId": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/niceStatementId"
+        },
+        {
+          "$ref": "#/$defs/plusStatementId"
+        }
+      ]
+    },
+    "niceRoleId": {
+      "type": "string",
+      "pattern": "^(OG|DD|IO|PD|IN)-WRL-[0-9]{3}$"
+    },
+    "plusRoleId": {
+      "type": "string",
+      "pattern": "^PR-OT-[0-9]{3}$"
+    },
+    "roleId": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/niceRoleId"
+        },
+        {
+          "$ref": "#/$defs/plusRoleId"
+        }
+      ]
+    },
+    "attackIcsId": {
+      "description": "MITRE ATT&CK for ICS technique or sub-technique ID. Only ever used in attack_ics fields, because it shares the T#### shape with NICE task IDs.",
+      "type": "string",
+      "pattern": "^T[0-9]{4}(\\.[0-9]{3})?$"
+    },
+    "sourceId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9.-]*$"
+    },
+    "statementType": {
+      "enum": [
+        "task",
+        "knowledge",
+        "skill"
+      ]
+    },
+    "categoryId": {
+      "enum": [
+        "OG",
+        "DD",
+        "IO",
+        "PD",
+        "IN"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "publisher",
+        "licence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/sourceId"
+        },
+        "title": {
+          "type": "string"
+        },
+        "publisher": {
+          "type": "string"
+        },
+        "version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "licence": {
+          "type": "string"
+        },
+        "held": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Repo path of a held copy, or null if not held."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "retrieved": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": [
+        "source",
+        "locator",
+        "locator_status",
+        "support"
+      ],
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/sourceId"
+        },
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Section, clause, element ID or page within the source."
+        },
+        "locator_status": {
+          "enum": [
+            "verified",
+            "to-verify",
+            "none"
+          ],
+          "description": "verified = checked against the source text; to-verify = not yet checked (e.g. standards we do not hold); none = whole-document citation."
+        },
+        "support": {
+          "enum": [
+            "verbatim",
+            "paraphrase",
+            "related"
+          ],
+          "description": "verbatim = text copied exactly (NICE only); paraphrase = our wording of the source's point; related = the source supports the statement but does not state it."
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "otContext": {
+      "type": "object",
+      "properties": {
+        "purdue_levels": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "3.5",
+              "4",
+              "5"
+            ]
+          }
+        },
+        "sectors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "protocol_families": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "statement": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "text",
+        "source",
+        "status",
+        "citations"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/statementId"
+        },
+        "type": {
+          "$ref": "#/$defs/statementType"
+        },
+        "text": {
+          "type": "string",
+          "description": "NICE: exactly as published. Plus: nice-plus draft wording."
+        },
+        "source": {
+          "enum": [
+            "nice",
+            "plus"
+          ]
+        },
+        "nice_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "official",
+            "draft",
+            "reviewed"
+          ],
+          "description": "NICE statements are official. Plus statements are draft until reviewed."
+        },
+        "relates_to_nice": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "relation"
+            ],
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/niceStatementId"
+              },
+              "relation": {
+                "enum": [
+                  "refines",
+                  "complements",
+                  "extends"
+                ]
+              }
+            }
+          }
+        },
+        "ot_context": {
+          "$ref": "#/$defs/otContext"
+        },
+        "attack_ics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/attackIcsId"
+          }
+        },
+        "citations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "source": {
+                "const": "nice"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/niceStatementId"
+              },
+              "status": {
+                "const": "official"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "source": {
+                "const": "plus"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/plusStatementId"
+              },
+              "status": {
+                "enum": [
+                  "draft",
+                  "reviewed"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "workRole": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "description",
+        "category",
+        "source",
+        "status",
+        "citations"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/roleId"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "category": {
+          "$ref": "#/$defs/categoryId"
+        },
+        "source": {
+          "enum": [
+            "nice",
+            "plus"
+          ]
+        },
+        "status": {
+          "enum": [
+            "official",
+            "stub",
+            "draft",
+            "reviewed"
+          ],
+          "description": "NICE roles are official. Plus roles: stub (title, description, related roles and open questions only), draft (statements linked), reviewed."
+        },
+        "nice_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "extends": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/niceRoleId"
+          }
+        },
+        "overlaps": {
+          "type": "array"
+        },
+        "opm_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "related": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/niceRoleId"
+          },
+          "description": "NICE roles this role draws on without inheriting their statements."
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "What we are unsure of; where reviewers should start."
+        }
+      }
+    },
+    "roleStatement": {
+      "type": "object",
+      "required": [
+        "flag",
+        "basis"
+      ],
+      "properties": {
+        "role": {
+          "$ref": "#/$defs/roleId"
+        },
+        "statement": {
+          "$ref": "#/$defs/statementId"
+        },
+        "flag": {
+          "enum": [
+            "core",
+            "additional",
+            "unspecified"
+          ],
+          "description": "NICE does not flag statements, so NICE's own links are 'unspecified'. Plus roles flag every link."
+        },
+        "basis": {
+          "enum": [
+            "nice-published",
+            "inherited",
+            "added-nice",
+            "plus"
+          ],
+          "description": "nice-published = link published by NICE; inherited = taken from a NICE role this role extends; added-nice = a NICE statement from elsewhere added by nice-plus; plus = a nice-plus statement."
+        },
+        "via": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/$defs/niceRoleId"
+          },
+          "description": "NICE role(s) the statement comes from or appears in."
+        },
+        "rationale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "coverageRef": {
+      "type": "object",
+      "required": [
+        "module",
+        "provenance"
+      ],
+      "properties": {
+        "module": {
+          "type": "string"
+        },
+        "provenance": {
+          "enum": [
+            "author-tagged",
+            "inferred"
+          ]
+        },
+        "rationale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "module": {
+      "type": "object",
+      "required": [
+        "id",
+        "collection",
+        "path",
+        "statements",
+        "provenance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "<collection id>:<path within collection>"
+        },
+        "collection": {
+          "$ref": "#/$defs/sourceId"
+        },
+        "path": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "objective": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "release_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "statements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/statementId"
+          }
+        },
+        "provenance": {
+          "enum": [
+            "author-tagged",
+            "inferred"
+          ]
+        }
+      }
+    },
+    "plusCompetencyAreaId": {
+      "type": "string",
+      "pattern": "^PC-OT-[0-9]{3}$"
+    },
+    "competencyArea": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "status",
+        "description",
+        "citations",
+        "groups"
+      ],
+      "description": "A plus competency area: NICE and plus statements grouped around a theme any role can draw on (cf. NICE's NF-COM-### competency areas).",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/plusCompetencyAreaId"
+        },
+        "title": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "reviewed"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "citations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "statements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/statementId"
+          },
+          "description": "Statements that apply to the whole area."
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "statements"
+            ],
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "citations": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/citation"
+                }
+              },
+              "statements": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/statementId"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

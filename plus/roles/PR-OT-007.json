@@ -1,0 +1,167 @@
+{
+  "$comment": "DRAFT NICE Plus work role. Not a NIST product. Core/additional flags and added statements are nice-plus judgments, not NIST's. Statements were chosen by relevance to the role, not from coverage tags.",
+  "id": "PR-OT-007",
+  "title": "Chief Operational Technology Officer",
+  "status": "draft",
+  "category": "OG",
+  "description": "DRAFT. OT specialization of NICE work role OG-WRL-007 (Executive Cybersecurity Leadership). The executive accountable for the security and resilience of the organization's operational technology: sets OT cybersecurity strategy, governance and risk tolerance, and makes sure security is built into operations, engineering, capital projects and procurement. Some organizations give this to a CISO or a VP of operations or engineering.",
+  "extends": [
+    "OG-WRL-007"
+  ],
+  "related": [
+    "DD-WRL-009",
+    "OG-WRL-014"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "OG-WRL-007",
+      "locator_status": "verified",
+      "support": "related",
+      "note": "Parent NICE role; all its statements are inherited."
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§3 OT Cybersecurity Program Development (PDF p. 50)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "isa-iec-62443-2-1",
+      "locator": null,
+      "locator_status": "none",
+      "support": "related",
+      "note": "Security program requirements for asset owners."
+    }
+  ],
+  "open_questions": [
+    "Is this a distinct executive role, or a set of OT duties added to the CISO (OG-WRL-007)?",
+    "Who owns OT security in practice: operations, engineering, or IT security? The answer shapes the core list."
+  ],
+  "inherit": [
+    {
+      "role": "OG-WRL-007",
+      "default_flag": "additional",
+      "core": [
+        "K0675",
+        "K0680",
+        "K0682",
+        "K0730",
+        "K0818",
+        "K0820",
+        "K0839",
+        "K1180",
+        "K1209",
+        "K1225",
+        "S0406",
+        "S0511",
+        "S0686",
+        "S0821",
+        "S0826",
+        "T1020",
+        "T1036",
+        "T1056",
+        "T1057",
+        "T1059",
+        "T1060",
+        "T1088",
+        "T1145",
+        "T1226",
+        "T1227",
+        "T1238",
+        "T1335",
+        "T1376",
+        "T1377",
+        "T1518",
+        "T1543",
+        "T1586",
+        "T1862",
+        "T1906"
+      ],
+      "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+    }
+  ],
+  "add_nice": [
+    {
+      "statement": "K1288",
+      "flag": "core",
+      "rationale": "Inferred: OT compliance requirements."
+    },
+    {
+      "statement": "K1292",
+      "flag": "core",
+      "rationale": "Inferred: OT cybersecurity risk tolerance levels."
+    },
+    {
+      "statement": "K1304",
+      "flag": "core",
+      "rationale": "Inferred: Operational priorities."
+    },
+    {
+      "statement": "K1289",
+      "flag": "core",
+      "rationale": "Inferred: Control system risks, threats and vulnerabilities."
+    },
+    {
+      "statement": "K1301",
+      "flag": "core",
+      "rationale": "Inferred: Cyber incidents that have affected OT."
+    },
+    {
+      "statement": "T2046",
+      "flag": "additional",
+      "rationale": "Inferred: Communicating implications of new OT technologies to stakeholders."
+    }
+  ],
+  "add_plus": [
+    {
+      "statement": "PT-OT-0020",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0021",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0022",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0023",
+      "flag": "core"
+    },
+    {
+      "statement": "PT-OT-0024",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0015",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0007",
+      "flag": "core"
+    },
+    {
+      "statement": "PK-OT-0006",
+      "flag": "additional"
+    },
+    {
+      "statement": "PK-OT-0008",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0027",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0034",
+      "flag": "additional"
+    },
+    {
+      "statement": "PT-OT-0035",
+      "flag": "additional"
+    }
+  ]
+}

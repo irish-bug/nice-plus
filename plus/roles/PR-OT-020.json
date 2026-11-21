@@ -1,0 +1,29 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-020",
+  "title": "OT Supply Chain Risk Analyst",
+  "status": "stub",
+  "category": "OG",
+  "description": "STUB. Manages cybersecurity supply chain risk for OT equipment, software, firmware and service providers (machine builders, integrators, maintenance contractors).",
+  "extends": [],
+  "related": [
+    "OG-WRL-017"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "OG-WRL-017",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§4.2.1 Supply Chain Risk Management (PDF p. 71)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": []
+}

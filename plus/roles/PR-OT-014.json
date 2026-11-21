@@ -1,0 +1,31 @@
+{
+  "$comment": "STUB NICE Plus work role: title, description, related NICE roles and open questions only. No statements yet. Contributions welcome.",
+  "id": "PR-OT-014",
+  "title": "ICS Forensic Analyst",
+  "status": "stub",
+  "category": "PD",
+  "description": "STUB. Recovers and analyzes evidence from industrial systems, including controllers, field devices, HMIs, historians and engineering workstations, where standard IT forensic tools often do not apply.",
+  "extends": [],
+  "related": [
+    "PD-WRL-002"
+  ],
+  "citations": [
+    {
+      "source": "nist-nice-v2.2.0",
+      "locator": "PD-WRL-002",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    },
+    {
+      "source": "nist-sp-800-82r3",
+      "locator": "§6.4.3 Response Analysis (RS.AN) (PDF p. 153)",
+      "locator_status": "verified",
+      "support": "related",
+      "note": null
+    }
+  ],
+  "open_questions": [
+    "Separate role, or part of the ICS Incident Responder (PR-OT-004)?"
+  ]
+}

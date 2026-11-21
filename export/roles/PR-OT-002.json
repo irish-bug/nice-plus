@@ -1,0 +1,3616 @@
+{
+  "schema_version": "0.3.0",
+  "kind": "nice-plus.role",
+  "notice": "DRAFT. NICE Plus is an independent extension of the NIST NICE Framework for OT/ICS roles. It is not a NIST product and has not been reviewed or endorsed by NIST. NICE statements are quoted exactly from NICE Framework Components; plus statements (IDs starting P) are drafts authored by nice-plus.",
+  "role": {
+    "id": "PR-OT-002",
+    "title": "Controls / Automation Engineer (Security Duties)",
+    "status": "draft",
+    "source": "plus",
+    "category": "DD",
+    "description": "DRAFT. Designs, programs, commissions and maintains control systems (PLCs, HMIs, drives, and the networks that connect them) and is responsible for the security of the logic and configurations they own. NICE has no role for the engineers who write and change controller programs; NICE work role DD-WRL-009 covers OT security engineering but not control system programming.",
+    "extends": [],
+    "related": [
+      {
+        "role": "DD-WRL-009",
+        "title": "Operational Technology (OT) Cybersecurity Engineering"
+      }
+    ],
+    "overlaps": [
+      {
+        "role": "DD-WRL-009",
+        "title": "Operational Technology (OT) Cybersecurity Engineering",
+        "shared": 15,
+        "of_nice_role": 108,
+        "jaccard": 0.107
+      },
+      {
+        "role": "DD-WRL-001",
+        "title": "Cybersecurity Architecture",
+        "shared": 7,
+        "of_nice_role": 218,
+        "jaccard": 0.027
+      },
+      {
+        "role": "DD-WRL-004",
+        "title": "Secure Systems Development",
+        "shared": 7,
+        "of_nice_role": 230,
+        "jaccard": 0.026
+      },
+      {
+        "role": "DD-WRL-002",
+        "title": "Enterprise Architecture",
+        "shared": 6,
+        "of_nice_role": 155,
+        "jaccard": 0.031
+      },
+      {
+        "role": "PD-WRL-001",
+        "title": "Defensive Cybersecurity",
+        "shared": 6,
+        "of_nice_role": 205,
+        "jaccard": 0.024
+      }
+    ],
+    "overlaps_method": "Computed: NICE roles sharing the most statements with this role, excluding the roles it extends.",
+    "citations": [
+      {
+        "source": "nist-sp-800-82r3",
+        "locator": "§3.3.2 Build and Train a Cross-Functional Team (PDF p. 55)",
+        "locator_status": "verified",
+        "support": "related",
+        "note": "Names control engineers as members of the OT cybersecurity team."
+      },
+      {
+        "source": "plc-top20-v1.0",
+        "locator": null,
+        "locator_status": "none",
+        "support": "related",
+        "note": "Secure coding practices aimed at the engineers who program PLCs."
+      }
+    ],
+    "open_questions": [
+      "Is one role right for both design-side controls engineers and plant-floor automation technicians, or should they be split?",
+      "Should this role inherit any of DD-WRL-009, or stay standalone with selected statements as now?"
+    ]
+  },
+  "frameworks": {
+    "nice": {
+      "version": "2.2.0",
+      "released": "2026-04-28",
+      "source": "nist-nice-v2.2.0"
+    },
+    "attack_ics": {
+      "version": "20.1",
+      "source": "mitre-attack-ics-v20.1",
+      "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation."
+    }
+  },
+  "statements": [
+    {
+      "id": "T1020",
+      "type": "task",
+      "text": "Determine the operational and safety impacts of cybersecurity lapses",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-002",
+          "DD-WRL-003",
+          "DD-WRL-004",
+          "DD-WRL-005",
+          "DD-WRL-006",
+          "DD-WRL-007",
+          "DD-WRL-008",
+          "IO-WRL-001",
+          "IO-WRL-002",
+          "IO-WRL-003",
+          "IO-WRL-004",
+          "IO-WRL-005",
+          "IO-WRL-006",
+          "IO-WRL-007",
+          "OG-WRL-001",
+          "OG-WRL-002",
+          "OG-WRL-003",
+          "OG-WRL-004",
+          "OG-WRL-005",
+          "OG-WRL-006",
+          "OG-WRL-007",
+          "OG-WRL-008",
+          "OG-WRL-009",
+          "OG-WRL-010",
+          "OG-WRL-011",
+          "OG-WRL-012",
+          "OG-WRL-013",
+          "OG-WRL-014",
+          "OG-WRL-015",
+          "OG-WRL-016",
+          "PD-WRL-001",
+          "PD-WRL-002",
+          "PD-WRL-003",
+          "PD-WRL-004",
+          "PD-WRL-006",
+          "PD-WRL-007"
+        ],
+        "rationale": "Inferred: Judging operational and safety impact of security lapses in their systems."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1020",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "T2033",
+      "type": "task",
+      "text": "Create a change management plan",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Contributing to change management plans."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T2033",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0068",
+      "type": "knowledge",
+      "text": "Knowledge of programming language structures and logic",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-004",
+          "PD-WRL-001"
+        ],
+        "rationale": "Inferred: Controller programming draws on programming-language structure."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0068",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/36",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/37",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/38",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/40",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/41",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/42",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/43",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/44",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/45",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/46",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/47",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/48",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/49",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/50",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/4",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/5",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/10",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/26",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/29",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/8",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/14",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/15",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/17",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/18",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/19",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/20",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/21",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/22",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/23",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/24",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/25",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/26",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/40",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0680",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-002",
+          "DD-WRL-003",
+          "DD-WRL-004",
+          "DD-WRL-005",
+          "DD-WRL-006",
+          "DD-WRL-007",
+          "DD-WRL-008",
+          "DD-WRL-009",
+          "IN-WRL-001",
+          "IN-WRL-002",
+          "IO-WRL-001",
+          "IO-WRL-002",
+          "IO-WRL-003",
+          "IO-WRL-004",
+          "IO-WRL-005",
+          "IO-WRL-006",
+          "IO-WRL-007",
+          "OG-WRL-001",
+          "OG-WRL-002",
+          "OG-WRL-003",
+          "OG-WRL-004",
+          "OG-WRL-005",
+          "OG-WRL-006",
+          "OG-WRL-007",
+          "OG-WRL-008",
+          "OG-WRL-009",
+          "OG-WRL-010",
+          "OG-WRL-011",
+          "OG-WRL-012",
+          "OG-WRL-013",
+          "OG-WRL-014",
+          "OG-WRL-015",
+          "OG-WRL-016",
+          "PD-WRL-001",
+          "PD-WRL-002",
+          "PD-WRL-003",
+          "PD-WRL-004",
+          "PD-WRL-006",
+          "PD-WRL-007"
+        ],
+        "rationale": "Inferred: Baseline cybersecurity principles."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0680",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/39",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/0",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/10",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/11",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/12",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/13",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/14",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/15",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/16",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/17",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/18",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/19",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/20",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/21",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/22",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/23",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/24",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/25",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/4",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/5",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/8",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/13",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/3",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/4",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0685",
+      "type": "knowledge",
+      "text": "Knowledge of access control principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-002",
+          "DD-WRL-004",
+          "DD-WRL-006",
+          "DD-WRL-007",
+          "IN-WRL-001",
+          "IO-WRL-001",
+          "IO-WRL-002",
+          "IO-WRL-004",
+          "IO-WRL-005",
+          "IO-WRL-006",
+          "IO-WRL-007",
+          "OG-WRL-005",
+          "OG-WRL-006",
+          "OG-WRL-012",
+          "OG-WRL-013",
+          "OG-WRL-014",
+          "PD-WRL-001",
+          "PD-WRL-003",
+          "PD-WRL-004",
+          "PD-WRL-007"
+        ],
+        "rationale": "Inferred: Access control on controllers and engineering software."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0685",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0749",
+      "type": "knowledge",
+      "text": "Knowledge of process engineering principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-002",
+          "DD-WRL-004",
+          "DD-WRL-006",
+          "DD-WRL-007",
+          "DD-WRL-008",
+          "IO-WRL-004",
+          "IO-WRL-005",
+          "IO-WRL-006",
+          "OG-WRL-001",
+          "OG-WRL-012",
+          "OG-WRL-014",
+          "PD-WRL-001"
+        ],
+        "rationale": "Inferred: Process engineering knowledge underlies control design."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0749",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/7",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0948",
+      "type": "knowledge",
+      "text": "Knowledge of embedded systems and software",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-002",
+          "DD-WRL-003",
+          "DD-WRL-004",
+          "DD-WRL-005",
+          "IO-WRL-006",
+          "OG-WRL-012",
+          "OG-WRL-013",
+          "PD-WRL-001"
+        ],
+        "rationale": "Inferred: PLCs, drives and HMIs are embedded systems."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0948",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:ot-device/1000",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-device/1001",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-device/1010",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1081",
+      "type": "knowledge",
+      "text": "Knowledge of secure firmware update principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-004"
+        ],
+        "rationale": "Inferred: Firmware updates on controllers and devices."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1081",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:ot-grokwell/300",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-008"
+      ]
+    },
+    {
+      "id": "K1122",
+      "type": "knowledge",
+      "text": "Knowledge of configuration management principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-006",
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Configuration management of controller programs."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1122",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1223",
+      "type": "knowledge",
+      "text": "Knowledge of system backup requirements",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-002"
+        ],
+        "rationale": "Inferred: Backups of controller programs and configurations."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1223",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1287",
+      "type": "knowledge",
+      "text": "Knowledge of change management processes",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009",
+          "OG-WRL-017"
+        ],
+        "rationale": "Inferred: Change management processes govern their work."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1287",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1293",
+      "type": "knowledge",
+      "text": "Knowledge of Purdue Model levels",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Purdue levels frame where controllers and HMIs sit."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1293",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1294",
+      "type": "knowledge",
+      "text": "Knowledge of change management policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Change management policies they follow."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1294",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1297",
+      "type": "knowledge",
+      "text": "Knowledge of OT safety systems",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Controls engineers work alongside and around safety systems."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1297",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1300",
+      "type": "knowledge",
+      "text": "Knowledge of control system network architectures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Control system network architectures they design and maintain."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1300",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1302",
+      "type": "knowledge",
+      "text": "Knowledge of industry hazards",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Industry hazards set the consequence of a bad change."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1302",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1304",
+      "type": "knowledge",
+      "text": "Knowledge of operational priorities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Operational priorities govern when changes can happen."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1304",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1306",
+      "type": "knowledge",
+      "text": "Knowledge of OT assets",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: OT assets they own."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1306",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1309",
+      "type": "knowledge",
+      "text": "Knowledge of OT protocols",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: OT protocols their systems use."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1309",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0757",
+      "type": "skill",
+      "text": "Skill in verifying the integrity of files",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "added-nice",
+        "via": [],
+        "rationale": "Inferred: Verifying integrity of program files."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0757",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Warmup/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/12",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "S0942",
+      "type": "skill",
+      "text": "Skill in performing system recovery for control system environments",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Recovering control systems is part of the job."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0942",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0943",
+      "type": "skill",
+      "text": "Skill in connecting to OT assets",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Connecting to OT assets for programming and diagnostics."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0943",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0944",
+      "type": "skill",
+      "text": "Skill in designing and specifying OT systems",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Designing and specifying OT systems."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0944",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0001",
+      "type": "task",
+      "text": "Maintain backups of controller programs, configurations and firmware, verify their integrity, and test restoration",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "S0942",
+          "relation": "complements"
+        },
+        {
+          "id": "T1124",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0809",
+          "name": "Data Destruction"
+        },
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.3 Backups (PR.IP-4) (PDF p. 129)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Back up PLC logic and configuration; verify backups for reliability and integrity; test restoration. Firmware is a nice-plus addition."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix E.3.3 File Hashing (PDF p. 228)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0002",
+      "type": "task",
+      "text": "Establish a process to detect unauthorized changes to controller logic, parameters and setpoints by comparing running programs against approved baselines",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1243",
+          "relation": "refines"
+        },
+        {
+          "id": "K1298",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        },
+        {
+          "id": "T0836",
+          "name": "Modify Parameter"
+        },
+        {
+          "id": "T0843",
+          "name": "Program Download"
+        },
+        {
+          "id": "T0821",
+          "name": "Modify Controller Tasking"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix E.3.3 File Hashing (PDF p. 228)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Hashes can validate the integrity of program logic."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.3 Threat Events and Incidents (PDF p. 196)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Manipulation of control: unauthorized changes to programmed instructions."
+        },
+        {
+          "source": "isa-iec-62443-3-3",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": "System integrity requirements."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0004",
+      "type": "task",
+      "text": "Define controls for transient cyber assets and removable media brought into production areas",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1305",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0864",
+          "name": "Transient Cyber Asset"
+        },
+        {
+          "id": "T0847",
+          "name": "Replication Through Removable Media"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.7 Media Protection (PR.PT-2) (PDF p. 136)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Restricts removable media and devices on OT nodes; does not use the term transient cyber assets."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.1.2 Physical Access Controls (PDF p. 116)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0005",
+      "type": "task",
+      "text": "Schedule cybersecurity changes (e.g., patches, firmware updates, firewall rule changes) around production schedules and planned downtime, with tested rollback",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T2033",
+          "relation": "refines"
+        },
+        {
+          "id": "K1287",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.2 Configuration Change Control (PDF pp. 128-129)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Schedule changes in maintenance downtime to limit impact."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§5.2.5.2 Patching (PDF p. 94)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Test patches in a test environment first."
+        },
+        {
+          "source": "nist-ir-8183r1",
+          "locator": "§5 Manufacturing Business/Mission Objectives",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0006",
+      "type": "task",
+      "text": "Assess the security of engineering workstations and controller programming software",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1619",
+          "relation": "refines"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0873",
+          "name": "Project File Infection"
+        },
+        {
+          "id": "T0843",
+          "name": "Program Download"
+        },
+        {
+          "id": "T0845",
+          "name": "Program Upload"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.2.3 Malicious Code Detection (PDF p. 149)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.1.1 Logical Access Controls (PDF p. 116)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "RBAC on engineering workstations."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0025",
+      "type": "task",
+      "text": "Apply secure coding practices to controller programs (e.g., validate HMI inputs and timer values in the controller, check physical plausibility, add integrity checks)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K0068",
+          "relation": "complements"
+        },
+        {
+          "id": "S0172",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0836",
+          "name": "Modify Parameter"
+        },
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        }
+      ],
+      "citations": [
+        {
+          "source": "plc-top20-v1.0",
+          "locator": "Practices 5, 6, 8, 12",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Integrity checks; validate timers and counters; validate HMI inputs at the PLC; validate inputs by physical plausibility."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0026",
+      "type": "task",
+      "text": "Disable unneeded services, ports and default accounts on controllers, HMIs and network devices during commissioning",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K0837",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T1694.001",
+          "name": "Default Credentials"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.1 Least Functionality (PR.IP-1) (PDF p. 128)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Disable functions and services not required, with care for unintended impacts."
+        },
+        {
+          "source": "plc-top20-v1.0",
+          "locator": "Practice 13",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Disable unneeded communication ports and protocols."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0027",
+      "type": "task",
+      "text": "Identify the critical functions where cyber manipulation could cause unacceptable consequences, and focus security design effort on them first",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T2042",
+          "relation": "complements"
+        },
+        {
+          "id": "T1122",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 1: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0028",
+      "type": "task",
+      "text": "Specify engineered controls early in design that eliminate or limit high-consequence cyber-enabled outcomes, instead of relying only on added IT security controls",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T2041",
+          "relation": "complements"
+        },
+        {
+          "id": "T1163",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0831",
+          "name": "Manipulation of Control"
+        },
+        {
+          "id": "T0880",
+          "name": "Loss of Safety"
+        }
+      ],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Engineered controls (p. 13)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 2: Engineered Controls (p. 23)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0030",
+      "type": "task",
+      "text": "Limit digital functionality to what each function needs, removing high-consequence, low-value complexity and latent capabilities that attackers could misuse",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K0837",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Design simplification (p. 13)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 4: Design Simplification (p. 43)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0033",
+      "type": "task",
+      "text": "Evaluate, with safety, quality, maintenance and other disciplines, how misuse of a digital system could affect their areas of operation",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1020",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Interdependency evaluation (p. 14)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 7: Interdependency Evaluation (p. 71)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PK-OT-0002",
+      "type": "knowledge",
+      "text": "Knowledge of industrial protocol families common in manufacturing (e.g., EtherNet/IP and CIP, PROFINET, Modbus TCP, OPC UA) and which security features each does or does not provide",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1309",
+          "relation": "refines"
+        },
+        {
+          "id": "S0951",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": [
+          "EtherNet/IP-CIP",
+          "PROFINET",
+          "Modbus",
+          "OPC UA"
+        ]
+      },
+      "attack_ics": [
+        {
+          "id": "T1692.001",
+          "name": "Command Message"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "section to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": "Discusses OT protocols and their security limitations; exact section not yet pinned."
+        },
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": "T1692.001",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Command messages sent over industrial protocols without authentication."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0003",
+      "type": "knowledge",
+      "text": "Knowledge of controller programs and engineering project files (e.g., IEC 61131-3 ladder diagram, structured text, function block diagram) as security-critical assets",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1306",
+          "relation": "refines"
+        },
+        {
+          "id": "K0068",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0873",
+          "name": "Project File Infection"
+        },
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        },
+        {
+          "id": "T0845",
+          "name": "Program Upload"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.3 Backups (PR.IP-4) (PDF p. 129)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Treats PLC logic and configuration files as data to back up and protect."
+        },
+        {
+          "source": "iec-61131-3",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": "Defines the controller programming languages; cited by part only."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0004",
+      "type": "knowledge",
+      "text": "Knowledge of controller operating modes and mode protection (e.g., physical key switches, run, program and remote modes) and how mode changes enable logic or firmware changes",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1306",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0858",
+          "name": "Change Operating Mode"
+        },
+        {
+          "id": "T1693",
+          "name": "Modify Firmware"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix F.7.5 Configuration Management, CM-3 control enhancement (8) OT discussion (PDF p. 261)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Describes PLC key switches used to restrict program changes."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0005",
+      "type": "knowledge",
+      "text": "Knowledge of vendor, machine-builder and integrator access paths into manufacturing networks (e.g., remote support connections, remote access built into machines, on-site service laptops)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1300",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3",
+          "3.5"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0822",
+          "name": "External Remote Services"
+        },
+        {
+          "id": "T0886",
+          "name": "Remote Services"
+        },
+        {
+          "id": "T0864",
+          "name": "Transient Cyber Asset"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.10 Remote Access (PDF pp. 139-140)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Covers temporary vendor remote access and its controls."
+        },
+        {
+          "source": "isa-iec-62443-2-4",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": "Security requirements for IACS service providers (integrators, maintenance)."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0006",
+      "type": "knowledge",
+      "text": "Knowledge of how cyber events in manufacturing become production consequences such as line stoppage, scrap, latent quality defects and equipment damage",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1304",
+          "relation": "refines"
+        },
+        {
+          "id": "K1302",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0828",
+          "name": "Loss of Productivity and Revenue"
+        },
+        {
+          "id": "T0879",
+          "name": "Damage to Property"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-ir-8183r1",
+          "locator": "§5 Manufacturing Business/Mission Objectives",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Lists Maintain Production Goals and Maintain Quality of Product among manufacturing business/mission objectives."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.2.1 (PDF p. 189)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Notes extended downtimes and production losses."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PK-OT-0007",
+      "type": "knowledge",
+      "text": "Knowledge of Cyber-Informed Engineering (CIE) principles and consequence-driven analysis methods",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1310",
+          "relation": "complements"
+        },
+        {
+          "id": "T2042",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE (pp. 12-14)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Defines the 12 CIE principles in design/operational and organizational groups."
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Part A, Cyber-Informed Engineering Principles (p. 8)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix D.2.7 INL CIE and CCE (PDF p. 215)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PK-OT-0016",
+      "type": "knowledge",
+      "text": "Knowledge of controller programming features that attackers or careless changes can misuse (e.g., forced I/O, online edits, test or bypass logic, unused routines)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1306",
+          "relation": "complements"
+        },
+        {
+          "id": "K0068",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0835",
+          "name": "Manipulate I/O Image"
+        },
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        },
+        {
+          "id": "T0821",
+          "name": "Modify Controller Tasking"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.3 Threat Events and Incidents (PDF p. 196)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Unauthorized changes to programmed instructions."
+        },
+        {
+          "source": "plc-top20-v1.0",
+          "locator": "Practice 1",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Modular code makes changes easier to verify."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0017",
+      "type": "knowledge",
+      "text": "Knowledge of engineered controls that limit physical consequences independently of digital control systems (e.g., mechanical interlocks, relief devices, hardwired trips, physical travel limits)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1297",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Engineered controls (p. 13)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 2: Engineered Controls (p. 23)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PK-OT-0018",
+      "type": "knowledge",
+      "text": "Knowledge of the systems engineering lifecycle (concept through retirement) and the cybersecurity choices available to engineers in each phase",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1303",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Part A, Systems Engineering Lifecycle Model for CIE (p. 10)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Key Premises of the National CIE Strategy (p. 15)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Risk can be reduced across the lifecycle, most cheaply early in design."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PS-OT-0001",
+      "type": "skill",
+      "text": "Skill in reading controller logic (e.g., ladder diagram, structured text, function block diagram) to find security-relevant behavior such as hidden overrides or altered setpoints",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K0068",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        },
+        {
+          "id": "T0836",
+          "name": "Modify Parameter"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.3 Threat Events and Incidents (PDF p. 196)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "iec-61131-3",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PS-OT-0002",
+      "type": "skill",
+      "text": "Skill in configuring controller and engineering-software security features (e.g., access passwords, mode protection, protected program blocks)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "S0951",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0858",
+          "name": "Change Operating Mode"
+        },
+        {
+          "id": "T1694.001",
+          "name": "Default Credentials"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix F.7.5 Configuration Management, CM-3 control enhancement (8) OT discussion (PDF p. 261)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PS-OT-0008",
+      "type": "skill",
+      "text": "Skill in using controller diagnostics (e.g., operating-mode tracking, change detection, program checksums) to detect unexpected changes",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1298",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0843",
+          "name": "Program Download"
+        },
+        {
+          "id": "T0858",
+          "name": "Change Operating Mode"
+        },
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        }
+      ],
+      "citations": [
+        {
+          "source": "plc-top20-v1.0",
+          "locator": "Practices 2, 5",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Track operating modes; checksum or hash integrity checks on PLC code."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PS-OT-0009",
+      "type": "skill",
+      "text": "Skill in tracing how manipulation of a digital function could lead to a physical consequence",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T2042",
+          "relation": "complements"
+        },
+        {
+          "id": "K1310",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 1: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    }
+  ],
+  "coverage": {
+    "collections": [
+      {
+        "id": "cyberfire-operationaltechnology",
+        "title": "Cyber Fire OT puzzles",
+        "role": "example coverage source",
+        "commit": "b0bef0fedff6aab3bd90838281b02814bbba994d",
+        "commit_date": "2026-11-02"
+      }
+    ],
+    "summary": {
+      "all": {
+        "total": 47,
+        "covered": 6
+      },
+      "by_type": {
+        "task": {
+          "total": 13,
+          "covered": 0
+        },
+        "knowledge": {
+          "total": 26,
+          "covered": 5
+        },
+        "skill": {
+          "total": 8,
+          "covered": 1
+        }
+      },
+      "by_flag": {
+        "core": {
+          "total": 35,
+          "covered": 5
+        },
+        "additional": {
+          "total": 12,
+          "covered": 1
+        }
+      },
+      "by_source": {
+        "nice": {
+          "total": 23,
+          "covered": 6
+        },
+        "plus": {
+          "total": 24,
+          "covered": 0
+        }
+      },
+      "by_basis": {
+        "inherited": {
+          "total": 0,
+          "covered": 0
+        },
+        "added-nice": {
+          "total": 23,
+          "covered": 6
+        },
+        "plus": {
+          "total": 24,
+          "covered": 0
+        }
+      }
+    },
+    "modules": [
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/36",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/36/puzzle.md",
+        "objective": "Truth Tables",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/37",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/37/puzzle.md",
+        "objective": "Truth Tables",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/38",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/38/puzzle.md",
+        "objective": "Truth Tables",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/39",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/39/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/40",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/40/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/41",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/41/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/42",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/42/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/43",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/43/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/44",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/44/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/45",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/45/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/46",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/46/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/47",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/47/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/48",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/48/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/49",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/49/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/50",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/50/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/0",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/0/puzzle.md",
+        "objective": "welcome to class",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/1/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/10",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/10/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/11",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/11/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/12",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/12/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/13",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/13/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/14",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/14/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/15",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/15/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/16",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/16/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/17",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/17/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/18",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/18/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/19",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/19/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/20",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/20/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/21",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/21/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/22",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/22/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/23",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/23/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/24",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/24/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/25",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/25/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/4/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/5",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/5/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/7/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/8",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/8/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/9/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/4/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/5",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/5/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/13",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/13/puzzle.md",
+        "objective": "hack the planet",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Warmup/7/puzzle.md",
+        "objective": "sha1 signatures",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "S0757"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/10",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/10/puzzle.md",
+        "objective": "Identify unauthorized setpoint modifications in Structured Text.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/12",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/12/puzzle.md",
+        "objective": "Execute recovery steps and verify logic integrity after a controller reflash.",
+        "release_id": null,
+        "statements_in_role": [
+          "S0757"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/26",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/26/puzzle.md",
+        "objective": "Analyze ladder logic to detect unauthorized changes.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/29",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/29/puzzle.md",
+        "objective": "Detect unauthorized logic changes in Structured Text.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/7/puzzle.md",
+        "objective": "Interpret control logic and correlate behavior to a physical process.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0068",
+          "K0749"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/8",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/8/puzzle.md",
+        "objective": "Compare baseline vs modified logic state for hidden manipulation.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/9/puzzle.md",
+        "objective": "Identify a hidden logic override in a ladder logic comparison.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/1/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/14",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/14/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/15",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/15/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/17",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/17/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/18",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/18/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/19",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/19/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/2",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/2/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/20",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/20/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/21",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/21/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/22",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/22/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/23",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/23/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/24",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/24/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/25",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/25/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/26",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/26/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/3",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/3/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/4/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/40",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/40/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0068"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-device/1000",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-device/1000/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0948"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-device/1001",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-device/1001/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0948"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-device/1010",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-device/1010/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0948"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-grokwell/300",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-grokwell/300/puzzle.md",
+        "objective": null,
+        "release_id": null,
+        "statements_in_role": [
+          "K1081"
+        ]
+      }
+    ],
+    "gaps": [
+      "T1020",
+      "T2033",
+      "K0685",
+      "K1122",
+      "K1223",
+      "K1287",
+      "K1293",
+      "K1294",
+      "K1297",
+      "K1300",
+      "K1302",
+      "K1304",
+      "K1306",
+      "K1309",
+      "S0942",
+      "S0943",
+      "S0944",
+      "PT-OT-0001",
+      "PT-OT-0002",
+      "PT-OT-0004",
+      "PT-OT-0005",
+      "PT-OT-0006",
+      "PT-OT-0025",
+      "PT-OT-0026",
+      "PT-OT-0027",
+      "PT-OT-0028",
+      "PT-OT-0030",
+      "PT-OT-0033",
+      "PK-OT-0002",
+      "PK-OT-0003",
+      "PK-OT-0004",
+      "PK-OT-0005",
+      "PK-OT-0006",
+      "PK-OT-0007",
+      "PK-OT-0016",
+      "PK-OT-0017",
+      "PK-OT-0018",
+      "PS-OT-0001",
+      "PS-OT-0002",
+      "PS-OT-0008",
+      "PS-OT-0009"
+    ],
+    "provenance_note": "author-tagged = tag assigned by the module's author; inferred = mapping proposed by nice-plus. Neither is independently verified."
+  },
+  "sources": [
+    {
+      "id": "cyberfire-operationaltechnology",
+      "title": "Cyber Fire OT puzzles (operationaltechnology repository)",
+      "publisher": "Cyber Fire / Idaho National Laboratory",
+      "version": "git commit; see data/coverage/cyberfire-operationaltechnology.json",
+      "date": null,
+      "url": null,
+      "licence": "The puzzles are not public. Only puzzle paths, NICE tags, objective lines and INL release IDs are imported and published here; puzzle text, hints and answers are never copied.",
+      "held": "data/coverage/cyberfire-operationaltechnology.json (tags only)",
+      "note": "Example coverage source. Tags are assigned by puzzle authors and have not been independently verified."
+    },
+    {
+      "id": "doe-cie-strategy",
+      "title": "National Cyber-Informed Engineering Strategy from the U.S. Department of Energy",
+      "publisher": "U.S. Department of Energy, Office of Cybersecurity, Energy Security, and Emergency Response (CESER)",
+      "version": null,
+      "date": "2022-06",
+      "url": "https://www.energy.gov/ceser/articles/us-department-energys-doe-national-cyber-informed-engineering-cie-strategy-document",
+      "licence": "US Government work",
+      "held": null,
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://www.energy.gov/sites/default/files/2022-06/FINAL%20DOE%20National%20CIE%20Strategy%20-%20June%202022_0.pdf. Locators use the document's printed page labels ('PAGE | n'). The 12 CIE principles are on pp. 12-14.",
+      "sha256": "eadfc36b6114c71145be998ea2b3c28e127b1a70af9ee8197ffa76b1f0b7709a"
+    },
+    {
+      "id": "iec-61131-3",
+      "title": "IEC 61131-3, Programmable controllers, Part 3: Programming languages",
+      "publisher": "IEC",
+      "version": null,
+      "date": null,
+      "url": null,
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null
+    },
+    {
+      "id": "inl-cie-implementation-guide",
+      "title": "Cyber-Informed Engineering Implementation Guide",
+      "publisher": "Idaho National Laboratory (INL)",
+      "version": "1.0 (INL/RPT-23-74072)",
+      "date": "2023-08-07",
+      "url": "https://www.osti.gov/biblio/1995796",
+      "licence": "US Government-sponsored report (INL); cite and paraphrase.",
+      "held": null,
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://www.osti.gov/servlets/purl/1995796. Linked from https://www.energy.gov/ceser/cyber-informed-engineering. Locators are principle sections with the guide's printed page numbers from its contents page.",
+      "sha256": "67e5c8f8ab206af04d47710a5eeccb86f88706deb376d3879d7429718f376bdc"
+    },
+    {
+      "id": "isa-iec-62443-2-4",
+      "title": "ISA/IEC 62443-2-4, Security program requirements for IACS service providers",
+      "publisher": "ISA / IEC",
+      "version": null,
+      "date": null,
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null,
+      "note": "No copy held. Citations are part-level and clause numbers are marked to-verify."
+    },
+    {
+      "id": "isa-iec-62443-3-3",
+      "title": "ISA/IEC 62443-3-3, System security requirements and security levels",
+      "publisher": "ISA / IEC",
+      "version": null,
+      "date": null,
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null,
+      "note": "No copy held. Citations are part-level and clause numbers are marked to-verify."
+    },
+    {
+      "id": "mitre-attack-ics-v20.1",
+      "title": "MITRE ATT&CK for ICS (STIX 2.1 collection)",
+      "publisher": "The MITRE Corporation",
+      "version": "20.1",
+      "date": "2026-11-05",
+      "url": "https://attack.mitre.org/matrices/ics/",
+      "licence": "MITRE ATT&CK terms of use (sources/attack-ics/LICENSE.txt)",
+      "held": "sources/attack-ics/v20.1/ics-attack.json",
+      "sha256": "3f6448369f9135ade84ff6437479441530d0b262f910dca991879a7146b524ff",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "nist-ir-8183r1",
+      "title": "NISTIR 8183 Rev. 1, Cybersecurity Framework Version 1.1 Manufacturing Profile",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "Rev. 1",
+      "date": "2020-10",
+      "url": "https://csrc.nist.gov/pubs/ir/8183/r1/final",
+      "licence": "US Government work",
+      "held": null,
+      "sha256": "ed32a2662e064012174d0b2dfe021aa25fe29c6997909b2dcec641b37425fef3",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8183r1.pdf. No Rev. 2 final was found at csrc.nist.gov on 2026-11-20."
+    },
+    {
+      "id": "nist-nice-v2.2.0",
+      "title": "Workforce Framework for Cybersecurity (NICE Framework) Components v2.2.0",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "2.2.0",
+      "date": "2026-04-28",
+      "url": "https://csrc.nist.gov/csrc/media/Projects/cprt/documents/nice/v2-2-0_nf_components.json",
+      "licence": "US Government work",
+      "held": "sources/nice/v2.2.0/v2-2-0_nf_components.json",
+      "sha256": "3ad1d9d7e0d6b32895cb569f86c3bc05af2937a68e96eab4d1c9b3d9fa6e575e",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "nist-sp-800-82r3",
+      "title": "NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "Rev. 3",
+      "date": "2023-09",
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "licence": "US Government work",
+      "held": null,
+      "sha256": "608f554514d381853e24e0b33123b7080fbd757826f460032690aade63394616",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf. Locators give the section and the PDF page index (not the printed page number)."
+    },
+    {
+      "id": "plc-top20-v1.0",
+      "title": "Secure PLC Coding Practices: Top 20 List",
+      "publisher": "Top 20 Secure PLC Coding Practices project",
+      "version": "1.0",
+      "date": "2021-06-15",
+      "url": "https://www.plc-security.com/",
+      "licence": "Not stated in the document; cite and paraphrase only.",
+      "held": null,
+      "sha256": "03727545f4554f826d2e05446dc0149c5029fdde7661b7e62b6101b951285593",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://www.plc-security.com/content/Top_20_Secure_PLC_Coding_Practices_V1.0.pdf. Locators are practice numbers."
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "$comment": "Every citation in nice-plus names a source id from this file. 'held' says whether a copy is kept in this repo. Copyrighted standards are cited by part only; their text never goes in this repo.",
+  "sources": [
+    {
+      "id": "nist-nice-v2.2.0",
+      "title": "Workforce Framework for Cybersecurity (NICE Framework) Components v2.2.0",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "2.2.0",
+      "date": "2026-04-28",
+      "url": "https://csrc.nist.gov/csrc/media/Projects/cprt/documents/nice/v2-2-0_nf_components.json",
+      "licence": "US Government work",
+      "held": "sources/nice/v2.2.0/v2-2-0_nf_components.json",
+      "sha256": "3ad1d9d7e0d6b32895cb569f86c3bc05af2937a68e96eab4d1c9b3d9fa6e575e",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "mitre-attack-ics-v20.1",
+      "title": "MITRE ATT&CK for ICS (STIX 2.1 collection)",
+      "publisher": "The MITRE Corporation",
+      "version": "20.1",
+      "date": "2026-11-05",
+      "url": "https://attack.mitre.org/matrices/ics/",
+      "licence": "MITRE ATT&CK terms of use (sources/attack-ics/LICENSE.txt)",
+      "held": "sources/attack-ics/v20.1/ics-attack.json",
+      "sha256": "3f6448369f9135ade84ff6437479441530d0b262f910dca991879a7146b524ff",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "nist-sp-800-82r3",
+      "title": "NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "Rev. 3",
+      "date": "2023-09",
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "licence": "US Government work",
+      "held": null,
+      "sha256": "608f554514d381853e24e0b33123b7080fbd757826f460032690aade63394616",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf. Locators give the section and the PDF page index (not the printed page number)."
+    },
+    {
+      "id": "nist-ir-8183r1",
+      "title": "NISTIR 8183 Rev. 1, Cybersecurity Framework Version 1.1 Manufacturing Profile",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "Rev. 1",
+      "date": "2020-10",
+      "url": "https://csrc.nist.gov/pubs/ir/8183/r1/final",
+      "licence": "US Government work",
+      "held": null,
+      "sha256": "ed32a2662e064012174d0b2dfe021aa25fe29c6997909b2dcec641b37425fef3",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8183r1.pdf. No Rev. 2 final was found at csrc.nist.gov on 2026-11-20."
+    },
+    {
+      "id": "doe-cie-strategy",
+      "title": "National Cyber-Informed Engineering Strategy from the U.S. Department of Energy",
+      "publisher": "U.S. Department of Energy, Office of Cybersecurity, Energy Security, and Emergency Response (CESER)",
+      "version": null,
+      "date": "2022-06",
+      "url": "https://www.energy.gov/ceser/articles/us-department-energys-doe-national-cyber-informed-engineering-cie-strategy-document",
+      "licence": "US Government work",
+      "held": null,
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://www.energy.gov/sites/default/files/2022-06/FINAL%20DOE%20National%20CIE%20Strategy%20-%20June%202022_0.pdf. Locators use the document's printed page labels ('PAGE | n'). The 12 CIE principles are on pp. 12-14.",
+      "sha256": "eadfc36b6114c71145be998ea2b3c28e127b1a70af9ee8197ffa76b1f0b7709a"
+    },
+    {
+      "id": "inl-cie-implementation-guide",
+      "title": "Cyber-Informed Engineering Implementation Guide",
+      "publisher": "Idaho National Laboratory (INL)",
+      "version": "1.0 (INL/RPT-23-74072)",
+      "date": "2023-08-07",
+      "url": "https://www.osti.gov/biblio/1995796",
+      "licence": "US Government-sponsored report (INL); cite and paraphrase.",
+      "held": null,
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://www.osti.gov/servlets/purl/1995796. Linked from https://www.energy.gov/ceser/cyber-informed-engineering. Locators are principle sections with the guide's printed page numbers from its contents page.",
+      "sha256": "67e5c8f8ab206af04d47710a5eeccb86f88706deb376d3879d7429718f376bdc"
+    },
+    {
+      "id": "plc-top20-v1.0",
+      "title": "Secure PLC Coding Practices: Top 20 List",
+      "publisher": "Top 20 Secure PLC Coding Practices project",
+      "version": "1.0",
+      "date": "2021-06-15",
+      "url": "https://www.plc-security.com/",
+      "licence": "Not stated in the document; cite and paraphrase only.",
+      "held": null,
+      "sha256": "03727545f4554f826d2e05446dc0149c5029fdde7661b7e62b6101b951285593",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://www.plc-security.com/content/Top_20_Secure_PLC_Coding_Practices_V1.0.pdf. Locators are practice numbers."
+    },
+    {
+      "id": "isa-iec-62443-2-1",
+      "title": "ISA/IEC 62443-2-1, Security program requirements for IACS asset owners",
+      "publisher": "ISA / IEC",
+      "version": null,
+      "date": null,
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null,
+      "note": "No copy held. Citations are part-level and clause numbers are marked to-verify."
+    },
+    {
+      "id": "isa-iec-62443-2-4",
+      "title": "ISA/IEC 62443-2-4, Security program requirements for IACS service providers",
+      "publisher": "ISA / IEC",
+      "version": null,
+      "date": null,
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null,
+      "note": "No copy held. Citations are part-level and clause numbers are marked to-verify."
+    },
+    {
+      "id": "isa-iec-62443-3-2",
+      "title": "ISA/IEC 62443-3-2, Security risk assessment for system design",
+      "publisher": "ISA / IEC",
+      "version": null,
+      "date": null,
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null,
+      "note": "No copy held. Citations are part-level and clause numbers are marked to-verify."
+    },
+    {
+      "id": "isa-iec-62443-3-3",
+      "title": "ISA/IEC 62443-3-3, System security requirements and security levels",
+      "publisher": "ISA / IEC",
+      "version": null,
+      "date": null,
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null,
+      "note": "No copy held. Citations are part-level and clause numbers are marked to-verify."
+    },
+    {
+      "id": "iec-62264-1",
+      "title": "IEC 62264-1 (ISA-95), Enterprise-control system integration, Part 1: Models and terminology",
+      "publisher": "IEC / ISA",
+      "version": null,
+      "date": null,
+      "url": null,
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null
+    },
+    {
+      "id": "iec-61131-3",
+      "title": "IEC 61131-3, Programmable controllers, Part 3: Programming languages",
+      "publisher": "IEC",
+      "version": null,
+      "date": null,
+      "url": null,
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null
+    },
+    {
+      "id": "cyberfire-operationaltechnology",
+      "title": "Cyber Fire OT puzzles (operationaltechnology repository)",
+      "publisher": "Cyber Fire / Idaho National Laboratory",
+      "version": "git commit; see data/coverage/cyberfire-operationaltechnology.json",
+      "date": null,
+      "url": null,
+      "licence": "The puzzles are not public. Only puzzle paths, NICE tags, objective lines and INL release IDs are imported and published here; puzzle text, hints and answers are never copied.",
+      "held": "data/coverage/cyberfire-operationaltechnology.json (tags only)",
+      "note": "Example coverage source. Tags are assigned by puzzle authors and have not been independently verified."
+    }
+  ]
+}

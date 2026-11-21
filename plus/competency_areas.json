@@ -1,0 +1,328 @@
+{
+  "$comment": "NICE Plus competency areas (DRAFT). A competency area groups NICE and plus statements around a theme any role can draw on, following the NICE Framework's own competency areas. IDs PC-OT-### never collide with NICE's NF-COM-###.",
+  "competency_areas": [
+    {
+      "id": "PC-OT-001",
+      "title": "Cyber-Informed Engineering",
+      "status": "draft",
+      "description": "DRAFT. The capability to apply Cyber-Informed Engineering (CIE): using engineering design, not only added security controls, to eliminate or limit the consequences a cyber attack on an industrial system could cause, across the whole system lifecycle. Organized by the 12 CIE principles in DOE's National CIE Strategy and INL's CIE Implementation Guide. CIE is aimed at the engineers and technicians who design, build, operate and maintain physical infrastructure, not only at cybersecurity specialists.",
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE (pp. 12-14)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Part B, Principles 1-12 (pp. 13-134)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix D.2.7 INL CIE and CCE (PDF p. 215)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "open_questions": [
+        "Should CIE be a competency area (as here) or also a role, e.g. a CIE lead engineer?",
+        "CIE comes from the energy sector. Which principles need different statements for manufacturing?"
+      ],
+      "groups": [
+        {
+          "title": "Consequence-focused design",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Consequence-focused design (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 1: Consequence-Focused Design (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0027",
+            "PS-OT-0009",
+            "PK-OT-0006",
+            "T2042",
+            "T2035"
+          ]
+        },
+        {
+          "title": "Engineered controls",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Engineered controls (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 2: Engineered Controls (p. 23)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0028",
+            "PK-OT-0017",
+            "T2041"
+          ]
+        },
+        {
+          "title": "Secure information architecture",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Secure information architecture (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 3: Secure Information Architecture (p. 33)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0029",
+            "PT-OT-0017",
+            "PT-OT-0018"
+          ]
+        },
+        {
+          "title": "Design simplification",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Design simplification (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 4: Design Simplification (p. 43)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0030",
+            "PT-OT-0026"
+          ]
+        },
+        {
+          "title": "Resilient layered defenses",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Resilient layered defenses (p. 13)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 5: Layered Defenses (p. 52)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0031",
+            "K0791"
+          ]
+        },
+        {
+          "title": "Active defense",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Active defense (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 6: Active Defense (p. 61)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0032",
+            "K1290",
+            "K1291"
+          ]
+        },
+        {
+          "title": "Interdependency evaluation",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Interdependency evaluation (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 7: Interdependency Evaluation (p. 71)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0033",
+            "T1020"
+          ]
+        },
+        {
+          "title": "Digital asset awareness",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Digital asset awareness (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 8: Digital Asset Awareness (p. 81)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "T2047",
+            "T2028",
+            "K1307"
+          ]
+        },
+        {
+          "title": "Cyber-secure supply chain controls",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Cyber-secure supply chain controls (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 9: Cyber-Secure Supply Chain Controls (p. 92)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0009",
+            "PT-OT-0023",
+            "T1399"
+          ]
+        },
+        {
+          "title": "Planned resilience with no assumed security",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Planned resilience with no assumed security (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 10: Planned Resilience (p. 104)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0034",
+            "PT-OT-0001",
+            "PT-OT-0014"
+          ]
+        },
+        {
+          "title": "Engineering information control",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Engineering information control (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 11: Engineering Information Control (p. 114)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0035"
+          ]
+        },
+        {
+          "title": "Cybersecurity culture",
+          "citations": [
+            {
+              "source": "doe-cie-strategy",
+              "locator": "Principles of CIE: Cybersecurity culture (p. 14)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            },
+            {
+              "source": "inl-cie-implementation-guide",
+              "locator": "Principle 12: Organizational Culture (p. 126)",
+              "locator_status": "verified",
+              "support": "related",
+              "note": null
+            }
+          ],
+          "statements": [
+            "PT-OT-0020",
+            "PT-OT-0024"
+          ]
+        }
+      ],
+      "statements": [
+        "PK-OT-0007",
+        "PK-OT-0018"
+      ]
+    }
+  ]
+}

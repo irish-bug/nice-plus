@@ -1,0 +1,2472 @@
+{
+  "$comment": "NICE Plus statements (DRAFT). Authored by nice-plus, not NIST. Each cites public sources that support it; locator_status says whether we checked the locator against the source. 'relates_to_nice' shows which NICE statement each one refines or complements. ot_context.sectors lists the sectors a statement is specific to; an empty list means it applies to any OT sector. ATT&CK IDs are checked against ATT&CK for ICS v20.1 at build time.",
+  "statements": [
+    {
+      "id": "PK-OT-0001",
+      "type": "knowledge",
+      "text": "Knowledge of the ISA-95 (IEC 62264) functional hierarchy and how manufacturing operations systems (e.g., MES, batch and recipe management) map onto Purdue levels and network zones",
+      "relates_to_nice": [
+        {
+          "id": "K1293",
+          "relation": "refines"
+        },
+        {
+          "id": "K1300",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "2",
+          "3",
+          "3.5",
+          "4"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§5.2.3.1 Network Architecture (PDF p. 88)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Names Purdue model and ISA-95 levels as reference architectures for segmentation."
+        },
+        {
+          "source": "iec-62264-1",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": "Defines the ISA-95 functional hierarchy; cited by part only."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0002",
+      "type": "knowledge",
+      "text": "Knowledge of industrial protocol families common in manufacturing (e.g., EtherNet/IP and CIP, PROFINET, Modbus TCP, OPC UA) and which security features each does or does not provide",
+      "relates_to_nice": [
+        {
+          "id": "K1309",
+          "relation": "refines"
+        },
+        {
+          "id": "S0951",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": [
+          "EtherNet/IP-CIP",
+          "PROFINET",
+          "Modbus",
+          "OPC UA"
+        ]
+      },
+      "attack_ics": [
+        "T1692.001"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "section to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": "Discusses OT protocols and their security limitations; exact section not yet pinned."
+        },
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": "T1692.001",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Command messages sent over industrial protocols without authentication."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0003",
+      "type": "knowledge",
+      "text": "Knowledge of controller programs and engineering project files (e.g., IEC 61131-3 ladder diagram, structured text, function block diagram) as security-critical assets",
+      "relates_to_nice": [
+        {
+          "id": "K1306",
+          "relation": "refines"
+        },
+        {
+          "id": "K0068",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0873",
+        "T0889",
+        "T0845"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.3 Backups (PR.IP-4) (PDF p. 129)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Treats PLC logic and configuration files as data to back up and protect."
+        },
+        {
+          "source": "iec-61131-3",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": "Defines the controller programming languages; cited by part only."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0004",
+      "type": "knowledge",
+      "text": "Knowledge of controller operating modes and mode protection (e.g., physical key switches, run, program and remote modes) and how mode changes enable logic or firmware changes",
+      "relates_to_nice": [
+        {
+          "id": "K1306",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0858",
+        "T1693"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix F.7.5 Configuration Management, CM-3 control enhancement (8) OT discussion (PDF p. 261)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Describes PLC key switches used to restrict program changes."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0005",
+      "type": "knowledge",
+      "text": "Knowledge of vendor, machine-builder and integrator access paths into manufacturing networks (e.g., remote support connections, remote access built into machines, on-site service laptops)",
+      "relates_to_nice": [
+        {
+          "id": "K1300",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3",
+          "3.5"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0822",
+        "T0886",
+        "T0864"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.10 Remote Access (PDF pp. 139-140)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Covers temporary vendor remote access and its controls."
+        },
+        {
+          "source": "isa-iec-62443-2-4",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": "Security requirements for IACS service providers (integrators, maintenance)."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0006",
+      "type": "knowledge",
+      "text": "Knowledge of how cyber events in manufacturing become production consequences such as line stoppage, scrap, latent quality defects and equipment damage",
+      "relates_to_nice": [
+        {
+          "id": "K1304",
+          "relation": "refines"
+        },
+        {
+          "id": "K1302",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0828",
+        "T0879"
+      ],
+      "citations": [
+        {
+          "source": "nist-ir-8183r1",
+          "locator": "§5 Manufacturing Business/Mission Objectives",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Lists Maintain Production Goals and Maintain Quality of Product among manufacturing business/mission objectives."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.2.1 (PDF p. 189)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Notes extended downtimes and production losses."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0007",
+      "type": "knowledge",
+      "text": "Knowledge of Cyber-Informed Engineering (CIE) principles and consequence-driven analysis methods",
+      "relates_to_nice": [
+        {
+          "id": "K1310",
+          "relation": "complements"
+        },
+        {
+          "id": "T2042",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE (pp. 12-14)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Defines the 12 CIE principles in design/operational and organizational groups."
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Part A, Cyber-Informed Engineering Principles (p. 8)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix D.2.7 INL CIE and CCE (PDF p. 215)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0008",
+      "type": "knowledge",
+      "text": "Knowledge of MITRE ATT&CK for ICS tactics and techniques",
+      "relates_to_nice": [
+        {
+          "id": "K1301",
+          "relation": "complements"
+        },
+        {
+          "id": "K1289",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix D.3.5 MITRE ATT&CK for ICS (PDF p. 218)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0001",
+      "type": "task",
+      "text": "Maintain backups of controller programs, configurations and firmware, verify their integrity, and test restoration",
+      "relates_to_nice": [
+        {
+          "id": "S0942",
+          "relation": "complements"
+        },
+        {
+          "id": "T1124",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0809",
+        "T0889"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.3 Backups (PR.IP-4) (PDF p. 129)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Back up PLC logic and configuration; verify backups for reliability and integrity; test restoration. Firmware is a nice-plus addition."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix E.3.3 File Hashing (PDF p. 228)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0002",
+      "type": "task",
+      "text": "Establish a process to detect unauthorized changes to controller logic, parameters and setpoints by comparing running programs against approved baselines",
+      "relates_to_nice": [
+        {
+          "id": "T1243",
+          "relation": "refines"
+        },
+        {
+          "id": "K1298",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0889",
+        "T0836",
+        "T0843",
+        "T0821"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix E.3.3 File Hashing (PDF p. 228)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Hashes can validate the integrity of program logic."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.3 Threat Events and Incidents (PDF p. 196)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Manipulation of control: unauthorized changes to programmed instructions."
+        },
+        {
+          "source": "isa-iec-62443-3-3",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": "System integrity requirements."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0003",
+      "type": "task",
+      "text": "Define security requirements for vendor, machine-builder and integrator remote access to production systems (e.g., approval, time limits, session monitoring, disconnection)",
+      "relates_to_nice": [
+        {
+          "id": "T2038",
+          "relation": "complements"
+        },
+        {
+          "id": "S0461",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "2",
+          "3",
+          "3.5"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0822",
+        "T0886"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.10 Remote Access (PDF pp. 139-140)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Request process for remote access, temporary vendor access, removal when no longer required (timers), monitoring remote activity, labeling devices for quick disconnection."
+        },
+        {
+          "source": "isa-iec-62443-2-4",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0004",
+      "type": "task",
+      "text": "Define controls for transient cyber assets and removable media brought into production areas",
+      "relates_to_nice": [
+        {
+          "id": "K1305",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0864",
+        "T0847"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.7 Media Protection (PR.PT-2) (PDF p. 136)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Restricts removable media and devices on OT nodes; does not use the term transient cyber assets."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.1.2 Physical Access Controls (PDF p. 116)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0005",
+      "type": "task",
+      "text": "Schedule cybersecurity changes (e.g., patches, firmware updates, firewall rule changes) around production schedules and planned downtime, with tested rollback",
+      "relates_to_nice": [
+        {
+          "id": "T2033",
+          "relation": "refines"
+        },
+        {
+          "id": "K1287",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.2 Configuration Change Control (PDF pp. 128-129)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Schedule changes in maintenance downtime to limit impact."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§5.2.5.2 Patching (PDF p. 94)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Test patches in a test environment first."
+        },
+        {
+          "source": "nist-ir-8183r1",
+          "locator": "§5 Manufacturing Business/Mission Objectives",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0006",
+      "type": "task",
+      "text": "Assess the security of engineering workstations and controller programming software",
+      "relates_to_nice": [
+        {
+          "id": "T1619",
+          "relation": "refines"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0873",
+        "T0843",
+        "T0845"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.2.3 Malicious Code Detection (PDF p. 149)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.1.1 Logical Access Controls (PDF p. 116)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "RBAC on engineering workstations."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0007",
+      "type": "task",
+      "text": "Map ATT&CK for ICS techniques to the plant's assets and processes to prioritize mitigations",
+      "relates_to_nice": [
+        {
+          "id": "T2042",
+          "relation": "complements"
+        },
+        {
+          "id": "T1164",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.1.2 Assessing Risk in an OT Environment (PDF p. 68)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Refers to ATT&CK for ICS in risk assessment."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0008",
+      "type": "task",
+      "text": "Specify network monitoring requirements for passive visibility of industrial protocol traffic within and between plant zones",
+      "relates_to_nice": [
+        {
+          "id": "K1308",
+          "relation": "complements"
+        },
+        {
+          "id": "S0941",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": [
+          "EtherNet/IP-CIP",
+          "PROFINET",
+          "Modbus",
+          "OPC UA"
+        ]
+      },
+      "attack_ics": [
+        "T1692.001",
+        "T0846"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.2.1 Network Monitoring (DE.CM-1) (PDF p. 147)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§5.2.3.3 Network Monitoring (PDF pp. 91-92)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix E.2.2 Passive Scanning (PDF p. 225)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0009",
+      "type": "task",
+      "text": "Specify cybersecurity requirements in machine-builder and integrator contracts for new production equipment",
+      "relates_to_nice": [
+        {
+          "id": "T2038",
+          "relation": "refines"
+        },
+        {
+          "id": "S0461",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix F.7.16 System and Services Acquisition (PDF pp. 297-298)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Contracts with third-party integrators."
+        },
+        {
+          "source": "isa-iec-62443-2-4",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PS-OT-0001",
+      "type": "skill",
+      "text": "Skill in reading controller logic (e.g., ladder diagram, structured text, function block diagram) to find security-relevant behavior such as hidden overrides or altered setpoints",
+      "relates_to_nice": [
+        {
+          "id": "K0068",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0889",
+        "T0836"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.3 Threat Events and Incidents (PDF p. 196)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "iec-61131-3",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PS-OT-0002",
+      "type": "skill",
+      "text": "Skill in configuring controller and engineering-software security features (e.g., access passwords, mode protection, protected program blocks)",
+      "relates_to_nice": [
+        {
+          "id": "S0951",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0858",
+        "T1694.001"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix F.7.5 Configuration Management, CM-3 control enhancement (8) OT discussion (PDF p. 261)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PS-OT-0003",
+      "type": "skill",
+      "text": "Skill in analyzing industrial protocol traffic to tell normal process communication from unauthorized commands",
+      "relates_to_nice": [
+        {
+          "id": "K1309",
+          "relation": "complements"
+        },
+        {
+          "id": "S0939",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": [
+          "EtherNet/IP-CIP",
+          "PROFINET",
+          "Modbus"
+        ]
+      },
+      "attack_ics": [
+        "T1692.001",
+        "T0836"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.2.1 Network Monitoring (DE.CM-1) (PDF p. 147)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "A baseline of normal OT traffic helps separate attacks from transient conditions."
+        }
+      ]
+    },
+    {
+      "id": "PS-OT-0004",
+      "type": "skill",
+      "text": "Skill in testing OT security controls without disrupting production (e.g., passive methods first, test environments, coordination with operations)",
+      "relates_to_nice": [
+        {
+          "id": "K1295",
+          "relation": "complements"
+        },
+        {
+          "id": "T2037",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix E.2.3 Active Scanning (PDF p. 226)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Active scans can affect device process state."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§5.2.5.2 Patching (PDF p. 94)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0009",
+      "type": "knowledge",
+      "text": "Knowledge of OT detection data sources (e.g., controller and engineering-software logs, historian and alarm data, network traffic at zone boundaries) and their limitations",
+      "relates_to_nice": [
+        {
+          "id": "K1308",
+          "relation": "refines"
+        },
+        {
+          "id": "K1298",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.1 Anomalies and Events (DE.AE) (PDF pp. 143-144)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Collect and correlate event data from multiple sources and sensors."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§5.2.3.2 Centralized Logging (PDF p. 90)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0010",
+      "type": "knowledge",
+      "text": "Knowledge of OT containment options and their process consequences (e.g., isolating zones, disconnecting remote access, moving to manual operation, controlled shutdown)",
+      "relates_to_nice": [
+        {
+          "id": "K0724",
+          "relation": "refines"
+        },
+        {
+          "id": "K1304",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3",
+          "3.5"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.4.4 Response Mitigation (RS.MI) (PDF p. 153)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Mitigation may involve process shutdowns or communication disconnects that affect operations."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.5 Response and Recovery Plans (PDF p. 133)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Lists transitioning to manual operations."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0011",
+      "type": "knowledge",
+      "text": "Knowledge of OT incident coordination partners and reporting channels (e.g., equipment vendors, integrators, sector information sharing organizations, government agencies)",
+      "relates_to_nice": [
+        {
+          "id": "K1181",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.4.2 Response Communications (RS.CO) (PDF pp. 151-152)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Names OT technical support such as vendors and integrators among response contacts."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0012",
+      "type": "knowledge",
+      "text": "Knowledge of signs that a process abnormality may have a cyber cause (e.g., unexplained setpoint or mode changes, HMI values that disagree with field indications, unexpected or suppressed alarms)",
+      "relates_to_nice": [
+        {
+          "id": "K1301",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0836",
+        "T0858",
+        "T0832",
+        "T0878"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.1 Anomalies and Events (DE.AE) (PDF p. 144)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Operational events such as unauthorized configuration changes and unplanned shutdowns."
+        },
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": "T0832, T0878",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0013",
+      "type": "knowledge",
+      "text": "Knowledge of site rules for removable media, personal devices and vendor access in control rooms and production areas",
+      "relates_to_nice": [
+        {
+          "id": "K0677",
+          "relation": "refines"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0847",
+        "T0864"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.7 Media Protection (PR.PT-2) (PDF p. 136)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.5 Establish a Cybersecurity Awareness Training Program for the OT Environment (PDF p. 58)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Training should outline the steps personnel follow when interacting with OT systems."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0014",
+      "type": "knowledge",
+      "text": "Knowledge of OT security architecture patterns (e.g., a DMZ between enterprise and control networks, unidirectional gateways, jump hosts for remote access) and their trade-offs",
+      "relates_to_nice": [
+        {
+          "id": "K0710",
+          "relation": "refines"
+        },
+        {
+          "id": "K1300",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "3",
+          "3.5",
+          "4"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§5.2.3.1 Network Architecture (PDF p. 88)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "DMZ as an enforcement boundary; firewalls and unidirectional gateways for segmentation."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix E.1.2 Unidirectional Gateways (PDF p. 224)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0015",
+      "type": "knowledge",
+      "text": "Knowledge of how OT security priorities and constraints differ from IT (e.g., availability and safety first, long equipment lifetimes, limited patching windows, vendor-qualified changes)",
+      "relates_to_nice": [
+        {
+          "id": "K0736",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§2.4 Comparing OT and IT System Security (PDF p. 45)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Section number taken from document order; title and page checked."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0016",
+      "type": "knowledge",
+      "text": "Knowledge of controller programming features that attackers or careless changes can misuse (e.g., forced I/O, online edits, test or bypass logic, unused routines)",
+      "relates_to_nice": [
+        {
+          "id": "K1306",
+          "relation": "complements"
+        },
+        {
+          "id": "K0068",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0835",
+        "T0889",
+        "T0821"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.3 Threat Events and Incidents (PDF p. 196)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Unauthorized changes to programmed instructions."
+        },
+        {
+          "source": "plc-top20-v1.0",
+          "locator": "Practice 1",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Modular code makes changes easier to verify."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0010",
+      "type": "task",
+      "text": "Build and maintain a baseline of normal industrial network communication (e.g., hosts, protocols, function codes, timing) for each zone",
+      "relates_to_nice": [
+        {
+          "id": "K1308",
+          "relation": "complements"
+        },
+        {
+          "id": "T1084",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T1692.001",
+        "T0846",
+        "T0888"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.2.1 Network Monitoring (DE.CM-1) (PDF p. 147)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "A baseline of the normal OT network helps distinguish attacks from transient conditions."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.1 Anomalies and Events (DE.AE) (PDF p. 144)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Networking events: unexpected communication, new ports or protocols."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0011",
+      "type": "task",
+      "text": "Correlate network detections with process data (e.g., historian trends, alarms, operator actions) to judge whether a process change was authorized",
+      "relates_to_nice": [
+        {
+          "id": "S0859",
+          "relation": "refines"
+        },
+        {
+          "id": "T1348",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0836",
+        "T0831",
+        "T0832"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.1 Anomalies and Events (DE.AE) (PDF p. 144)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Correlate event data from multiple sources; add asset context to judge impact."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0012",
+      "type": "task",
+      "text": "Coordinate incident response actions with operations, engineering and process safety staff before containment so that the response does not create unsafe conditions or unplanned stops",
+      "relates_to_nice": [
+        {
+          "id": "T0510",
+          "relation": "refines"
+        },
+        {
+          "id": "T1020",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0880"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.4.4 Response Mitigation (RS.MI) (PDF p. 153)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Impacts of shutdowns or disconnects should be understood and communicated."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.9 Develop a Recovery and Restoration Capability (PDF p. 59)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Prioritize human and environmental safety before restarting operations."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.2.2 Safety Systems (PDF p. 72)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0013",
+      "type": "task",
+      "text": "Collect evidence from controllers, HMIs and engineering workstations (e.g., running programs, project files, device and application logs) without disrupting operations",
+      "relates_to_nice": [
+        {
+          "id": "T1370",
+          "relation": "refines"
+        },
+        {
+          "id": "S0607",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.4.3 Response Analysis (RS.AN) (PDF p. 153)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Analysis includes forensics and considering OT dependencies."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.8 Develop an Incident Response Capability (PDF p. 59)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0014",
+      "type": "task",
+      "text": "Restore controllers and OT systems from known-good backups and verify logic, setpoints and firmware before returning them to production",
+      "relates_to_nice": [
+        {
+          "id": "T1124",
+          "relation": "refines"
+        },
+        {
+          "id": "S0942",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0889",
+        "T0836"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.9 Develop a Recovery and Restoration Capability (PDF p. 59)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Restore to a pre-incident state; safety before restart."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.3 Backups (PR.IP-4) (PDF p. 129)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Test restoration from backup data."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0015",
+      "type": "task",
+      "text": "Report suspected cyber-related process abnormalities through the site escalation path while keeping the process in a safe state",
+      "relates_to_nice": [
+        {
+          "id": "T1242",
+          "relation": "refines"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.5 Establish a Cybersecurity Awareness Training Program for the OT Environment (PDF p. 58)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.2 Awareness and Training (PR.AT) (PDF p. 125)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Training should cover the physical process as well as the OT system."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0016",
+      "type": "task",
+      "text": "Follow procedures for operating in manual or degraded modes when control or view is lost",
+      "relates_to_nice": [
+        {
+          "id": "K1304",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0827",
+        "T0829"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.5 Response and Recovery Plans (PDF p. 133)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Lists transitioning to manual operations."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.1.2 Assessing Risk in an OT Environment (PDF p. 69)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Manual control mechanisms let operators control actuators without the digital OT system."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0017",
+      "type": "task",
+      "text": "Design zone and conduit models that group OT assets by function, criticality and consequence, and specify the security controls for each conduit",
+      "relates_to_nice": [
+        {
+          "id": "T2032",
+          "relation": "complements"
+        },
+        {
+          "id": "T2045",
+          "relation": "complements"
+        },
+        {
+          "id": "S0948",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3",
+          "3.5"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§5.2.3.1 Network Architecture (PDF p. 88)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Segment devices by management authority, level of trust and other criteria into levels, tiers or zones."
+        },
+        {
+          "source": "isa-iec-62443-3-2",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": "Zone and conduit partitioning."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0018",
+      "type": "task",
+      "text": "Design the boundary between enterprise and control networks (e.g., an industrial DMZ or unidirectional gateway) so that traffic does not pass directly between them",
+      "relates_to_nice": [
+        {
+          "id": "S0683",
+          "relation": "complements"
+        },
+        {
+          "id": "T2031",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "3",
+          "3.5",
+          "4"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§5.2.3.1 Network Architecture (PDF p. 88)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "DMZ as an enforcement boundary between segments."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix E.1.2 Unidirectional Gateways (PDF p. 224)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Data diode at the boundary between operational and enterprise networks."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0019",
+      "type": "task",
+      "text": "Design architectures that keep safety instrumented systems independent of basic process control and of enterprise networks",
+      "relates_to_nice": [
+        {
+          "id": "T2041",
+          "relation": "refines"
+        },
+        {
+          "id": "K1297",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0880",
+        "T0837"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§2.3.7 Safety Systems (PDF p. 42)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.2.2 Safety Systems (PDF p. 72)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0020",
+      "type": "task",
+      "text": "Establish OT cybersecurity governance with accountability shared across operations, engineering, IT security and safety",
+      "relates_to_nice": [
+        {
+          "id": "T1906",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.1 Establish OT Cybersecurity Governance (PDF p. 55)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Assign responsibilities and accountability; coordinate OT cybersecurity roles."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.2 Build and Train a Cross-Functional Team (PDF p. 55)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "IT, control engineers, operators, security and risk staff, with safety experts."
+        },
+        {
+          "source": "isa-iec-62443-2-1",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0021",
+      "type": "task",
+      "text": "Build the business case for OT cybersecurity investment in terms of the organization's operational objectives (e.g., safety, production, quality)",
+      "relates_to_nice": [
+        {
+          "id": "T1059",
+          "relation": "complements"
+        },
+        {
+          "id": "T1088",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.2.2 Building an OT Cybersecurity Business Case (PDF p. 52)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Tie the business case to business objectives, business impact and financial justification."
+        },
+        {
+          "source": "nist-ir-8183r1",
+          "locator": "§5 Manufacturing Business/Mission Objectives",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0022",
+      "type": "task",
+      "text": "Define the organization's tolerance for OT cybersecurity risk and approve risk acceptance decisions for production systems",
+      "relates_to_nice": [
+        {
+          "id": "K1292",
+          "relation": "complements"
+        },
+        {
+          "id": "T1906",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.1.3 Responding to Risk in an OT Environment (PDF p. 70)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Risk responses, including acceptance, may be constrained by operational impact."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.1.1 Framing OT Risk (PDF p. 63)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0023",
+      "type": "task",
+      "text": "Ensure OT cybersecurity requirements are included in capital projects, procurement and plant modifications",
+      "relates_to_nice": [
+        {
+          "id": "T1345",
+          "relation": "complements"
+        },
+        {
+          "id": "T2038",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix F.7.16 System and Services Acquisition (PDF pp. 297-298)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.2.1 Supply Chain Risk Management (PDF p. 71)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0024",
+      "type": "task",
+      "text": "Ensure OT incident response plans are exercised jointly with operations, engineering and safety staff",
+      "relates_to_nice": [
+        {
+          "id": "T1057",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.8 Develop an Incident Response Capability (PDF p. 59)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "The IR plan applies to all OT personnel."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.5 Response and Recovery Plans (PDF pp. 131-133)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0025",
+      "type": "task",
+      "text": "Apply secure coding practices to controller programs (e.g., validate HMI inputs and timer values in the controller, check physical plausibility, add integrity checks)",
+      "relates_to_nice": [
+        {
+          "id": "K0068",
+          "relation": "complements"
+        },
+        {
+          "id": "S0172",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0836",
+        "T0889"
+      ],
+      "citations": [
+        {
+          "source": "plc-top20-v1.0",
+          "locator": "Practices 5, 6, 8, 12",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Integrity checks; validate timers and counters; validate HMI inputs at the PLC; validate inputs by physical plausibility."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0026",
+      "type": "task",
+      "text": "Disable unneeded services, ports and default accounts on controllers, HMIs and network devices during commissioning",
+      "relates_to_nice": [
+        {
+          "id": "K0837",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T1694.001"
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.1 Least Functionality (PR.IP-1) (PDF p. 128)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Disable functions and services not required, with care for unintended impacts."
+        },
+        {
+          "source": "plc-top20-v1.0",
+          "locator": "Practice 13",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Disable unneeded communication ports and protocols."
+        }
+      ]
+    },
+    {
+      "id": "PS-OT-0005",
+      "type": "skill",
+      "text": "Skill in recognizing controller program downloads, mode changes and firmware updates in network traffic",
+      "relates_to_nice": [
+        {
+          "id": "S0874",
+          "relation": "complements"
+        },
+        {
+          "id": "K1309",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0843",
+        "T0858",
+        "T1693"
+      ],
+      "citations": [
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": "T0843, T0858, T1693",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.1 Anomalies and Events (DE.AE) (PDF p. 144)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Unauthorized configuration changes as operational events."
+        }
+      ]
+    },
+    {
+      "id": "PS-OT-0006",
+      "type": "skill",
+      "text": "Skill in cross-checking HMI indications against independent field indications (e.g., local gauges, field operator reports)",
+      "relates_to_nice": [
+        {
+          "id": "K1304",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0832"
+      ],
+      "citations": [
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": "T0832",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Manipulation of View."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.2 Awareness and Training (PR.AT) (PDF p. 125)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Training should cover the physical process as well as the OT system."
+        }
+      ]
+    },
+    {
+      "id": "PS-OT-0007",
+      "type": "skill",
+      "text": "Skill in assigning target security levels to zones and conduits based on risk",
+      "relates_to_nice": [
+        {
+          "id": "T2032",
+          "relation": "refines"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3",
+          "3.5"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "isa-iec-62443-3-2",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "isa-iec-62443-3-3",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": "Security levels."
+        }
+      ]
+    },
+    {
+      "id": "PS-OT-0008",
+      "type": "skill",
+      "text": "Skill in using controller diagnostics (e.g., operating-mode tracking, change detection, program checksums) to detect unexpected changes",
+      "relates_to_nice": [
+        {
+          "id": "K1298",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0843",
+        "T0858",
+        "T0889"
+      ],
+      "citations": [
+        {
+          "source": "plc-top20-v1.0",
+          "locator": "Practices 2, 5",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Track operating modes; checksum or hash integrity checks on PLC code."
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0017",
+      "type": "knowledge",
+      "text": "Knowledge of engineered controls that limit physical consequences independently of digital control systems (e.g., mechanical interlocks, relief devices, hardwired trips, physical travel limits)",
+      "relates_to_nice": [
+        {
+          "id": "K1297",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Engineered controls (p. 13)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 2: Engineered Controls (p. 23)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PK-OT-0018",
+      "type": "knowledge",
+      "text": "Knowledge of the systems engineering lifecycle (concept through retirement) and the cybersecurity choices available to engineers in each phase",
+      "relates_to_nice": [
+        {
+          "id": "K1303",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Part A, Systems Engineering Lifecycle Model for CIE (p. 10)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Key Premises of the National CIE Strategy (p. 15)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Risk can be reduced across the lifecycle, most cheaply early in design."
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0027",
+      "type": "task",
+      "text": "Identify the critical functions where cyber manipulation could cause unacceptable consequences, and focus security design effort on them first",
+      "relates_to_nice": [
+        {
+          "id": "T2042",
+          "relation": "complements"
+        },
+        {
+          "id": "T1122",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 1: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0028",
+      "type": "task",
+      "text": "Specify engineered controls early in design that eliminate or limit high-consequence cyber-enabled outcomes, instead of relying only on added IT security controls",
+      "relates_to_nice": [
+        {
+          "id": "T2041",
+          "relation": "complements"
+        },
+        {
+          "id": "T1163",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0831",
+        "T0880"
+      ],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Engineered controls (p. 13)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 2: Engineered Controls (p. 23)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0029",
+      "type": "task",
+      "text": "Design information pathways so that data flows only in intended directions, and enforce those flows with architectural controls",
+      "relates_to_nice": [
+        {
+          "id": "S0683",
+          "relation": "complements"
+        },
+        {
+          "id": "T2031",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Secure information architecture (p. 13)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 3: Secure Information Architecture (p. 33)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0030",
+      "type": "task",
+      "text": "Limit digital functionality to what each function needs, removing high-consequence, low-value complexity and latent capabilities that attackers could misuse",
+      "relates_to_nice": [
+        {
+          "id": "K0837",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Design simplification (p. 13)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 4: Design Simplification (p. 43)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0031",
+      "type": "task",
+      "text": "Design layered defenses with diversity, redundancy and hardening so that a single failure cannot disable a critical function and degradation during an incident is predictable",
+      "relates_to_nice": [
+        {
+          "id": "K0791",
+          "relation": "refines"
+        },
+        {
+          "id": "K0715",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Resilient layered defenses (p. 13)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 5: Layered Defenses (p. 52)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0032",
+      "type": "task",
+      "text": "Include design elements that detect intrusions and allow a threat to be isolated or removed while critical operations continue",
+      "relates_to_nice": [
+        {
+          "id": "K1291",
+          "relation": "complements"
+        },
+        {
+          "id": "K1290",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Active defense (p. 14)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 6: Active Defense (p. 61)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0033",
+      "type": "task",
+      "text": "Evaluate, with safety, quality, maintenance and other disciplines, how misuse of a digital system could affect their areas of operation",
+      "relates_to_nice": [
+        {
+          "id": "T1020",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Interdependency evaluation (p. 14)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 7: Interdependency Evaluation (p. 71)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0034",
+      "type": "task",
+      "text": "Plan for continued operation during and after a cyber attack that degrades digital controls, assuming any digital component may be compromised during its lifecycle",
+      "relates_to_nice": [
+        {
+          "id": "T1124",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0827"
+      ],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Planned resilience with no assumed security (p. 14)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 10: Planned Resilience (p. 104)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PT-OT-0035",
+      "type": "task",
+      "text": "Protect sensitive engineering records (e.g., requirements, specifications, designs, configurations, test results) whose release would help attackers",
+      "relates_to_nice": [
+        {
+          "id": "K0865",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        "T0882"
+      ],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Engineering information control (p. 14)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 11: Engineering Information Control (p. 114)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "PS-OT-0009",
+      "type": "skill",
+      "text": "Skill in tracing how manipulation of a digital function could lead to a physical consequence",
+      "relates_to_nice": [
+        {
+          "id": "T2042",
+          "relation": "complements"
+        },
+        {
+          "id": "K1310",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 1: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ]
+    }
+  ]
+}

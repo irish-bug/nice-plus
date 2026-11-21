@@ -1,0 +1,6003 @@
+{
+  "schema_version": "0.3.0",
+  "kind": "nice-plus.role",
+  "notice": "DRAFT. NICE Plus is an independent extension of the NIST NICE Framework for OT/ICS roles. It is not a NIST product and has not been reviewed or endorsed by NIST. NICE statements are quoted exactly from NICE Framework Components; plus statements (IDs starting P) are drafts authored by nice-plus.",
+  "role": {
+    "id": "PR-OT-007",
+    "title": "Chief Operational Technology Officer",
+    "status": "draft",
+    "source": "plus",
+    "category": "OG",
+    "description": "DRAFT. OT specialization of NICE work role OG-WRL-007 (Executive Cybersecurity Leadership). The executive accountable for the security and resilience of the organization's operational technology: sets OT cybersecurity strategy, governance and risk tolerance, and makes sure security is built into operations, engineering, capital projects and procurement. Some organizations give this to a CISO or a VP of operations or engineering.",
+    "extends": [
+      {
+        "role": "OG-WRL-007",
+        "title": "Executive Cybersecurity Leadership"
+      }
+    ],
+    "related": [
+      {
+        "role": "DD-WRL-009",
+        "title": "Operational Technology (OT) Cybersecurity Engineering"
+      },
+      {
+        "role": "OG-WRL-014",
+        "title": "Systems Security Management"
+      }
+    ],
+    "overlaps": [
+      {
+        "role": "OG-WRL-014",
+        "title": "Systems Security Management",
+        "shared": 55,
+        "of_nice_role": 201,
+        "jaccard": 0.209
+      },
+      {
+        "role": "OG-WRL-012",
+        "title": "Security Control Assessment",
+        "shared": 49,
+        "of_nice_role": 304,
+        "jaccard": 0.132
+      },
+      {
+        "role": "OG-WRL-003",
+        "title": "Cybersecurity Workforce Management",
+        "shared": 43,
+        "of_nice_role": 129,
+        "jaccard": 0.212
+      },
+      {
+        "role": "OG-WRL-013",
+        "title": "Systems Authorization",
+        "shared": 39,
+        "of_nice_role": 101,
+        "jaccard": 0.218
+      },
+      {
+        "role": "OG-WRL-005",
+        "title": "Cybersecurity Instruction",
+        "shared": 34,
+        "of_nice_role": 160,
+        "jaccard": 0.14
+      }
+    ],
+    "overlaps_method": "Computed: NICE roles sharing the most statements with this role, excluding the roles it extends.",
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "OG-WRL-007",
+        "locator_status": "verified",
+        "support": "related",
+        "note": "Parent NICE role; all its statements are inherited."
+      },
+      {
+        "source": "nist-sp-800-82r3",
+        "locator": "§3 OT Cybersecurity Program Development (PDF p. 50)",
+        "locator_status": "verified",
+        "support": "related",
+        "note": null
+      },
+      {
+        "source": "isa-iec-62443-2-1",
+        "locator": null,
+        "locator_status": "none",
+        "support": "related",
+        "note": "Security program requirements for asset owners."
+      }
+    ],
+    "open_questions": [
+      "Is this a distinct executive role, or a set of OT duties added to the CISO (OG-WRL-007)?",
+      "Who owns OT security in practice: operations, engineering, or IT security? The answer shapes the core list."
+    ]
+  },
+  "frameworks": {
+    "nice": {
+      "version": "2.2.0",
+      "released": "2026-04-28",
+      "source": "nist-nice-v2.2.0"
+    },
+    "attack_ics": {
+      "version": "20.1",
+      "source": "mitre-attack-ics-v20.1",
+      "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation."
+    }
+  },
+  "statements": [
+    {
+      "id": "T0006",
+      "type": "task",
+      "text": "Advocate organization's official position in legal and legislative proceedings",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T0006",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1020",
+      "type": "task",
+      "text": "Determine the operational and safety impacts of cybersecurity lapses",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1020",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "T1036",
+      "type": "task",
+      "text": "Integrate leadership priorities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1036",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1038",
+      "type": "task",
+      "text": "Integrate organization objectives in intelligence collection",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1038",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1054",
+      "type": "task",
+      "text": "Scope analysis reports to various audiences that accounts for data sharing classification restrictions",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1054",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1055",
+      "type": "task",
+      "text": "Determine if priority information requirements are satisfied",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1055",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1056",
+      "type": "task",
+      "text": "Acquire resources to support cybersecurity program goals and objectives",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1056",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1057",
+      "type": "task",
+      "text": "Conduct an effective enterprise continuity of operations program",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1057",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1059",
+      "type": "task",
+      "text": "Perform cost/benefit analyses of cybersecurity programs, policies, processes, systems, and elements",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1059",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1060",
+      "type": "task",
+      "text": "Advise senior management on organizational cybersecurity efforts",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1060",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1088",
+      "type": "task",
+      "text": "Communicate the value of cybersecurity to organizational stakeholders",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1088",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1145",
+      "type": "task",
+      "text": "Develop strategic plans",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1145",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1146",
+      "type": "task",
+      "text": "Maintain strategic plans",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1146",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1221",
+      "type": "task",
+      "text": "Disseminate incident and other Computer Network Defense (CND) information",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1221",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1226",
+      "type": "task",
+      "text": "Align cybersecurity priorities with organizational security strategy",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1226",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1227",
+      "type": "task",
+      "text": "Manage cybersecurity budget, staffing, and contracting",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1227",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1234",
+      "type": "task",
+      "text": "Develop Computer Network Defense (CND) guidance for organizational stakeholders",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1234",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1238",
+      "type": "task",
+      "text": "Determine the effectiveness of enterprise cybersecurity safeguards",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1238",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1307",
+      "type": "task",
+      "text": "Develop cybersecurity policy recommendations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1307",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1308",
+      "type": "task",
+      "text": "Coordinate cybersecurity policy review and approval processes",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1308",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1310",
+      "type": "task",
+      "text": "Implement protective or corrective measures when a cybersecurity incident or vulnerability is discovered",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1310",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1335",
+      "type": "task",
+      "text": "Promote cybersecurity awareness to management",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1335",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1336",
+      "type": "task",
+      "text": "Verify the inclusion of sound cybersecurity principles in the organization's vision and goals",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1336",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1342",
+      "type": "task",
+      "text": "Oversee policy standards and implementation strategy development",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1342",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1354",
+      "type": "task",
+      "text": "Identify system cybersecurity requirements",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1354",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1355",
+      "type": "task",
+      "text": "Determine if vulnerability remediation plans are in place",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1355",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1356",
+      "type": "task",
+      "text": "Develop vulnerability remediation plans",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1356",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1376",
+      "type": "task",
+      "text": "Develop critical infrastructure protection policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1376",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1377",
+      "type": "task",
+      "text": "Implement critical infrastructure protection policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1377",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1450",
+      "type": "task",
+      "text": "Allocate and distribute human capital assets",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1450",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1476",
+      "type": "task",
+      "text": "Promote awareness of cybersecurity policy and strategy among management",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1476",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1518",
+      "type": "task",
+      "text": "Develop organizational cybersecurity strategy",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1518",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1543",
+      "type": "task",
+      "text": "Develop cybersecurity policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1543",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1586",
+      "type": "task",
+      "text": "Conduct cybersecurity risk assessments",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1586",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1779",
+      "type": "task",
+      "text": "Coordinate strategic planning efforts with internal and external partners",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1779",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1862",
+      "type": "task",
+      "text": "Establish cybersecurity risk assessment processes",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1862",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1906",
+      "type": "task",
+      "text": "Establish a cybersecurity risk management program",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1906",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T2046",
+      "type": "task",
+      "text": "Communicate implication of new and upgraded technologies to cybersecurity program stakeholders",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Communicating implications of new OT technologies to stakeholders."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T2046",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0644",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity operation policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0644",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007",
+        "NF-COM-008"
+      ]
+    },
+    {
+      "id": "K0674",
+      "type": "knowledge",
+      "text": "Knowledge of computer networking protocols",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0674",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/29",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/30",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/31",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/32",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/33",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/34",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/6",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/11",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/17",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/19",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/6",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/8",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Warmup/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/20",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/22",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/23",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/24",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/25",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/27",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/28",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/3",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/4",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-device/1011",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-device/1020",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/100",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/150",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/200",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/3",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/30",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/35",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/36",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/4",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/40",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/42",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/45",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/5",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/50",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/500",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/55",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/550",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/60",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-pcap/75",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-train/100",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-train/200",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-train/300",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-train/400",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-train/500",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0675",
+      "type": "knowledge",
+      "text": "Knowledge of risk management processes",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0675",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0676",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity laws and regulations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0676",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0677",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0677",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0678",
+      "type": "knowledge",
+      "text": "Knowledge of privacy laws and regulations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0678",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002",
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0679",
+      "type": "knowledge",
+      "text": "Knowledge of privacy policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0679",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0680",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0680",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/39",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/0",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/10",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/11",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/12",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/13",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/14",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/15",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/16",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/17",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/18",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/19",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/20",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/21",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/22",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/23",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/24",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/25",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/4",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/5",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/8",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/13",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/3",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/4",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0681",
+      "type": "knowledge",
+      "text": "Knowledge of privacy principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0681",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002",
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0682",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity threats",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0682",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0683",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0683",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "K0684",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity threat characteristics",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0684",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0688",
+      "type": "knowledge",
+      "text": "Knowledge of common application vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0688",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "K0689",
+      "type": "knowledge",
+      "text": "Knowledge of network infrastructure principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0689",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0728",
+      "type": "knowledge",
+      "text": "Knowledge of Confidentiality, Integrity and Availability (CIA) principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0728",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/6",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002",
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0729",
+      "type": "knowledge",
+      "text": "Knowledge of non-repudiation principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0729",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002",
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0730",
+      "type": "knowledge",
+      "text": "Knowledge of cyber safety principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0730",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "K0743",
+      "type": "knowledge",
+      "text": "Knowledge of new and emerging technologies",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0743",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:ot-grokwell/300",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006",
+        "NF-COM-008"
+      ]
+    },
+    {
+      "id": "K0751",
+      "type": "knowledge",
+      "text": "Knowledge of system threats",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0751",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0752",
+      "type": "knowledge",
+      "text": "Knowledge of system vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0752",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "K0783",
+      "type": "knowledge",
+      "text": "Knowledge of network attack characteristics",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0783",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/6",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/23",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/28",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0784",
+      "type": "knowledge",
+      "text": "Knowledge of insider threat laws and regulations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0784",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0785",
+      "type": "knowledge",
+      "text": "Knowledge of insider threat tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0785",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0800",
+      "type": "knowledge",
+      "text": "Knowledge of evidence admissibility laws and regulations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0800",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0818",
+      "type": "knowledge",
+      "text": "Knowledge of new and emerging cybersecurity risks",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0818",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "K0819",
+      "type": "knowledge",
+      "text": "Knowledge of import and export control laws and regulations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0819",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0820",
+      "type": "knowledge",
+      "text": "Knowledge of supply chain risks",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0820",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0821",
+      "type": "knowledge",
+      "text": "Knowledge of federal agency roles and responsibilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0821",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0825",
+      "type": "knowledge",
+      "text": "Knowledge of threat vector characteristics",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0825",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0831",
+      "type": "knowledge",
+      "text": "Knowledge of network attack vectors",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0831",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0839",
+      "type": "knowledge",
+      "text": "Knowledge of critical infrastructure systems and software",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0839",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/39",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/6",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/8",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/11",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/6",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/3",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/4",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-grokwell/600",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0892",
+      "type": "knowledge",
+      "text": "Knowledge of cyber defense laws and regulations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0892",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0936",
+      "type": "knowledge",
+      "text": "Knowledge of network hardware threats and vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0936",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0983",
+      "type": "knowledge",
+      "text": "Knowledge of computer networking principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0983",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0990",
+      "type": "knowledge",
+      "text": "Knowledge of cyber operations principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0990",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1014",
+      "type": "knowledge",
+      "text": "Knowledge of network security principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1014",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K1025",
+      "type": "knowledge",
+      "text": "Knowledge of decision-making policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1025",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1079",
+      "type": "knowledge",
+      "text": "Knowledge of web application security risks",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1079",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1083",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity competitions",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1083",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1180",
+      "type": "knowledge",
+      "text": "Knowledge of organizational cybersecurity goals and objectives",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1180",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1183",
+      "type": "knowledge",
+      "text": "Knowledge of organizational cybersecurity policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1183",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1188",
+      "type": "knowledge",
+      "text": "Knowledge of organizational policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1188",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1209",
+      "type": "knowledge",
+      "text": "Knowledge of risk mitigation principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1209",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K1225",
+      "type": "knowledge",
+      "text": "Knowledge of system life cycles",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1225",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-008"
+      ]
+    },
+    {
+      "id": "K1288",
+      "type": "knowledge",
+      "text": "Knowledge of OT cybersecurity compliance requirements and best practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009",
+          "OG-WRL-017"
+        ],
+        "rationale": "Inferred: OT compliance requirements."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1288",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1289",
+      "type": "knowledge",
+      "text": "Knowledge of control system environment risks, threats, and vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Control system risks, threats and vulnerabilities."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1289",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1292",
+      "type": "knowledge",
+      "text": "Knowledge of OT cybersecurity risk tolerance levels",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: OT cybersecurity risk tolerance levels."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1292",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1301",
+      "type": "knowledge",
+      "text": "Knowledge of cyber incidents impacting OT",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Cyber incidents that have affected OT."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1301",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1304",
+      "type": "knowledge",
+      "text": "Knowledge of operational priorities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Operational priorities."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1304",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0111",
+      "type": "skill",
+      "text": "Skill in interfacing with customers",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0111",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0406",
+      "type": "skill",
+      "text": "Skill in developing policy plans",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0406",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "S0414",
+      "type": "skill",
+      "text": "Skill in evaluating laws",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0414",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0415",
+      "type": "skill",
+      "text": "Skill in evaluating regulations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0415",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0416",
+      "type": "skill",
+      "text": "Skill in evaluating policies",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0416",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "S0431",
+      "type": "skill",
+      "text": "Skill in applying critical thinking",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0431",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002",
+        "NF-COM-008"
+      ]
+    },
+    {
+      "id": "S0506",
+      "type": "skill",
+      "text": "Skill in identifying customer information needs",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0506",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0511",
+      "type": "skill",
+      "text": "Skill in establishing priorities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0511",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0564",
+      "type": "skill",
+      "text": "Skill in creating system security policies",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0564",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "S0610",
+      "type": "skill",
+      "text": "Skill in communicating effectively",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0610",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "S0686",
+      "type": "skill",
+      "text": "Skill in performing risk assessments",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0686",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0707",
+      "type": "skill",
+      "text": "Skill in developing comprehensive cyber operations assessment programs",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0707",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0708",
+      "type": "skill",
+      "text": "Skill in executing comprehensive cyber operations assessment programs",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0708",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0799",
+      "type": "skill",
+      "text": "Skill in anticipating new security threats",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0799",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0800",
+      "type": "skill",
+      "text": "Skill in analyzing organizational patterns and relationships",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0800",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0807",
+      "type": "skill",
+      "text": "Skill in solving problems",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0807",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0821",
+      "type": "skill",
+      "text": "Skill in collaborating with internal and external stakeholders",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0821",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "S0826",
+      "type": "skill",
+      "text": "Skill in communicating with external organizations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "OG-WRL-007"
+        ],
+        "rationale": "Inferred: strategy, risk, resourcing, continuity and critical-infrastructure statements are core; intelligence, legal and IT-specific statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0826",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0020",
+      "type": "task",
+      "text": "Establish OT cybersecurity governance with accountability shared across operations, engineering, IT security and safety",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1906",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.1 Establish OT Cybersecurity Governance (PDF p. 55)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Assign responsibilities and accountability; coordinate OT cybersecurity roles."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.2 Build and Train a Cross-Functional Team (PDF p. 55)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "IT, control engineers, operators, security and risk staff, with safety experts."
+        },
+        {
+          "source": "isa-iec-62443-2-1",
+          "locator": "clause to verify",
+          "locator_status": "to-verify",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0021",
+      "type": "task",
+      "text": "Build the business case for OT cybersecurity investment in terms of the organization's operational objectives (e.g., safety, production, quality)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1059",
+          "relation": "complements"
+        },
+        {
+          "id": "T1088",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.2.2 Building an OT Cybersecurity Business Case (PDF p. 52)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Tie the business case to business objectives, business impact and financial justification."
+        },
+        {
+          "source": "nist-ir-8183r1",
+          "locator": "§5 Manufacturing Business/Mission Objectives",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0022",
+      "type": "task",
+      "text": "Define the organization's tolerance for OT cybersecurity risk and approve risk acceptance decisions for production systems",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1292",
+          "relation": "complements"
+        },
+        {
+          "id": "T1906",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.1.3 Responding to Risk in an OT Environment (PDF p. 70)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Risk responses, including acceptance, may be constrained by operational impact."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.1.1 Framing OT Risk (PDF p. 63)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0023",
+      "type": "task",
+      "text": "Ensure OT cybersecurity requirements are included in capital projects, procurement and plant modifications",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1345",
+          "relation": "complements"
+        },
+        {
+          "id": "T2038",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix F.7.16 System and Services Acquisition (PDF pp. 297-298)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.2.1 Supply Chain Risk Management (PDF p. 71)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0024",
+      "type": "task",
+      "text": "Ensure OT incident response plans are exercised jointly with operations, engineering and safety staff",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1057",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.8 Develop an Incident Response Capability (PDF p. 59)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "The IR plan applies to all OT personnel."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.5 Response and Recovery Plans (PDF pp. 131-133)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0027",
+      "type": "task",
+      "text": "Identify the critical functions where cyber manipulation could cause unacceptable consequences, and focus security design effort on them first",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T2042",
+          "relation": "complements"
+        },
+        {
+          "id": "T1122",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 1: Consequence-Focused Design (p. 13)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0034",
+      "type": "task",
+      "text": "Plan for continued operation during and after a cyber attack that degrades digital controls, assuming any digital component may be compromised during its lifecycle",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1124",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0827",
+          "name": "Loss of Control"
+        }
+      ],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Planned resilience with no assumed security (p. 14)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 10: Planned Resilience (p. 104)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0035",
+      "type": "task",
+      "text": "Protect sensitive engineering records (e.g., requirements, specifications, designs, configurations, test results) whose release would help attackers",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K0865",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0882",
+          "name": "Theft of Operational Information"
+        }
+      ],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE: Engineering information control (p. 14)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": null
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Principle 11: Engineering Information Control (p. 114)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PK-OT-0006",
+      "type": "knowledge",
+      "text": "Knowledge of how cyber events in manufacturing become production consequences such as line stoppage, scrap, latent quality defects and equipment damage",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1304",
+          "relation": "refines"
+        },
+        {
+          "id": "K1302",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [
+          "manufacturing"
+        ],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0828",
+          "name": "Loss of Productivity and Revenue"
+        },
+        {
+          "id": "T0879",
+          "name": "Damage to Property"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-ir-8183r1",
+          "locator": "§5 Manufacturing Business/Mission Objectives",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Lists Maintain Production Goals and Maintain Quality of Product among manufacturing business/mission objectives."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.2.1 (PDF p. 189)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Notes extended downtimes and production losses."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PK-OT-0007",
+      "type": "knowledge",
+      "text": "Knowledge of Cyber-Informed Engineering (CIE) principles and consequence-driven analysis methods",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1310",
+          "relation": "complements"
+        },
+        {
+          "id": "T2042",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "doe-cie-strategy",
+          "locator": "Principles of CIE (pp. 12-14)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Defines the 12 CIE principles in design/operational and organizational groups."
+        },
+        {
+          "source": "inl-cie-implementation-guide",
+          "locator": "Part A, Cyber-Informed Engineering Principles (p. 8)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix D.2.7 INL CIE and CCE (PDF p. 215)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PK-OT-0008",
+      "type": "knowledge",
+      "text": "Knowledge of MITRE ATT&CK for ICS tactics and techniques",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1301",
+          "relation": "complements"
+        },
+        {
+          "id": "K1289",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix D.3.5 MITRE ATT&CK for ICS (PDF p. 218)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0015",
+      "type": "knowledge",
+      "text": "Knowledge of how OT security priorities and constraints differ from IT (e.g., availability and safety first, long equipment lifetimes, limited patching windows, vendor-qualified changes)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K0736",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§2.4 Comparing OT and IT System Security (PDF p. 45)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Section number taken from document order; title and page checked."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    }
+  ],
+  "coverage": {
+    "collections": [
+      {
+        "id": "cyberfire-operationaltechnology",
+        "title": "Cyber Fire OT puzzles",
+        "role": "example coverage source",
+        "commit": "b0bef0fedff6aab3bd90838281b02814bbba994d",
+        "commit_date": "2026-11-02"
+      }
+    ],
+    "summary": {
+      "all": {
+        "total": 117,
+        "covered": 6
+      },
+      "by_type": {
+        "task": {
+          "total": 46,
+          "covered": 0
+        },
+        "knowledge": {
+          "total": 53,
+          "covered": 6
+        },
+        "skill": {
+          "total": 18,
+          "covered": 0
+        }
+      },
+      "by_flag": {
+        "core": {
+          "total": 46,
+          "covered": 2
+        },
+        "additional": {
+          "total": 71,
+          "covered": 4
+        }
+      },
+      "by_source": {
+        "nice": {
+          "total": 105,
+          "covered": 6
+        },
+        "plus": {
+          "total": 12,
+          "covered": 0
+        }
+      },
+      "by_basis": {
+        "inherited": {
+          "total": 99,
+          "covered": 6
+        },
+        "added-nice": {
+          "total": 6,
+          "covered": 0
+        },
+        "plus": {
+          "total": 12,
+          "covered": 0
+        }
+      }
+    },
+    "modules": [
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/39",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/39/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680",
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/0",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/0/puzzle.md",
+        "objective": "welcome to class",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/1/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0728",
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/10",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/10/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/11",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/11/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/12",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/12/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/13",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/13/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/14",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/14/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/15",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/15/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/16",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/16/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/17",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/17/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/18",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/18/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/19",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/19/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/2",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/2/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0728",
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/20",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/20/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/21",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/21/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/22",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/22/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/23",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/23/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/24",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/24/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/25",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/25/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/29",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/29/puzzle.md",
+        "objective": "Protocols",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/30",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/30/puzzle.md",
+        "objective": "Protocols",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/31",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/31/puzzle.md",
+        "objective": "Protocols",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/32",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/32/puzzle.md",
+        "objective": "Protocols",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/33",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/33/puzzle.md",
+        "objective": "Protocols",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/34",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/34/puzzle.md",
+        "objective": "Protocols",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/4/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/5",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/5/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/6",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/6/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0728",
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/7/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/8",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/8/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/9/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/1/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/2",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/2/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/6",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/6/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/7/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/8",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/8/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/9/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/11",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/11/puzzle.md",
+        "objective": "Finish Lab 1",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/13",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/13/puzzle.md",
+        "objective": "hack the planet",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/6",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/6/puzzle.md",
+        "objective": "complete lab 1",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0783"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/7/puzzle.md",
+        "objective": "Finish Lab 1",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674",
+          "K0783"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/17",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/17/puzzle.md",
+        "objective": "open the manual",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/19",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/19/puzzle.md",
+        "objective": "open the manual",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/6",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/6/puzzle.md",
+        "objective": "open the manual",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/8",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/8/puzzle.md",
+        "objective": "Complete Lab 2",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/9/puzzle.md",
+        "objective": "Complete Lab 2",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Warmup/9/puzzle.md",
+        "objective": "wireshark basics",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/11",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/11/puzzle.md",
+        "objective": "Execute containment and recovery steps with process continuity and safety constraints.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/2",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/2/puzzle.md",
+        "objective": "Identify MBAP header length anomalies in Modbus TCP traffic",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/20",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/20/puzzle.md",
+        "objective": "Recognize a ENIP command and its direct physical consequence.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/22",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/22/puzzle.md",
+        "objective": "Analyze CIP service codes to detect unauthorized controller state manipulation.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/23",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/23/puzzle.md",
+        "objective": "Identify adversarial TTPs used for device fingerprinting via ENIP.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674",
+          "K0783"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/24",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/24/puzzle.md",
+        "objective": "Deeply understand Modbus/TCP addressing and protocol offsets.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/25",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/25/puzzle.md",
+        "objective": "Identify DNP3 Transport Layer fragment anomalies.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/27",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/27/puzzle.md",
+        "objective": "Reconstruct an adversary timeline to identify unauthorized control nodes and tampered ENIP/CIP setpoints.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/28",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/28/puzzle.md",
+        "objective": "Identify adversarial TTPs for Profinet network discovery.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674",
+          "K0783"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/3",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/3/puzzle.md",
+        "objective": "Identify the missing field in a truncated (Partial) MBAP header.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/4/puzzle.md",
+        "objective": "Identify a DNP3 Link Layer length field anomaly.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/6",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/6/puzzle.md",
+        "objective": "Perform packet analysis to reconstruct a multi-state control change.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/1/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680",
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/2",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/2/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680",
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/3",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/3/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680",
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/4/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680",
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-device/1011",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-device/1011/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-device/1020",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-device/1020/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-grokwell/300",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-grokwell/300/puzzle.md",
+        "objective": null,
+        "release_id": null,
+        "statements_in_role": [
+          "K0743"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-grokwell/600",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-grokwell/600/puzzle.md",
+        "objective": null,
+        "release_id": null,
+        "statements_in_role": [
+          "K0839"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/1/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/100",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/100/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/150",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/150/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/2",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/2/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/200",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/200/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/3",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/3/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/30",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/30/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/35",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/35/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/36",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/36/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/4/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/40",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/40/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/42",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/42/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/45",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/45/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/5",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/5/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/50",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/50/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/500",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/500/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/55",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/55/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/550",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/550/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/60",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/60/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-pcap/75",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-pcap/75/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-train/100",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-train/100/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-train/200",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-train/200/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-train/300",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-train/300/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-train/400",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-train/400/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-train/500",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-train/500/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0674"
+        ]
+      }
+    ],
+    "gaps": [
+      "T0006",
+      "T1020",
+      "T1036",
+      "T1038",
+      "T1054",
+      "T1055",
+      "T1056",
+      "T1057",
+      "T1059",
+      "T1060",
+      "T1088",
+      "T1145",
+      "T1146",
+      "T1221",
+      "T1226",
+      "T1227",
+      "T1234",
+      "T1238",
+      "T1307",
+      "T1308",
+      "T1310",
+      "T1335",
+      "T1336",
+      "T1342",
+      "T1354",
+      "T1355",
+      "T1356",
+      "T1376",
+      "T1377",
+      "T1450",
+      "T1476",
+      "T1518",
+      "T1543",
+      "T1586",
+      "T1779",
+      "T1862",
+      "T1906",
+      "T2046",
+      "K0644",
+      "K0675",
+      "K0676",
+      "K0677",
+      "K0678",
+      "K0679",
+      "K0681",
+      "K0682",
+      "K0683",
+      "K0684",
+      "K0688",
+      "K0689",
+      "K0729",
+      "K0730",
+      "K0751",
+      "K0752",
+      "K0784",
+      "K0785",
+      "K0800",
+      "K0818",
+      "K0819",
+      "K0820",
+      "K0821",
+      "K0825",
+      "K0831",
+      "K0892",
+      "K0936",
+      "K0983",
+      "K0990",
+      "K1014",
+      "K1025",
+      "K1079",
+      "K1083",
+      "K1180",
+      "K1183",
+      "K1188",
+      "K1209",
+      "K1225",
+      "K1288",
+      "K1289",
+      "K1292",
+      "K1301",
+      "K1304",
+      "S0111",
+      "S0406",
+      "S0414",
+      "S0415",
+      "S0416",
+      "S0431",
+      "S0506",
+      "S0511",
+      "S0564",
+      "S0610",
+      "S0686",
+      "S0707",
+      "S0708",
+      "S0799",
+      "S0800",
+      "S0807",
+      "S0821",
+      "S0826",
+      "PT-OT-0020",
+      "PT-OT-0021",
+      "PT-OT-0022",
+      "PT-OT-0023",
+      "PT-OT-0024",
+      "PT-OT-0027",
+      "PT-OT-0034",
+      "PT-OT-0035",
+      "PK-OT-0006",
+      "PK-OT-0007",
+      "PK-OT-0008",
+      "PK-OT-0015"
+    ],
+    "provenance_note": "author-tagged = tag assigned by the module's author; inferred = mapping proposed by nice-plus. Neither is independently verified."
+  },
+  "sources": [
+    {
+      "id": "cyberfire-operationaltechnology",
+      "title": "Cyber Fire OT puzzles (operationaltechnology repository)",
+      "publisher": "Cyber Fire / Idaho National Laboratory",
+      "version": "git commit; see data/coverage/cyberfire-operationaltechnology.json",
+      "date": null,
+      "url": null,
+      "licence": "The puzzles are not public. Only puzzle paths, NICE tags, objective lines and INL release IDs are imported and published here; puzzle text, hints and answers are never copied.",
+      "held": "data/coverage/cyberfire-operationaltechnology.json (tags only)",
+      "note": "Example coverage source. Tags are assigned by puzzle authors and have not been independently verified."
+    },
+    {
+      "id": "doe-cie-strategy",
+      "title": "National Cyber-Informed Engineering Strategy from the U.S. Department of Energy",
+      "publisher": "U.S. Department of Energy, Office of Cybersecurity, Energy Security, and Emergency Response (CESER)",
+      "version": null,
+      "date": "2022-06",
+      "url": "https://www.energy.gov/ceser/articles/us-department-energys-doe-national-cyber-informed-engineering-cie-strategy-document",
+      "licence": "US Government work",
+      "held": null,
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://www.energy.gov/sites/default/files/2022-06/FINAL%20DOE%20National%20CIE%20Strategy%20-%20June%202022_0.pdf. Locators use the document's printed page labels ('PAGE | n'). The 12 CIE principles are on pp. 12-14.",
+      "sha256": "eadfc36b6114c71145be998ea2b3c28e127b1a70af9ee8197ffa76b1f0b7709a"
+    },
+    {
+      "id": "inl-cie-implementation-guide",
+      "title": "Cyber-Informed Engineering Implementation Guide",
+      "publisher": "Idaho National Laboratory (INL)",
+      "version": "1.0 (INL/RPT-23-74072)",
+      "date": "2023-08-07",
+      "url": "https://www.osti.gov/biblio/1995796",
+      "licence": "US Government-sponsored report (INL); cite and paraphrase.",
+      "held": null,
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://www.osti.gov/servlets/purl/1995796. Linked from https://www.energy.gov/ceser/cyber-informed-engineering. Locators are principle sections with the guide's printed page numbers from its contents page.",
+      "sha256": "67e5c8f8ab206af04d47710a5eeccb86f88706deb376d3879d7429718f376bdc"
+    },
+    {
+      "id": "isa-iec-62443-2-1",
+      "title": "ISA/IEC 62443-2-1, Security program requirements for IACS asset owners",
+      "publisher": "ISA / IEC",
+      "version": null,
+      "date": null,
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards",
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null,
+      "note": "No copy held. Citations are part-level and clause numbers are marked to-verify."
+    },
+    {
+      "id": "mitre-attack-ics-v20.1",
+      "title": "MITRE ATT&CK for ICS (STIX 2.1 collection)",
+      "publisher": "The MITRE Corporation",
+      "version": "20.1",
+      "date": "2026-11-05",
+      "url": "https://attack.mitre.org/matrices/ics/",
+      "licence": "MITRE ATT&CK terms of use (sources/attack-ics/LICENSE.txt)",
+      "held": "sources/attack-ics/v20.1/ics-attack.json",
+      "sha256": "3f6448369f9135ade84ff6437479441530d0b262f910dca991879a7146b524ff",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "nist-ir-8183r1",
+      "title": "NISTIR 8183 Rev. 1, Cybersecurity Framework Version 1.1 Manufacturing Profile",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "Rev. 1",
+      "date": "2020-10",
+      "url": "https://csrc.nist.gov/pubs/ir/8183/r1/final",
+      "licence": "US Government work",
+      "held": null,
+      "sha256": "ed32a2662e064012174d0b2dfe021aa25fe29c6997909b2dcec641b37425fef3",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8183r1.pdf. No Rev. 2 final was found at csrc.nist.gov on 2026-11-20."
+    },
+    {
+      "id": "nist-nice-v2.2.0",
+      "title": "Workforce Framework for Cybersecurity (NICE Framework) Components v2.2.0",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "2.2.0",
+      "date": "2026-04-28",
+      "url": "https://csrc.nist.gov/csrc/media/Projects/cprt/documents/nice/v2-2-0_nf_components.json",
+      "licence": "US Government work",
+      "held": "sources/nice/v2.2.0/v2-2-0_nf_components.json",
+      "sha256": "3ad1d9d7e0d6b32895cb569f86c3bc05af2937a68e96eab4d1c9b3d9fa6e575e",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "nist-sp-800-82r3",
+      "title": "NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "Rev. 3",
+      "date": "2023-09",
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "licence": "US Government work",
+      "held": null,
+      "sha256": "608f554514d381853e24e0b33123b7080fbd757826f460032690aade63394616",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf. Locators give the section and the PDF page index (not the printed page number)."
+    }
+  ]
+}

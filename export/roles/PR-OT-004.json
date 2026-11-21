@@ -1,0 +1,6145 @@
+{
+  "schema_version": "0.3.0",
+  "kind": "nice-plus.role",
+  "notice": "DRAFT. NICE Plus is an independent extension of the NIST NICE Framework for OT/ICS roles. It is not a NIST product and has not been reviewed or endorsed by NIST. NICE statements are quoted exactly from NICE Framework Components; plus statements (IDs starting P) are drafts authored by nice-plus.",
+  "role": {
+    "id": "PR-OT-004",
+    "title": "ICS Incident Responder",
+    "status": "draft",
+    "source": "plus",
+    "category": "PD",
+    "description": "DRAFT. OT specialization of NICE work role PD-WRL-003 (Incident Response). Investigates and responds to cybersecurity incidents affecting industrial control systems, coordinating containment and recovery with operations, engineering and safety staff so that response does not cause unsafe conditions or unnecessary downtime.",
+    "extends": [
+      {
+        "role": "PD-WRL-003",
+        "title": "Incident Response"
+      }
+    ],
+    "related": [
+      {
+        "role": "PD-WRL-002",
+        "title": "Digital Forensics"
+      },
+      {
+        "role": "DD-WRL-009",
+        "title": "Operational Technology (OT) Cybersecurity Engineering"
+      }
+    ],
+    "overlaps": [
+      {
+        "role": "PD-WRL-001",
+        "title": "Defensive Cybersecurity",
+        "shared": 61,
+        "of_nice_role": 205,
+        "jaccard": 0.227
+      },
+      {
+        "role": "PD-WRL-002",
+        "title": "Digital Forensics",
+        "shared": 48,
+        "of_nice_role": 181,
+        "jaccard": 0.186
+      },
+      {
+        "role": "PD-WRL-007",
+        "title": "Vulnerability Analysis",
+        "shared": 48,
+        "of_nice_role": 96,
+        "jaccard": 0.277
+      },
+      {
+        "role": "OG-WRL-014",
+        "title": "Systems Security Management",
+        "shared": 43,
+        "of_nice_role": 201,
+        "jaccard": 0.152
+      },
+      {
+        "role": "OG-WRL-012",
+        "title": "Security Control Assessment",
+        "shared": 42,
+        "of_nice_role": 304,
+        "jaccard": 0.109
+      }
+    ],
+    "overlaps_method": "Computed: NICE roles sharing the most statements with this role, excluding the roles it extends.",
+    "citations": [
+      {
+        "source": "nist-nice-v2.2.0",
+        "locator": "PD-WRL-003",
+        "locator_status": "verified",
+        "support": "related",
+        "note": "Parent NICE role; all its statements are inherited."
+      },
+      {
+        "source": "nist-sp-800-82r3",
+        "locator": "§3.3.8 Develop an Incident Response Capability (PDF p. 59)",
+        "locator_status": "verified",
+        "support": "related",
+        "note": null
+      },
+      {
+        "source": "nist-sp-800-82r3",
+        "locator": "§6.4 Respond (RS) (PDF pp. 151-153)",
+        "locator_status": "verified",
+        "support": "related",
+        "note": null
+      }
+    ],
+    "open_questions": [
+      "Should ICS forensics (controllers, field devices) be part of this role or only the separate ICS Forensic Analyst stub (PR-OT-014)?",
+      "Many responders are external (vendors, integrators, retained IR firms). Does the role need a service-provider variant?"
+    ]
+  },
+  "frameworks": {
+    "nice": {
+      "version": "2.2.0",
+      "released": "2026-04-28",
+      "source": "nist-nice-v2.2.0"
+    },
+    "attack_ics": {
+      "version": "20.1",
+      "source": "mitre-attack-ics-v20.1",
+      "notice": "© 2026 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation."
+    }
+  },
+  "statements": [
+    {
+      "id": "T0164",
+      "type": "task",
+      "text": "Perform cyber defense trend analysis and reporting",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T0164",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T0262",
+      "type": "task",
+      "text": "Employ approved defense-in-depth principles and practices (e.g., defense-in-multiple places, layered defenses, security robustness)",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T0262",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T0510",
+      "type": "task",
+      "text": "Coordinate incident response functions",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T0510",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1020",
+      "type": "task",
+      "text": "Determine the operational and safety impacts of cybersecurity lapses",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1020",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "T1084",
+      "type": "task",
+      "text": "Identify anomalous network activity",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1084",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1085",
+      "type": "task",
+      "text": "Identify potential threats to network resources",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1085",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1109",
+      "type": "task",
+      "text": "Resolve cyber defense incidents",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1109",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1110",
+      "type": "task",
+      "text": "Coordinate technical support to enterprise-wide cybersecurity defense technicians",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1110",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1118",
+      "type": "task",
+      "text": "Identify vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1118",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1119",
+      "type": "task",
+      "text": "Recommend vulnerability remediation strategies",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1119",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1124",
+      "type": "task",
+      "text": "Restore essential system capabilities and business functions after catastrophic failure events",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-001",
+          "DD-WRL-002",
+          "DD-WRL-004",
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Restoring essential capabilities after catastrophic failure."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1124",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1250",
+      "type": "task",
+      "text": "Perform cyber defense incident triage",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1250",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1251",
+      "type": "task",
+      "text": "Recommend incident remediation strategies",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1251",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1252",
+      "type": "task",
+      "text": "Determine the scope, urgency, and impact of cyber defense incidents",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1252",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1256",
+      "type": "task",
+      "text": "Perform forensically sound image collection",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1256",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1257",
+      "type": "task",
+      "text": "Recommend mitigation and remediation strategies for enterprise systems",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1257",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1260",
+      "type": "task",
+      "text": "Perform real-time cyber defense incident handling",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1260",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1299",
+      "type": "task",
+      "text": "Determine causes of network alerts",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1299",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1315",
+      "type": "task",
+      "text": "Track cyber defense incidents from initial detection through final resolution",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1315",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1316",
+      "type": "task",
+      "text": "Document cyber defense incidents from initial detection through final resolution",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1316",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1332",
+      "type": "task",
+      "text": "Produce incident findings reports",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1332",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1333",
+      "type": "task",
+      "text": "Communicate incident findings to appropriate constituencies",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1333",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1370",
+      "type": "task",
+      "text": "Collect intrusion artifacts",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1370",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1371",
+      "type": "task",
+      "text": "Mitigate potential cyber defense incidents",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1371",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1372",
+      "type": "task",
+      "text": "Advise law enforcement personnel as technical expert",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1372",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1407",
+      "type": "task",
+      "text": "Correlate threat assessment data",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1407",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1485",
+      "type": "task",
+      "text": "Prepare after action reviews (AARs)",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1485",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1489",
+      "type": "task",
+      "text": "Correlate incident data",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1489",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1582",
+      "type": "task",
+      "text": "Maintain currency of cyber defense threat conditions",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1582",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "T1617",
+      "type": "task",
+      "text": "Prepare cyber defense reports",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "T1617",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0675",
+      "type": "knowledge",
+      "text": "Knowledge of risk management processes",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0675",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0676",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity laws and regulations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0676",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0677",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0677",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0678",
+      "type": "knowledge",
+      "text": "Knowledge of privacy laws and regulations",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0678",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002",
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0679",
+      "type": "knowledge",
+      "text": "Knowledge of privacy policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0679",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0680",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0680",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/39",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/0",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/10",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/11",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/12",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/13",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/14",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/15",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/16",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/17",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/18",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/19",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/20",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/21",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/22",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/23",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/24",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/25",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/4",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/5",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/8",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/13",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/3",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/4",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0681",
+      "type": "knowledge",
+      "text": "Knowledge of privacy principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0681",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002",
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0682",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity threats",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0682",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0683",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0683",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "K0684",
+      "type": "knowledge",
+      "text": "Knowledge of cybersecurity threat characteristics",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0684",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0685",
+      "type": "knowledge",
+      "text": "Knowledge of access control principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0685",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0686",
+      "type": "knowledge",
+      "text": "Knowledge of authentication and authorization tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0686",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/11",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/12",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/13",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0689",
+      "type": "knowledge",
+      "text": "Knowledge of network infrastructure principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0689",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0701",
+      "type": "knowledge",
+      "text": "Knowledge of data backup and recovery policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0701",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/12",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0709",
+      "type": "knowledge",
+      "text": "Knowledge of business continuity and disaster recovery (BCDR) policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0709",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0710",
+      "type": "knowledge",
+      "text": "Knowledge of enterprise cybersecurity architecture principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0710",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0716",
+      "type": "knowledge",
+      "text": "Knowledge of host access control (HAC) systems and software",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0716",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0717",
+      "type": "knowledge",
+      "text": "Knowledge of network access control (NAC) systems and software",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0717",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0718",
+      "type": "knowledge",
+      "text": "Knowledge of network communications principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0718",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0724",
+      "type": "knowledge",
+      "text": "Knowledge of incident response principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0724",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Warmup/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/11",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/22",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0725",
+      "type": "knowledge",
+      "text": "Knowledge of incident response tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0725",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0726",
+      "type": "knowledge",
+      "text": "Knowledge of incident handling tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0726",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0732",
+      "type": "knowledge",
+      "text": "Knowledge of intrusion detection tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0732",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0746",
+      "type": "knowledge",
+      "text": "Knowledge of policy-based access controls",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0746",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0747",
+      "type": "knowledge",
+      "text": "Knowledge of Risk Adaptive (Adaptable) Access Controls (RAdAC)",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0747",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0751",
+      "type": "knowledge",
+      "text": "Knowledge of system threats",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0751",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0752",
+      "type": "knowledge",
+      "text": "Knowledge of system vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0752",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002"
+      ]
+    },
+    {
+      "id": "K0770",
+      "type": "knowledge",
+      "text": "Knowledge of system administration principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0770",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0778",
+      "type": "knowledge",
+      "text": "Knowledge of enterprise information technology (IT) architecture principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0778",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0783",
+      "type": "knowledge",
+      "text": "Knowledge of network attack characteristics",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0783",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/6",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/23",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/28",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0791",
+      "type": "knowledge",
+      "text": "Knowledge of defense-in-depth principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0791",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Morning/5",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006",
+        "NF-COM-007",
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "K0829",
+      "type": "knowledge",
+      "text": "Knowledge of account creation policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0829",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0830",
+      "type": "knowledge",
+      "text": "Knowledge of password policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0830",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0832",
+      "type": "knowledge",
+      "text": "Knowledge of cyberattack characteristics",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0832",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0833",
+      "type": "knowledge",
+      "text": "Knowledge of cyberattack actor characteristics",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0833",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0837",
+      "type": "knowledge",
+      "text": "Knowledge of hardening tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0837",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0844",
+      "type": "knowledge",
+      "text": "Knowledge of cyber attack stages",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0844",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0845",
+      "type": "knowledge",
+      "text": "Knowledge of cyber intrusion activity phases",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0845",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0857",
+      "type": "knowledge",
+      "text": "Knowledge of malware analysis tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0857",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0865",
+      "type": "knowledge",
+      "text": "Knowledge of data classification standards and best practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0865",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-002",
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0866",
+      "type": "knowledge",
+      "text": "Knowledge of data classification tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0866",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0870",
+      "type": "knowledge",
+      "text": "Knowledge of enterprise architecture (EA) reference models and frameworks",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0870",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0871",
+      "type": "knowledge",
+      "text": "Knowledge of enterprise architecture (EA) principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0871",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0891",
+      "type": "knowledge",
+      "text": "Knowledge of the Open Systems Interconnect (OSI) reference model",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0891",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0898",
+      "type": "knowledge",
+      "text": "Knowledge of cloud service models and frameworks",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0898",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K0915",
+      "type": "knowledge",
+      "text": "Knowledge of network architecture principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0915",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/32",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0916",
+      "type": "knowledge",
+      "text": "Knowledge of malware analysis principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0916",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0924",
+      "type": "knowledge",
+      "text": "Knowledge of network analysis tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0924",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0934",
+      "type": "knowledge",
+      "text": "Knowledge of data classification policies and procedures",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0934",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "K0969",
+      "type": "knowledge",
+      "text": "Knowledge of cyber-attack tools and techniques",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0969",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K0983",
+      "type": "knowledge",
+      "text": "Knowledge of computer networking principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K0983",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1002",
+      "type": "knowledge",
+      "text": "Knowledge of supervisory control and data acquisition (SCADA) systems and software",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "PD-WRL-006"
+        ],
+        "rationale": "Inferred: SCADA and supervisory systems are often in scope."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1002",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/41",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/42",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/43",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/46",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/47",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/48",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/49",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/50",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/1",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/3",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/4",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/8",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day2/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/11",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/10",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/17",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/8",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab2/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/10",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/2",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/20",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/22",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/26",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/29",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/3",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/30",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/31",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/5",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/6",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/7",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/8",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/9",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/20",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/21",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/22",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/23",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/24",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/25",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/26",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-core/40",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-device/1011",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-grokwell/600",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1014",
+      "type": "knowledge",
+      "text": "Knowledge of network security principles and practices",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1014",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "K1049",
+      "type": "knowledge",
+      "text": "Knowledge of routing protocols",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1049",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1079",
+      "type": "knowledge",
+      "text": "Knowledge of web application security risks",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1079",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1293",
+      "type": "knowledge",
+      "text": "Knowledge of Purdue Model levels",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Purdue levels frame scoping and containment."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1293",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1297",
+      "type": "knowledge",
+      "text": "Knowledge of OT safety systems",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Response must not compromise safety systems."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1297",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1301",
+      "type": "knowledge",
+      "text": "Knowledge of cyber incidents impacting OT",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Cyber incidents that have affected OT."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1301",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1304",
+      "type": "knowledge",
+      "text": "Knowledge of operational priorities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: Operational priorities shape containment choices."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1304",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1306",
+      "type": "knowledge",
+      "text": "Knowledge of OT assets",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: OT assets in scope."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1306",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "K1309",
+      "type": "knowledge",
+      "text": "Knowledge of OT protocols",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: OT protocols seen in evidence."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "K1309",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0077",
+      "type": "skill",
+      "text": "Skill in securing network communications",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0077",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0080",
+      "type": "skill",
+      "text": "Skill in performing damage assessments",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0080",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0483",
+      "type": "skill",
+      "text": "Skill in identifying software communications vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0483",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-008"
+      ]
+    },
+    {
+      "id": "S0509",
+      "type": "skill",
+      "text": "Skill in evaluating security products",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0509",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0544",
+      "type": "skill",
+      "text": "Skill in recognizing vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0544",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0547",
+      "type": "skill",
+      "text": "Skill in identifying malware",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0547",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0548",
+      "type": "skill",
+      "text": "Skill in capturing malware",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0548",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0549",
+      "type": "skill",
+      "text": "Skill in containing malware",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0549",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0550",
+      "type": "skill",
+      "text": "Skill in reporting malware",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0550",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0572",
+      "type": "skill",
+      "text": "Skill in detecting host- and network-based intrusions",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0572",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0589",
+      "type": "skill",
+      "text": "Skill in preserving digital evidence integrity",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0589",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0607",
+      "type": "skill",
+      "text": "Skill in collecting digital evidence",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0607",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0608",
+      "type": "skill",
+      "text": "Skill in processing digital evidence",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0608",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0609",
+      "type": "skill",
+      "text": "Skill in transporting digital evidence",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0609",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0614",
+      "type": "skill",
+      "text": "Skill in categorizing types of vulnerabilities",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0614",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0615",
+      "type": "skill",
+      "text": "Skill in protecting a network against malware",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0615",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0651",
+      "type": "skill",
+      "text": "Skill in performing malware analysis",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0651",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-008"
+      ]
+    },
+    {
+      "id": "S0688",
+      "type": "skill",
+      "text": "Skill in performing network data analysis",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0688",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0805",
+      "type": "skill",
+      "text": "Skill in designing incident responses",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0805",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0806",
+      "type": "skill",
+      "text": "Skill in performing incident responses",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0806",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/11",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/12",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/27",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-advanced/31",
+          "provenance": "author-tagged"
+        },
+        {
+          "module": "cyberfire-operationaltechnology:ot-grokwell/600",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0821",
+      "type": "skill",
+      "text": "Skill in collaborating with internal and external stakeholders",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0821",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-007"
+      ]
+    },
+    {
+      "id": "S0854",
+      "type": "skill",
+      "text": "Skill in performing data analysis",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0854",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "NF-COM-006"
+      ]
+    },
+    {
+      "id": "S0866",
+      "type": "skill",
+      "text": "Skill in performing log file analysis",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "additional",
+        "basis": "inherited",
+        "via": [
+          "PD-WRL-003"
+        ],
+        "rationale": "Inferred: incident handling, evidence, coordination and recovery statements are core; IT-specific and general statements are additional."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0866",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [
+        {
+          "module": "cyberfire-operationaltechnology:OT1_Day3-Lab1/12",
+          "provenance": "author-tagged"
+        }
+      ],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "S0942",
+      "type": "skill",
+      "text": "Skill in performing system recovery for control system environments",
+      "source": "nice",
+      "nice_version": "2.2.0",
+      "status": "official",
+      "link": {
+        "flag": "core",
+        "basis": "added-nice",
+        "via": [
+          "DD-WRL-009"
+        ],
+        "rationale": "Inferred: System recovery for control system environments."
+      },
+      "relates_to_nice": [],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-nice-v2.2.0",
+          "locator": "S0942",
+          "locator_status": "verified",
+          "support": "verbatim"
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0001",
+      "type": "task",
+      "text": "Maintain backups of controller programs, configurations and firmware, verify their integrity, and test restoration",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "S0942",
+          "relation": "complements"
+        },
+        {
+          "id": "T1124",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0809",
+          "name": "Data Destruction"
+        },
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.3 Backups (PR.IP-4) (PDF p. 129)",
+          "locator_status": "verified",
+          "support": "paraphrase",
+          "note": "Back up PLC logic and configuration; verify backups for reliability and integrity; test restoration. Firmware is a nice-plus addition."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix E.3.3 File Hashing (PDF p. 228)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PT-OT-0012",
+      "type": "task",
+      "text": "Coordinate incident response actions with operations, engineering and process safety staff before containment so that the response does not create unsafe conditions or unplanned stops",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T0510",
+          "relation": "refines"
+        },
+        {
+          "id": "T1020",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0880",
+          "name": "Loss of Safety"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.4.4 Response Mitigation (RS.MI) (PDF p. 153)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Impacts of shutdowns or disconnects should be understood and communicated."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.9 Develop a Recovery and Restoration Capability (PDF p. 59)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Prioritize human and environmental safety before restarting operations."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§4.2.2 Safety Systems (PDF p. 72)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0013",
+      "type": "task",
+      "text": "Collect evidence from controllers, HMIs and engineering workstations (e.g., running programs, project files, device and application logs) without disrupting operations",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1370",
+          "relation": "refines"
+        },
+        {
+          "id": "S0607",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.4.3 Response Analysis (RS.AN) (PDF p. 153)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Analysis includes forensics and considering OT dependencies."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.8 Develop an Incident Response Capability (PDF p. 59)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PT-OT-0014",
+      "type": "task",
+      "text": "Restore controllers and OT systems from known-good backups and verify logic, setpoints and firmware before returning them to production",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "T1124",
+          "relation": "refines"
+        },
+        {
+          "id": "S0942",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        },
+        {
+          "id": "T0836",
+          "name": "Modify Parameter"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§3.3.9 Develop a Recovery and Restoration Capability (PDF p. 59)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Restore to a pre-incident state; safety before restart."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.3 Backups (PR.IP-4) (PDF p. 129)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Test restoration from backup data."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": [
+        "PC-OT-001"
+      ]
+    },
+    {
+      "id": "PK-OT-0003",
+      "type": "knowledge",
+      "text": "Knowledge of controller programs and engineering project files (e.g., IEC 61131-3 ladder diagram, structured text, function block diagram) as security-critical assets",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1306",
+          "relation": "refines"
+        },
+        {
+          "id": "K0068",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0873",
+          "name": "Project File Infection"
+        },
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        },
+        {
+          "id": "T0845",
+          "name": "Program Upload"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.3 Backups (PR.IP-4) (PDF p. 129)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Treats PLC logic and configuration files as data to back up and protect."
+        },
+        {
+          "source": "iec-61131-3",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": "Defines the controller programming languages; cited by part only."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0008",
+      "type": "knowledge",
+      "text": "Knowledge of MITRE ATT&CK for ICS tactics and techniques",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "additional",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1301",
+          "relation": "complements"
+        },
+        {
+          "id": "K1289",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "mitre-attack-ics-v20.1",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix D.3.5 MITRE ATT&CK for ICS (PDF p. 218)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0010",
+      "type": "knowledge",
+      "text": "Knowledge of OT containment options and their process consequences (e.g., isolating zones, disconnecting remote access, moving to manual operation, controlled shutdown)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K0724",
+          "relation": "refines"
+        },
+        {
+          "id": "K1304",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2",
+          "3",
+          "3.5"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.4.4 Response Mitigation (RS.MI) (PDF p. 153)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Mitigation may involve process shutdowns or communication disconnects that affect operations."
+        },
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.2.4.5 Response and Recovery Plans (PDF p. 133)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Lists transitioning to manual operations."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PK-OT-0011",
+      "type": "knowledge",
+      "text": "Knowledge of OT incident coordination partners and reporting channels (e.g., equipment vendors, integrators, sector information sharing organizations, government agencies)",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1181",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.4.2 Response Communications (RS.CO) (PDF pp. 151-152)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "Names OT technical support such as vendors and integrators among response contacts."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PS-OT-0001",
+      "type": "skill",
+      "text": "Skill in reading controller logic (e.g., ladder diagram, structured text, function block diagram) to find security-relevant behavior such as hidden overrides or altered setpoints",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K0068",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1"
+        ],
+        "sectors": [],
+        "protocol_families": []
+      },
+      "attack_ics": [
+        {
+          "id": "T0889",
+          "name": "Modify Program"
+        },
+        {
+          "id": "T0836",
+          "name": "Modify Parameter"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "Appendix C.3 Threat Events and Incidents (PDF p. 196)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": null
+        },
+        {
+          "source": "iec-61131-3",
+          "locator": null,
+          "locator_status": "none",
+          "support": "related",
+          "note": null
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    },
+    {
+      "id": "PS-OT-0003",
+      "type": "skill",
+      "text": "Skill in analyzing industrial protocol traffic to tell normal process communication from unauthorized commands",
+      "source": "plus",
+      "nice_version": null,
+      "status": "draft",
+      "link": {
+        "flag": "core",
+        "basis": "plus",
+        "via": null,
+        "rationale": null
+      },
+      "relates_to_nice": [
+        {
+          "id": "K1309",
+          "relation": "complements"
+        },
+        {
+          "id": "S0939",
+          "relation": "complements"
+        }
+      ],
+      "ot_context": {
+        "purdue_levels": [
+          "1",
+          "2"
+        ],
+        "sectors": [],
+        "protocol_families": [
+          "EtherNet/IP-CIP",
+          "PROFINET",
+          "Modbus"
+        ]
+      },
+      "attack_ics": [
+        {
+          "id": "T1692.001",
+          "name": "Command Message"
+        },
+        {
+          "id": "T0836",
+          "name": "Modify Parameter"
+        }
+      ],
+      "citations": [
+        {
+          "source": "nist-sp-800-82r3",
+          "locator": "§6.3.2.1 Network Monitoring (DE.CM-1) (PDF p. 147)",
+          "locator_status": "verified",
+          "support": "related",
+          "note": "A baseline of normal OT traffic helps separate attacks from transient conditions."
+        }
+      ],
+      "coverage": [],
+      "open_questions": [],
+      "competency_areas": []
+    }
+  ],
+  "coverage": {
+    "collections": [
+      {
+        "id": "cyberfire-operationaltechnology",
+        "title": "Cyber Fire OT puzzles",
+        "role": "example coverage source",
+        "commit": "b0bef0fedff6aab3bd90838281b02814bbba994d",
+        "commit_date": "2026-11-02"
+      }
+    ],
+    "summary": {
+      "all": {
+        "total": 125,
+        "covered": 10
+      },
+      "by_type": {
+        "task": {
+          "total": 34,
+          "covered": 0
+        },
+        "knowledge": {
+          "total": 65,
+          "covered": 8
+        },
+        "skill": {
+          "total": 26,
+          "covered": 2
+        }
+      },
+      "by_flag": {
+        "core": {
+          "total": 56,
+          "covered": 8
+        },
+        "additional": {
+          "total": 69,
+          "covered": 2
+        }
+      },
+      "by_source": {
+        "nice": {
+          "total": 115,
+          "covered": 10
+        },
+        "plus": {
+          "total": 10,
+          "covered": 0
+        }
+      },
+      "by_basis": {
+        "inherited": {
+          "total": 106,
+          "covered": 9
+        },
+        "added-nice": {
+          "total": 9,
+          "covered": 1
+        },
+        "plus": {
+          "total": 10,
+          "covered": 0
+        }
+      }
+    },
+    "modules": [
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/39",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/39/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/41",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/41/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/42",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/42/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/43",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/43/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/46",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/46/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/47",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/47/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/48",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/48/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/49",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/49/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Afternoon/50",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Afternoon/50/puzzle.md",
+        "objective": "PLC Programming Problems",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/0",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/0/puzzle.md",
+        "objective": "welcome to class",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/1/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/10",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/10/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/11",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/11/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/12",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/12/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/13",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/13/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/14",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/14/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/15",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/15/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/16",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/16/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/17",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/17/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/18",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/18/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/19",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/19/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/20",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/20/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/21",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/21/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/22",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/22/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/23",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/23/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/24",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/24/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/25",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/25/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/4/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/5",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/5/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0791",
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/7/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/8",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/8/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day1-Morning/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day1-Morning/9/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/1/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/2",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/2/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/3",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/3/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/4/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/7/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/8",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/8/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day2/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day2/9/puzzle.md",
+        "objective": "OT Cybersecurity",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/11",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/11/puzzle.md",
+        "objective": "Finish Lab 1",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/12",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/12/puzzle.md",
+        "objective": "Finish Lab 1",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "S0866"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/13",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/13/puzzle.md",
+        "objective": "hack the planet",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/6",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/6/puzzle.md",
+        "objective": "complete lab 1",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0783"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab1/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab1/7/puzzle.md",
+        "objective": "Finish Lab 1",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002",
+          "K0783"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/10",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/10/puzzle.md",
+        "objective": "Complete Lab 2",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/11",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/11/puzzle.md",
+        "objective": "Complete Lab 2",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0686"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/12",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/12/puzzle.md",
+        "objective": "open the manual",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0686"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/13",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/13/puzzle.md",
+        "objective": "open the manual",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0686"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/17",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/17/puzzle.md",
+        "objective": "open the manual",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/8",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/8/puzzle.md",
+        "objective": "Complete Lab 2",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Lab2/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Lab2/9/puzzle.md",
+        "objective": "Complete Lab 2",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:OT1_Day3-Warmup/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/OT1_Day3-Warmup/1/puzzle.md",
+        "objective": "open the manual",
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0724"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/10",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/10/puzzle.md",
+        "objective": "Identify unauthorized setpoint modifications in Structured Text.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/11",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/11/puzzle.md",
+        "objective": "Execute containment and recovery steps with process continuity and safety constraints.",
+        "release_id": null,
+        "statements_in_role": [
+          "S0806",
+          "K0724"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/12",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/12/puzzle.md",
+        "objective": "Execute recovery steps and verify logic integrity after a controller reflash.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0701",
+          "S0806"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/2",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/2/puzzle.md",
+        "objective": "Identify MBAP header length anomalies in Modbus TCP traffic",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/20",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/20/puzzle.md",
+        "objective": "Recognize a ENIP command and its direct physical consequence.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/22",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/22/puzzle.md",
+        "objective": "Analyze CIP service codes to detect unauthorized controller state manipulation.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002",
+          "K0724"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/23",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/23/puzzle.md",
+        "objective": "Identify adversarial TTPs used for device fingerprinting via ENIP.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0783"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/26",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/26/puzzle.md",
+        "objective": "Analyze ladder logic to detect unauthorized changes.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/27",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/27/puzzle.md",
+        "objective": "Reconstruct an adversary timeline to identify unauthorized control nodes and tampered ENIP/CIP setpoints.",
+        "release_id": null,
+        "statements_in_role": [
+          "S0806"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/28",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/28/puzzle.md",
+        "objective": "Identify adversarial TTPs for Profinet network discovery.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0783"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/29",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/29/puzzle.md",
+        "objective": "Detect unauthorized logic changes in Structured Text.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/3",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/3/puzzle.md",
+        "objective": "Identify the missing field in a truncated (Partial) MBAP header.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/30",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/30/puzzle.md",
+        "objective": "Reconstruct adversary timeline using historian and network layers.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/31",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/31/puzzle.md",
+        "objective": "Execute containment steps while maintaining process stability.",
+        "release_id": null,
+        "statements_in_role": [
+          "S0806",
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/32",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/32/puzzle.md",
+        "objective": "Communicate risk to leadership regarding network architecture.",
+        "release_id": null,
+        "statements_in_role": [
+          "K0915"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/5",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/5/puzzle.md",
+        "objective": "Perform packet analysis to extract a setpoint modification.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/6",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/6/puzzle.md",
+        "objective": "Perform packet analysis to reconstruct a multi-state control change.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/7",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/7/puzzle.md",
+        "objective": "Interpret control logic and correlate behavior to a physical process.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/8",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/8/puzzle.md",
+        "objective": "Compare baseline vs modified logic state for hidden manipulation.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-advanced/9",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-advanced/9/puzzle.md",
+        "objective": "Identify a hidden logic override in a ladder logic comparison.",
+        "release_id": null,
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/1",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/1/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/2",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/2/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/20",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/20/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/21",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/21/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/22",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/22/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/23",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/23/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/24",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/24/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/25",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/25/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/26",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/26/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/3",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/3/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/4",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/4/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K0680"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-core/40",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-core/40/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-device/1011",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-device/1011/puzzle.md",
+        "objective": null,
+        "release_id": "INL/MIS-26-89792",
+        "statements_in_role": [
+          "K1002"
+        ]
+      },
+      {
+        "id": "cyberfire-operationaltechnology:ot-grokwell/600",
+        "collection": "cyberfire-operationaltechnology",
+        "path": "categories/ot-grokwell/600/puzzle.md",
+        "objective": null,
+        "release_id": null,
+        "statements_in_role": [
+          "K1002",
+          "S0806"
+        ]
+      }
+    ],
+    "gaps": [
+      "T0164",
+      "T0262",
+      "T0510",
+      "T1020",
+      "T1084",
+      "T1085",
+      "T1109",
+      "T1110",
+      "T1118",
+      "T1119",
+      "T1124",
+      "T1250",
+      "T1251",
+      "T1252",
+      "T1256",
+      "T1257",
+      "T1260",
+      "T1299",
+      "T1315",
+      "T1316",
+      "T1332",
+      "T1333",
+      "T1370",
+      "T1371",
+      "T1372",
+      "T1407",
+      "T1485",
+      "T1489",
+      "T1582",
+      "T1617",
+      "K0675",
+      "K0676",
+      "K0677",
+      "K0678",
+      "K0679",
+      "K0681",
+      "K0682",
+      "K0683",
+      "K0684",
+      "K0685",
+      "K0689",
+      "K0709",
+      "K0710",
+      "K0716",
+      "K0717",
+      "K0718",
+      "K0725",
+      "K0726",
+      "K0732",
+      "K0746",
+      "K0747",
+      "K0751",
+      "K0752",
+      "K0770",
+      "K0778",
+      "K0829",
+      "K0830",
+      "K0832",
+      "K0833",
+      "K0837",
+      "K0844",
+      "K0845",
+      "K0857",
+      "K0865",
+      "K0866",
+      "K0870",
+      "K0871",
+      "K0891",
+      "K0898",
+      "K0916",
+      "K0924",
+      "K0934",
+      "K0969",
+      "K0983",
+      "K1014",
+      "K1049",
+      "K1079",
+      "K1293",
+      "K1297",
+      "K1301",
+      "K1304",
+      "K1306",
+      "K1309",
+      "S0077",
+      "S0080",
+      "S0483",
+      "S0509",
+      "S0544",
+      "S0547",
+      "S0548",
+      "S0549",
+      "S0550",
+      "S0572",
+      "S0589",
+      "S0607",
+      "S0608",
+      "S0609",
+      "S0614",
+      "S0615",
+      "S0651",
+      "S0688",
+      "S0805",
+      "S0821",
+      "S0854",
+      "S0942",
+      "PT-OT-0001",
+      "PT-OT-0012",
+      "PT-OT-0013",
+      "PT-OT-0014",
+      "PK-OT-0003",
+      "PK-OT-0008",
+      "PK-OT-0010",
+      "PK-OT-0011",
+      "PS-OT-0001",
+      "PS-OT-0003"
+    ],
+    "provenance_note": "author-tagged = tag assigned by the module's author; inferred = mapping proposed by nice-plus. Neither is independently verified."
+  },
+  "sources": [
+    {
+      "id": "cyberfire-operationaltechnology",
+      "title": "Cyber Fire OT puzzles (operationaltechnology repository)",
+      "publisher": "Cyber Fire / Idaho National Laboratory",
+      "version": "git commit; see data/coverage/cyberfire-operationaltechnology.json",
+      "date": null,
+      "url": null,
+      "licence": "The puzzles are not public. Only puzzle paths, NICE tags, objective lines and INL release IDs are imported and published here; puzzle text, hints and answers are never copied.",
+      "held": "data/coverage/cyberfire-operationaltechnology.json (tags only)",
+      "note": "Example coverage source. Tags are assigned by puzzle authors and have not been independently verified."
+    },
+    {
+      "id": "iec-61131-3",
+      "title": "IEC 61131-3, Programmable controllers, Part 3: Programming languages",
+      "publisher": "IEC",
+      "version": null,
+      "date": null,
+      "url": null,
+      "licence": "Copyrighted. Cite by part only; do not reproduce text.",
+      "held": null
+    },
+    {
+      "id": "mitre-attack-ics-v20.1",
+      "title": "MITRE ATT&CK for ICS (STIX 2.1 collection)",
+      "publisher": "The MITRE Corporation",
+      "version": "20.1",
+      "date": "2026-11-05",
+      "url": "https://attack.mitre.org/matrices/ics/",
+      "licence": "MITRE ATT&CK terms of use (sources/attack-ics/LICENSE.txt)",
+      "held": "sources/attack-ics/v20.1/ics-attack.json",
+      "sha256": "3f6448369f9135ade84ff6437479441530d0b262f910dca991879a7146b524ff",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "nist-nice-v2.2.0",
+      "title": "Workforce Framework for Cybersecurity (NICE Framework) Components v2.2.0",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "2.2.0",
+      "date": "2026-04-28",
+      "url": "https://csrc.nist.gov/csrc/media/Projects/cprt/documents/nice/v2-2-0_nf_components.json",
+      "licence": "US Government work",
+      "held": "sources/nice/v2.2.0/v2-2-0_nf_components.json",
+      "sha256": "3ad1d9d7e0d6b32895cb569f86c3bc05af2937a68e96eab4d1c9b3d9fa6e575e",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "nist-sp-800-82r3",
+      "title": "NIST SP 800-82 Rev. 3, Guide to Operational Technology (OT) Security",
+      "publisher": "National Institute of Standards and Technology (NIST)",
+      "version": "Rev. 3",
+      "date": "2023-09",
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "licence": "US Government work",
+      "held": null,
+      "sha256": "608f554514d381853e24e0b33123b7080fbd757826f460032690aade63394616",
+      "retrieved": "2026-11-20",
+      "note": "sha256 is of https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf. Locators give the section and the PDF page index (not the printed page number)."
+    }
+  ]
+}
